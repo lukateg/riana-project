@@ -1,7 +1,3 @@
-# CAPSTONE PROJECT / UI INTERNSHIP BELGRADE 2022
-
-JIRA Board: https://griddynamics.atlassian.net/jira/software/c/projects/IBQ2Y22/boards/188?selectedIssue=IBQ2Y22-1
-
 ## Available Scripts
 
 In the project directory, you can run:
