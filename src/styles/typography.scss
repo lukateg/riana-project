@@ -1,0 +1,48 @@
+// Typography styles
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Playfair+Display+SC:wght@400;700&display=swap');
+
+$ff-headings: 'Playfair Display SC', serif;
+$ff-subheadings: 'Nunito', sans-serif;
+$ff-standard: Arial, sans-serif;
+
+$fs-heading-small: 1.5rem; // 24px
+$fs-heading-medium: 2.25rem; // 36px
+$fs-heading-standard: 3rem; // 48px
+$fs-heading-large: 3.75rem; // 60px
+
+$fs-paragraph-small: 0.625rem; // 10px
+$fs-paragraph-medium: 0.688rem; // 11px
+$fs-paragraph-large: 0.875rem; // 14px
+
+$fs-paragraph: 1rem; // 16px
+
+body {
+  font-family: $ff-standard;
+  font-size: $fs-paragraph;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $ff-headings;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: $fs-heading-large;
+}
+
+h2 {
+  font-size: $fs-heading-standard;
+}
+
+h3 {
+  font-size: $fs-heading-medium;
+}
+
+h4 {
+  font-size: $fs-heading-small;
+}

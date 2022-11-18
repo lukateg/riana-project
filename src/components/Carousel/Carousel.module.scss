@@ -1,0 +1,119 @@
+@use '../../styles/base.scss' as *;
+
+.carousel {
+  :global(.swiper-pagination-bullet) {
+    background-color: transparent;
+    opacity: 1;
+    border-radius: 0%;
+    border: 1px solid #d7d5d4;
+    width: 1rem;
+  }
+
+  :global(.swiper-pagination-bullet-active) {
+    background-color: #d7d5d4;
+    opacity: 1;
+  }
+  :global(.swiper__slide) {
+    width: 100%;
+  }
+  &__slide {
+    width: 100%;
+    min-height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+    @include tablet {
+      height: 496px;
+    }
+
+    &--first {
+      background-image: url('../../../public/images/first-slide-min.jpg');
+    }
+    &--second {
+      background-image: url('../../../public/images/second-slide-min.jpg');
+    }
+    &--third {
+      background-image: url('../../../public/images/third-slide-min.jpg');
+    }
+    &--fourth {
+      background-image: url('../../../public/images/fourth-slide-min.jpg');
+    }
+  }
+  .carousel__wrapper {
+    width: 100% !important;
+    max-width: 760px;
+    width: fit-content;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__content {
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    @include tablet {
+      align-items: center;
+      width: 80%;
+      min-width: 320px;
+      max-width: 500px;
+    }
+    @include desktop {
+      width: 70%;
+    }
+    h4 {
+      font-size: $fs-heading-small;
+      font-family: $ff-headings;
+      line-height: 22px;
+      font-weight: 400;
+      white-space: normal;
+      @include tablet {
+        font-size: clamp($fs-paragraph-large, 8vw, $fs-heading-standard);
+        font-weight: 400;
+        white-space: nowrap;
+        margin: 1rem 0rem;
+      }
+    }
+    h6 {
+      display: none;
+      font-family: $ff-subheadings;
+      font-size: clamp($fs-paragraph-small, 4vw, $fs-paragraph);
+      text-transform: uppercase;
+      font-weight: 500;
+      @include tablet {
+        display: inherit;
+      }
+    }
+    .carousel__button {
+      font-size: clamp($fs-paragraph-small, 4vw, $fs-paragraph-large);
+      text-decoration: none;
+      cursor: pointer;
+      background-color: $primary-color;
+      border: none;
+      color: $base-color;
+      text-transform: uppercase;
+      margin-top: 1rem;
+      padding: 0.35rem 0.5rem;
+      width: fit-content;
+      @include tablet {
+        margin: 0;
+      }
+      &--desktop {
+        display: none;
+        @include tablet {
+          display: inherit;
+          margin-top: 1rem;
+        }
+      }
+      &--mobile {
+        display: inherit;
+        @include tablet {
+          display: none;
+        }
+      }
+    }
+  }
+}
