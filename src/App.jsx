@@ -11,6 +11,8 @@ const App = () => (
       doloremque tenetur in est cumque quia sint minima ratione recusandae quod
       laboriosam nisi nobis dolores at, a consectetur eum dolore maiores.
     </p>
+    <h2>Promena na trecoj grani</h2>
+    <h1>Nikijeva nova grana</h1>
     <Route path="/" element={<Carousel />} />
   </Routes>
 );
