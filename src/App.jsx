@@ -7,6 +7,7 @@ const App = () => (
     direktno na main
     <h1>Treca promena sa novom granom</h1>
     <h2>Promena na trecoj grani</h2>
+    <h1>Nikijeva nova grana</h1>
     <Route path="/" element={<Carousel />} />
   </Routes>
 );
