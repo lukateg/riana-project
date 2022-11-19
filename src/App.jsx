@@ -6,6 +6,11 @@ const App = () => (
     Cao Luka ovo je nasa prva promena Cao Luka ovo je nasa druga promena ali
     direktno na main
     <h1>Treca promena sa novom granom</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
+      doloremque tenetur in est cumque quia sint minima ratione recusandae quod
+      laboriosam nisi nobis dolores at, a consectetur eum dolore maiores.
+    </p>
     <Route path="/" element={<Carousel />} />
   </Routes>
 );
