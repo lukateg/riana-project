@@ -1,10 +1,14 @@
 // Typography styles
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Playfair+Display+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap');
+$ff-1: 'Alright-Sans', serif;
+$ff-2: 'Baskerville', sans-serif;
+$ff-3: 'FontsFree-1', sans-serif;
+$ff-4: 'FontsFree-2', sans-serif;
+$ff-5: 'FontsFree-3', sans-serif;
+$ff-6: 'FontsFree-4', sans-serif;
 
-$ff-headings: 'Playfair Display SC', serif;
-$ff-subheadings: 'Nunito', sans-serif;
-$ff-standard: Arial, sans-serif;
 
 $fs-heading-small: 1.5rem; // 24px
 $fs-heading-medium: 2.25rem; // 36px
@@ -17,32 +21,28 @@ $fs-paragraph-large: 0.875rem; // 14px
 
 $fs-paragraph: 1rem; // 16px
 
-body {
-  font-family: $ff-standard;
-  font-size: $fs-paragraph;
+@font-face {
+  font-family: 'Alright-Sans';
+  src: url('../fonts/Alright\ Sans.ttf');
+}
+@font-face {
+  font-family: 'Baskerville';
+  src: url('../fonts/Baskerville.ttc');
+}
+@font-face {
+  font-family: 'FontsFree-1';
+  src: url('../fonts/FontsFree-1.ttf');
+}
+@font-face {
+  font-family: 'FontsFree-2';
+  src: url('../fonts/FontsFree-2.ttf');
+}
+@font-face {
+  font-family: 'FontsFree-3';
+  src: url('../fonts/FontsFree-3.ttf');
+}
+@font-face {
+  font-family: 'FontsFree-4';
+  src: url('../fonts/FontsFree-4.ttf');
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: $ff-headings;
-  font-weight: 400;
-}
-
-h1 {
-  font-size: $fs-heading-large;
-}
-
-h2 {
-  font-size: $fs-heading-standard;
-}
-
-h3 {
-  font-size: $fs-heading-medium;
-}
-
-h4 {
-  font-size: $fs-heading-small;
-}
