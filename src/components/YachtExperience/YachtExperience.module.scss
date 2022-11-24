@@ -1,0 +1,63 @@
+@use '../../styles/base.scss' as *;
+
+.section {
+  @include wrapper;
+  &__heading {
+    width: 90%;
+    max-width: 1160px;
+    letter-spacing: 5px;
+    text-align: center;
+    font-size: clamp(1rem, 2.7vw, $fs-heading-large);
+    font-family: $ff-2;
+    color: $primary-color;
+    text-transform: uppercase;
+    margin: 1rem auto 3rem auto;
+  }
+
+  &__content {
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+  }
+
+  &__image {
+    width: 40%;
+    max-width: 648px;
+    max-height: 976px;
+    height: 100vh;
+    z-index: 5;
+  }
+
+  &__text_container {
+    padding: 1rem 2rem 1rem 7rem;
+    width: min-content;
+    height: min-content;
+    background-color: #eeefef;
+    position: absolute;
+    bottom: -3rem;
+    right: 0;
+    z-index: 1;
+
+    span {
+      display: block;
+      padding-bottom: 2.5rem;
+      width: 45vw;
+      max-width: 838px;
+    }
+
+    h3 {
+      font-family: $ff-2;
+      font-size: clamp($fs-heading-small, 1.2vw + 1vh, $fs-heading-medium);
+      //   font-size: clamp($fs-heading-small, 2.1vw, $fs-heading-medium);
+      text-align: left;
+      color: $primary-color;
+      letter-spacing: 3.5px;
+      margin-bottom: 3rem;
+    }
+    p {
+      margin: 1.5rem 0 1.5rem 0;
+      font-size: clamp($fs-paragraph-large, 1.2vw + 0.5vh, $fs-heading-small);
+      //   font-size: clamp($fs-paragraph-large, 1.3vw, $fs-heading-small);
+    }
+  }
+}
