@@ -3,6 +3,7 @@
 import Navbar from './components/Navbar/Navbar';
 import YachtExperience from './components/YachtExperience/YachtExperience';
 import HeroImage from './components/HeroImage/HeroImage';
+import Design from './components/Design/Design';
 
 const App = () => (
   // <Routes>
@@ -12,6 +13,7 @@ const App = () => (
     <Navbar />
     <HeroImage />
     <YachtExperience />
+    <Design />
   </>
 );
 
