@@ -1,0 +1,41 @@
+@use '../../styles/base.scss' as *;
+
+.section {
+  @include wrapper;
+  color: $primary-color;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 0;
+  }
+
+  h2 {
+    font-size: $fs-heading-medium;
+    text-align: center;
+    font-family: $ff-2;
+  }
+  h3 {
+    font-size: 25px;
+    text-align: center;
+    font-family: $ff-2;
+  }
+  p {
+    font-size: $fs-heading-small;
+    font-family: $ff-1;
+    margin: 2rem 0;
+    text-align: center;
+    letter-spacing: 0.5px;
+    max-width: 939px;
+  }
+  button {
+    background: #1a1a1a00 0% 0% no-repeat padding-box;
+    border: 1px solid #000000;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    width: 240px;
+    height: 61px;
+    margin-bottom: 2rem;
+  }
+}
