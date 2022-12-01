@@ -5,7 +5,7 @@ import YachtExperience from './components/YachtExperience/YachtExperience';
 import HeroImage from './components/HeroImage/HeroImage';
 import ClassicMotorSailingYacht from './components/ClassicMotorSailingYacht/ClassicMotorSailingYacht';
 import Design from './components/Design/Design';
-
+import InteriorExterior from './components/Interior-Exterior/Interior-Exterior';
 
 const App = () => (
   // <Routes>
@@ -17,6 +17,7 @@ const App = () => (
     <YachtExperience />
     <ClassicMotorSailingYacht />
     <Design />
+    <InteriorExterior />
   </>
 );
 

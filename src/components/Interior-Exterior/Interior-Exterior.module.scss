@@ -1,0 +1,59 @@
+@use '../../styles/base.scss' as *;
+
+.section {
+    @include wrapper;
+    display: flex;
+    // justify-content: space-between;
+    flex-direction: column;
+}
+
+.section__elements {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section__discoverMore {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section__discoverMore__item {
+    width: 50%;
+    padding-top: 1rem;
+    &__right {
+        width: 47%;
+        align-self: flex-start;
+        padding-top: 1rem;
+    }
+}
+
+
+.image {
+    width: 40vw;
+    height: 300px;
+}
+
+.paragraph {
+    font-size: 16px;
+    width: 45ch;
+    font-size: $fs-heading-small;
+    font-family: $ff-1;
+    text-align:left;
+    letter-spacing: 0.5px;
+    max-width: 939px;
+}
+
+.section__element__paragraph {
+    width: 40vw;
+    font-size: 18px;
+}
+
+.section__element__heading{
+    font-family: $ff-2;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: #1a1a1a;
+}
+
+
+
