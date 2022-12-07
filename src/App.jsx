@@ -6,6 +6,7 @@ import HeroImage from './components/HeroImage/HeroImage';
 import ClassicMotorSailingYacht from './components/ClassicMotorSailingYacht/ClassicMotorSailingYacht';
 import Design from './components/Design/Design';
 import InteriorExterior from './components/Interior-Exterior/Interior-Exterior';
+import Specifications from './components/Specifications/Specifications';
 
 const App = () => (
   // <Routes>
@@ -18,6 +19,7 @@ const App = () => (
     <ClassicMotorSailingYacht />
     <Design />
     <InteriorExterior />
+    <Specifications />
   </>
 );
 
