@@ -1,0 +1,61 @@
+@use '../../styles/base.scss' as *;
+
+.section {
+    @include wrapper;
+    height: 64vh;
+    margin-top: 2rem;
+}
+
+.section__content {
+    background-color: #EEEFEF;
+    width: 60%;
+    //height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 200px 0px 40px;
+}
+
+.section__content__text {
+    margin-bottom: 1rem;
+    width: 30vw;
+}
+
+.section__content__text p {
+    margin-top: 1rem;
+    font-family: $ff-1;
+}
+
+.section__content__text h1 {
+    font-family: $ff-2;
+}
+
+
+
+.section__content button {
+    background: #1a1a1a00 0% 0% no-repeat padding-box;
+    border: 1px solid #000000;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    // width: 240px;
+    // height: 61px;
+    padding: 10px 40px;
+    margin-bottom: 1rem;
+    margin-left: 20%;
+    //align-self: center;
+}
+
+
+.section__content img {
+    //width: 45vw;
+    width: 90%;
+    //height: 59vh;
+    height: 93%;
+    position: absolute;
+    top: 12%;
+    left: 70%;
+}
+
+
+
+
