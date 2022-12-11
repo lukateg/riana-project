@@ -1,0 +1,57 @@
+@use '../../styles/base.scss' as *;
+
+
+
+.section {
+    @include wrapper;
+    background-color: #EEEFEF;
+    display: flex;
+    justify-content: space-between;
+    padding: 75px 90px;
+}
+
+.section__content {
+    width: 40%;
+    height: 55vh;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 2%;
+}
+
+.section__content__heading {
+    font-family: $ff-2;
+    text-transform: uppercase;
+    color: #1a1a1a;
+}
+
+.section__content__text  {
+    font-family: $ff-1;
+    margin-top: 5%;
+    color: #1a1a1a;
+}
+
+.section__image {
+    overflow: hidden;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    background-image: url('../../images/Dinning.jpg');
+    width: 60%;
+}
+
+.section__content button {
+    background: #1a1a1a00 0% 0% no-repeat padding-box;
+    border: 1px solid #000000;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 10px 40px;
+    margin-top: 20%;
+}
+
+
+

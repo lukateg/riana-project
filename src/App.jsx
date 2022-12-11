@@ -8,6 +8,7 @@ import Design from './components/Design/Design';
 import InteriorExterior from './components/Interior-Exterior/Interior-Exterior';
 import Specifications from './components/Specifications/Specifications';
 import Events from './components/Evenets/Events';
+import Dinning from './components/Dinning/Dinning';
 
 const App = () => (
   // <Routes>
@@ -22,6 +23,7 @@ const App = () => (
     <InteriorExterior />
     <Specifications />
     <Events />
+    <Dinning />
   </>
 );
 
