@@ -3,6 +3,7 @@
 .carousel {
   overflow: hidden !important;
   width: 130%;
+  margin: 7rem 0 9rem 0;
   :global(.swiper-pagination-bullet) {
     background-color: transparent;
     opacity: 1;
@@ -58,19 +59,6 @@
     @include tablet {
       height: 450px;
     }
-
-    // &--first {
-    //   background-image: url('../../images/_D812016.jpg');
-    // }
-    // &--second {
-    //   background-image: url('../../images/_D811904.jpg');
-    // }
-    // &--third {
-    //   background-image: url('../../images/_D812026.jpg');
-    // }
-    // &--fourth {
-    //   background-image: url('../../images/_D8E9211.jpg');
-    // }
   }
 
   .carousel__wrapper {
