@@ -12,9 +12,8 @@ import 'swiper/css/lazy';
 
 import { Pagination, Autoplay, Navigation, Lazy } from 'swiper';
 import styles from './Carousel.module.scss';
-// import { Navigation } from 'swiper';
 
-const Carousel = () => (
+const Carousel = ({ images }) => (
   <Swiper
     slidesPerView={2}
     spaceBetween={160}
@@ -33,58 +32,18 @@ const Carousel = () => (
     className={styles.carousel}
   >
     <div className={styles.carousel__wrapper}>
-      <SwiperSlide>
-        {({ isNext }) => (
-          <div
-            className={`${styles.carousel__slide} ${
-              styles['carousel__slide--first']
-            } ${
-              !isNext
-                ? styles['carousel__slide--active']
-                : styles['carousel__slide--not-active']
-            }`}
-          />
-        )}
-      </SwiperSlide>
-      <SwiperSlide>
-        {({ isNext }) => (
-          <div
-            className={`${styles.carousel__slide} ${
-              styles['carousel__slide--second']
-            } ${
-              !isNext
-                ? styles['carousel__slide--active']
-                : styles['carousel__slide--not-active']
-            }`}
-          />
-        )}
-      </SwiperSlide>
-      <SwiperSlide>
-        {({ isNext }) => (
-          <div
-            className={`${styles.carousel__slide} ${
-              styles['carousel__slide--third']
-            } ${
-              !isNext
-                ? styles['carousel__slide--active']
-                : styles['carousel__slide--not-active']
-            }`}
-          />
-        )}
-      </SwiperSlide>
-      <SwiperSlide>
-        {({ isNext }) => (
-          <div
-            className={`${styles.carousel__slide} ${
-              styles['carousel__slide--fourth']
-            } ${
-              !isNext
-                ? styles['carousel__slide--active']
-                : styles['carousel__slide--not-active']
-            }`}
-          />
-        )}
-      </SwiperSlide>
+      {images.map((image) => (
+        <SwiperSlide key={image}>
+          {
+            <div
+              className={`${styles.carousel__slide} ${styles['carousel__slide--first']} `}
+              style={{
+                backgroundImage: `url(${image})`
+              }}
+            />
+          }
+        </SwiperSlide>
+      ))}
     </div>
   </Swiper>
 );
