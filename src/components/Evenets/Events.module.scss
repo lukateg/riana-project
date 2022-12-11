@@ -4,6 +4,7 @@
     @include wrapper;
     height: 64vh;
     margin-top: 2rem;
+    margin-bottom: 4%;
 }
 
 .section__content {
@@ -30,8 +31,6 @@
     font-family: $ff-2;
 }
 
-
-
 .section__content button {
     background: #1a1a1a00 0% 0% no-repeat padding-box;
     border: 1px solid #000000;
@@ -48,7 +47,7 @@
 
 .section__content img {
     //width: 45vw;
-    width: 90%;
+    width: 97%;
     //height: 59vh;
     height: 93%;
     position: absolute;
