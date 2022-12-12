@@ -14,38 +14,40 @@ import { Pagination, Autoplay, Navigation, Lazy } from 'swiper';
 import styles from './Carousel.module.scss';
 
 const Carousel = ({ images }) => (
-  <Swiper
-    slidesPerView={2}
-    spaceBetween={160}
-    autoplay={{
-      delay: 150000,
-      disableOnInteraction: false
-    }}
-    loop
-    pagination={{
-      clickable: true
-    }}
-    speed={1500}
-    navigation
-    lazy={true}
-    modules={[Autoplay, Pagination, Navigation, Lazy]}
-    className={styles.carousel}
-  >
-    <div className={styles.carousel__wrapper}>
-      {images.map((image) => (
-        <SwiperSlide key={image}>
-          {
-            <div
-              className={`${styles.carousel__slide} ${styles['carousel__slide--first']} `}
-              style={{
-                backgroundImage: `url(${image})`
-              }}
-            />
-          }
-        </SwiperSlide>
-      ))}
-    </div>
-  </Swiper>
+  <section>
+    <Swiper
+      slidesPerView={2}
+      spaceBetween={160}
+      autoplay={{
+        delay: 150000,
+        disableOnInteraction: false
+      }}
+      loop
+      pagination={{
+        clickable: true
+      }}
+      speed={1500}
+      navigation
+      lazy={true}
+      modules={[Autoplay, Pagination, Navigation, Lazy]}
+      className={styles.carousel}
+    >
+      <div className={styles.carousel__wrapper}>
+        {images.map((image) => (
+          <SwiperSlide key={image}>
+            {
+              <div
+                className={`${styles.carousel__slide} ${styles['carousel__slide--first']} `}
+                style={{
+                  backgroundImage: `url(${image})`
+                }}
+              />
+            }
+          </SwiperSlide>
+        ))}
+      </div>
+    </Swiper>
+  </section>
 );
 
 export default Carousel;
