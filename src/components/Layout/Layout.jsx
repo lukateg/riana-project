@@ -11,7 +11,6 @@ function Layout() {
     secondImage: false,
     thirdImage: false
   });
-  console.log(styles);
   return (
     <div className={styles.section}>
       <h2>LAYOUT</h2>
