@@ -15,6 +15,8 @@ import Specifications from './components/Specifications/Specifications';
 import Events from './components/Evenets/Events';
 import Dinning from './components/Dinning/Dinning';
 import Footer from './components/Footer/Footer';
+import Layout from './components/Layout/Layout';
+
 
 const App = () => (
   // <Routes>
@@ -29,6 +31,7 @@ const App = () => (
     <InteriorExterior />
     <Carousel images={[firstImage, secondImage, thirdImage, fourthImage]} />
     <Specifications />
+    <Layout />
     <Events />
     <Dinning />
     <Footer />
