@@ -16,6 +16,7 @@ import Events from './components/Evenets/Events';
 import Dinning from './components/Dinning/Dinning';
 import Footer from './components/Footer/Footer';
 import Layout from './components/Layout/Layout';
+import Activities from './components/Activities/Activities';
 
 
 const App = () => (
@@ -34,6 +35,7 @@ const App = () => (
     <Layout />
     <Events />
     <Dinning />
+    <Activities />
     <Footer />
   </>
 );
