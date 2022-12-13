@@ -14,6 +14,7 @@ import InteriorExterior from './components/Interior-Exterior/Interior-Exterior';
 import Specifications from './components/Specifications/Specifications';
 import Events from './components/Evenets/Events';
 import Dinning from './components/Dinning/Dinning';
+import Footer from './components/Footer/Footer';
 
 const App = () => (
   // <Routes>
@@ -30,6 +31,7 @@ const App = () => (
     <Specifications />
     <Events />
     <Dinning />
+    <Footer />
   </>
 );
 
