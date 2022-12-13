@@ -1,0 +1,75 @@
+@use '../../styles/base.scss' as *;
+
+.sectionWrapper {
+    background-color: #1a1a1a
+} 
+
+.section {
+    @include wrapper;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3%;
+}
+
+.section__navigation {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    color: white;
+    height: 18vh;
+}
+
+.section__navigation__logo {
+    font-family: $ff-5;
+    text-transform: uppercase;
+}
+
+.section__navigation__element {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-family: $ff-1;
+    font-size: 14px;
+    font-weight:200;
+}
+
+
+.section__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6vh;
+}
+
+
+
+.section__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6vh;
+    font-family: $ff-1;
+    text-transform: uppercase;
+    color: white;
+}
+.section__links__icons {
+    width: 20vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    //background-color: red;
+}
+
+.section__links__icons__wrapper {
+    background: white;
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__links__icons__wrapper i {
+    color: black;
+}
