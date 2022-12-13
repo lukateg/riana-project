@@ -1,0 +1,54 @@
+@use '../../styles/base.scss' as *;
+
+.section {
+  @include wrapper;
+  color: $primary-color;
+  padding: 3rem 0;
+
+  &__images {
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__image {
+    max-height: 6rem;
+    width: 6rem;
+    object-fit: contain;
+  }
+
+  h1 {
+    text-align: center;
+    font: normal normal normal 35px/40px Baskerville;
+    letter-spacing: 3.5px;
+    color: #1a1a1a;
+    text-transform: uppercase;
+    opacity: 1;
+  }
+  p {
+    text-align: center;
+    font: normal normal normal 20px/32px Alright Sans;
+    letter-spacing: 0.2px;
+    color: #1a1a1a;
+    opacity: 1;
+    max-width: 959px;
+    margin: 2rem auto;
+  }
+  h3 {
+    margin: 7rem 0 5rem 0;
+    text-align: center;
+    font: normal normal normal 25px/28px Baskerville;
+    letter-spacing: 2px;
+    color: #1a1a1a;
+    text-transform: uppercase;
+    opacity: 1;
+  }
+  button {
+    display: block;
+    margin: 3rem auto;
+    width: 426px;
+    height: 88px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    opacity: 1;
+  }
+}
