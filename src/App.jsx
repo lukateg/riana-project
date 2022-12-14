@@ -17,7 +17,6 @@ import Dinning from './components/Dinning/Dinning';
 import Footer from './components/Footer/Footer';
 import Layout from './components/Layout/Layout';
 
-
 const App = () => (
   // <Routes>
   //   <Route path="/" element={<Carousel />} />

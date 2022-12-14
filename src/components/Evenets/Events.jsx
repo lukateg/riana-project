@@ -7,7 +7,7 @@ const Events = () => (
       <div className={styles.section__content__text}>
         <h1>
           WEDDINGS,
-          <br /> PARTIES & EVENTS
+          <br className={styles.headingResponsive} /> PARTIES & EVENTS
         </h1>
         <p>
           Riana Yacht provides a unique floating venue that will comfortably
@@ -24,6 +24,7 @@ const Events = () => (
       <div className={styles.section__content__button}>
         <button type="button">EXPLORE</button>
       </div>
+      <img src={image} alt="" className={styles.imageMobile} />
     </div>
   </div>
 );

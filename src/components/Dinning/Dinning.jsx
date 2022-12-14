@@ -1,4 +1,5 @@
 import styles from './Dinning.module.scss';
+import image from '../../images/Dinning.jpg';
 
 const Dinning = () => (
   <div className={styles.section}>
@@ -22,8 +23,9 @@ const Dinning = () => (
       </div>
     </div>
     <div className={styles.section__image}>
-      {/* <img src={image} alt="dinningImage" /> */}
+      {/* <img src={image} alt="dinningImage" className={styles.image} /> */}
     </div>
+    <img src={image} alt="dinningImage" className={styles.image} />
   </div>
 );
 
