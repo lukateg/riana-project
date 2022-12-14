@@ -2,35 +2,68 @@
 
 .section {
     @include wrapper;
-    height: 64vh;
-    margin-top: 2rem;
-    margin-bottom: 4%;
+    margin-bottom: 7vh;
+    //margin-bottom: 1500px;
+    position: relative;
+    @media only screen and (max-width: 400px) {
+        width: 100%;
+    }
 }
 
 .section__content {
     background-color: #EEEFEF;
     width: 60%;
     //height: 100%;
-    position: relative;
     display: flex;
     flex-direction: column;
-    padding: 80px 200px 0px 40px;
+    padding: 7% 200px 0px 4%;
+    @media only screen and (max-width: 737px) {
+        width: 100%;
+        padding: 12px 16px;
+    }
+   
 }
 
 .section__content__text {
     margin-bottom: 1rem;
     width: 30vw;
+    @media only screen and (max-width: 737px) {
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid #1a1a1a;
+        padding-top: 1rem;
+    }
 }
 
 .section__content__text p {
     margin-top: 1rem;
     font-family: $ff-1;
+    @media only screen and (max-width: 500px) {
+        font-size: 16px;
+    }
 }
 
 .section__content__text h1 {
     font-family: $ff-2;
+    @media only screen and (max-width: 500px) {
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
 }
 
+.headingResponsive {
+    @media only screen and (max-width: 737px) {
+        display: none;
+    }  
+}
+
+.section__content__button {
+    @media only screen and (max-width: 737px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;    
+    }
+}
 .section__content button {
     background: #1a1a1a00 0% 0% no-repeat padding-box;
     border: 1px solid #000000;
@@ -42,17 +75,55 @@
     margin-bottom: 1rem;
     margin-left: 20%;
     //align-self: center;
+    @media only screen and (max-width: 737px) {
+        margin-left: 0;
+    }
+    @media only screen and (max-width: 400px) {
+        padding: 10px 30px;
+    }
+
+
 }
 
 
-.section__content img {
+.section__image {
     //width: 45vw;
-    width: 97%;
+    width: 50vw;
     //height: 59vh;
-    height: 93%;
+    height: 60vh;
     position: absolute;
-    top: 12%;
-    left: 70%;
+    top: 7vh;
+    left: 35vw;
+    @media only screen and (max-width: 1176px) {
+        height: 65vh;
+     }
+     @media only screen and (max-width: 1127px) {
+        height: 68vh;
+     }
+     @media only screen and (max-width: 1035px) {
+        height: 70vh;
+     }
+     @media only screen and (max-width: 985px) {
+        height: 75vh;
+     }
+     @media only screen and (max-width: 977px) {
+        //top:10vh;
+        height: 77vh;
+     }
+     @media only screen and (max-width: 847px) {
+        height: 77vh;
+        top: 7vh;
+     }
+     @media only screen and (max-width: 737px) {
+       display: none;
+     }
+}
+
+.imageMobile {
+    display: none;
+    @media only screen and (max-width: 737px) {
+        display: block;
+      }
 }
 
 

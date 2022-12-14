@@ -1,11 +1,24 @@
+
+// Mobile First Approcah
 @mixin tablet {
   @media only screen and (min-width: 320px) {
     @content;
   }
 }
-
 @mixin desktop {
   @media only screen and (min-width: 760px) {
+    @content;
+  }
+}
+
+// Desktop First Approach
+@mixin mobileDF {
+  @media only screen and (max-width: 320px) {
+    @content;
+  }
+}
+@mixin tabletDF {
+  @media only screen and (max-width: 760px) {
     @content;
   }
 }

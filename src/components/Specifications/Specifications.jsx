@@ -1,5 +1,5 @@
 import styles from './Specifications.module.scss';
-//  import image from '../../images/birdView.jpg';
+// import image from '../../images/birdView.jpg';
 
 const Specifications = () => (
   <div className={styles.section}>

@@ -16,7 +16,7 @@ const InteriorExterior = () => (
           accommodation for nannies, security, staff or extra guests. All cabins
           are fitted with ensuite bathrooms.
         </p>
-        {/* <p>DISCOVER MORE</p> */}
+        <p className={styles.discoverMore}>DISCOVER MORE</p>
       </div>
       <div className={styles.section__element}>
         <img src={exteriorImage} alt="exteriorImage" className={styles.image} />
@@ -28,7 +28,7 @@ const InteriorExterior = () => (
           There are also two outdoor dining areas on the flybridge and aft decks
           which can be shaded during the day and open to the stars at night.
         </p>
-        {/* <p>DISCOVER MORE</p> */}
+        <p className={styles.discoverMore}>DISCOVER MORE</p>
       </div>
     </div>
     <div className={styles.section__discoverMore}>
