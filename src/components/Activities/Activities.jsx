@@ -9,7 +9,7 @@ import image7 from '../../images/Artboard21.png';
 
 const images = [image1, image2, image5, image3, image4, image6, image7];
 
-const Design = () => (
+const Activities = () => (
   <div className={styles.section}>
     <h1 className={styles.section__heading}>ACTIVITIES</h1>
     <p>
@@ -32,4 +32,4 @@ const Design = () => (
   </div>
 );
 
-export default Design;
+export default Activities;
