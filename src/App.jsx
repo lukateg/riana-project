@@ -16,6 +16,8 @@ import Events from './components/Evenets/Events';
 import Dinning from './components/Dinning/Dinning';
 import Footer from './components/Footer/Footer';
 import Layout from './components/Layout/Layout';
+import Activities from './components/Activities/Activities';
+import YachtStories from './components/YachtStories/YachtStories';
 
 const App = () => (
   // <Routes>
@@ -32,7 +34,9 @@ const App = () => (
     <Specifications />
     <Layout />
     <Events />
+    <YachtStories />
     <Dinning />
+    <Activities />
     <Footer />
   </>
 );
