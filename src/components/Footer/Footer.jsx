@@ -46,7 +46,9 @@ const Footer = () => (
           </div>
         </div>
         <div className={styles.section__links__rights}>
-          <p>2022 © NIKI & NORA. ALL RIGHTS RESERVED.</p>
+          <p>
+            2022 © NIKI & NORA. <span id="allRights">ALL RIGHTS RESERVED.</span>
+          </p>
         </div>
       </div>
     </div>
