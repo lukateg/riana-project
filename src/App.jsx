@@ -25,7 +25,7 @@ const App = () => (
   //   <Route path="/" element={<Carousel />} />
   // </Routes>
   <>
-    {/* <Navbar />
+    <Navbar />
     <HeroImage />
     <YachtExperience />
     <ClassicMotorSailingYacht />
@@ -38,8 +38,8 @@ const App = () => (
     <YachtStories />
     <Dinning />
     <Activities />
-    <Footer /> */}
-    <ContactPage />
+    <Footer />
+    {/* <ContactPage /> */}
   </>
 );
 
