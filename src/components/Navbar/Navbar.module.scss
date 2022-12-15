@@ -139,9 +139,9 @@ hr {
         text-decoration: none;
 
         background-color: white;
-        width: 50%;
+        width: 90%;
         height: 100%;
-        box-shadow: 0 40px 60px rgba(0,0,0,0.5);
+        //box-shadow: 0 40px 60px rgba(0,0,0,0.5);
         border-top: 0.5px solid #645C59;
     }
 }
@@ -152,6 +152,8 @@ hr {
     border-top: 0.5px solid #645C59;
     padding-bottom: 10px;
     padding-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .nav__mobile__row i {
     padding-right: 0.5rem;
@@ -162,7 +164,7 @@ hr {
     text-transform: uppercase;
     font-family: $ff-6;
     font-size: 12px;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 .nav__mobile__row__contact {
     padding-top: 20px;
@@ -170,7 +172,7 @@ hr {
 }
 
 .nav__mobile__row__contact i {
-    margin-left: 1.3rem;
+    margin-left: 1.5rem;
     margin-right: 0.5rem;
 }
 
