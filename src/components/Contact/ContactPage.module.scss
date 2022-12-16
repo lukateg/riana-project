@@ -2,9 +2,28 @@
 @use '../../styles/base.scss' as *;
 
 
-.image img{
-  height: 500px;
-  width: 100%;
+.section {
+  position: relative;
+  overflow: hidden;
+  &__alert {
+    display: none !important;
+    padding: 0.35rem 4rem !important;
+    z-index: 100;
+    position: fixed !important;
+    top: 2.5rem;
+    width: fit-content;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 2s, height 4s;
+    -webkit-transition: opacity 2s ease-in-out;
+    -moz-transition: opacity 2s ease-in-out;
+    -o-transition: opacity 2s ease-in-out;
+    transition: opacity 2s ease-in-out;
+
+    &--active {
+      display: flex !important;
+    }
+  }
 }
 
 .button {
