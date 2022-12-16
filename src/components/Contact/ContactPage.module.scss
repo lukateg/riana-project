@@ -1,6 +1,7 @@
 // @use '../../../styles/base.scss' as *;
 @use '../../styles/base.scss' as *;
 
+
 .section {
   position: relative;
   overflow: hidden;
@@ -22,5 +23,20 @@
     &--active {
       display: flex !important;
     }
+  }
+}
+
+.button {
+  display: block;
+  margin: 3rem auto;
+  width: 426px;
+  height: 88px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  opacity: 1;
+  @media only screen and (max-width: 500px) {
+      margin: 2rem auto;
+      width: 270px;
+      height: 50px;
   }
 }

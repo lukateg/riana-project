@@ -21,6 +21,7 @@ import Activities from './components/Activities/Activities';
 import YachtStories from './components/YachtStories/YachtStories';
 import ContactPage from './components/Contact/ContactPage';
 import Gallery from './components/Gallery/Gallery';
+import HeroImageForHome from './images/HeroImage.jpg';
 
 const App = () => (
   <>
@@ -30,7 +31,7 @@ const App = () => (
         path="/"
         element={
           <>
-            <HeroImage />
+            <HeroImage image={HeroImageForHome} />
             <YachtExperience />
             <ClassicMotorSailingYacht />
             <Design />

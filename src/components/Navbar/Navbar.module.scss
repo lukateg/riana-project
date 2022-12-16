@@ -13,6 +13,8 @@
     &.active {
         background: white ;
     }
+
+   
     @media only screen and (min-width: 651px) {
         margin-bottom: 0;
         background: transparent;
@@ -23,9 +25,12 @@
     }
     @media only screen and (max-width: 650px) {
        height: 48px;
+       padding-left: 0;
+       padding-right: 0;
 
     }
 }
+
 
 .nav__headline {
     display: flex;
@@ -120,8 +125,10 @@ hr {
     }
 
     @media only screen and (max-width: 650px) {
-        width: 10000vw;
-        margin-left: -40px;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+       
      }
   }
 
@@ -183,3 +190,13 @@ hr {
     color: #645C59;
 }
 
+.logoImage {
+    display: none;
+    &.active {
+        display: block;
+        width: 180px;
+        height: 25px;
+        margin-top: 6px;
+        margin-bottom: 4.6px;
+    }
+}
