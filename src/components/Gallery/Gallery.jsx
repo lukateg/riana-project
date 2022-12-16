@@ -6,7 +6,6 @@ import firstImage from '../../images/_D812016.jpg';
 import secondImage from '../../images/_D811904.jpg';
 import thirdImage from '../../images/_D812026.jpg';
 import fourthImage from '../../images/_D8E9211.jpg';
-import Footer from '../Footer/Footer';
 import HeroImage from '../HeroImage/HeroImage';
 
 import styles from './Gallery.module.scss';
@@ -66,7 +65,6 @@ const Gallery = () => (
     <button type="button" className={styles.button}>
       DOWNLOAD E-BROCHURE
     </button>
-    <Footer />
   </>
 );
 

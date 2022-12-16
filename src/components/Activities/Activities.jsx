@@ -25,7 +25,12 @@ const Activities = () => (
     <h3>AMMENITIES</h3>
     <div className={styles.section__images}>
       {images.map((image) => (
-        <img src={image} alt="slika" className={styles.section__image} />
+        <img
+          key={image}
+          src={image}
+          alt="slika"
+          className={styles.section__image}
+        />
       ))}
     </div>
     <button type="button">DOWNLOAD E-BROCHURE</button>

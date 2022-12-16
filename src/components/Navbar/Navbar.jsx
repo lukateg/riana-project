@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import styles from './Navbar.module.scss';
 
 const Navbar = () => {
@@ -55,64 +56,64 @@ const Navbar = () => {
         }
       >
         <div className={styles.nav__item}>
-          <a
+          <Link
             className={
               navbar
                 ? `${styles.nav__item__element} ${styles.active}`
                 : `${styles.nav__item__element}`
             }
-            href="home"
+            to="/"
           >
             home
-          </a>
+          </Link>
         </div>
         <div className={styles.nav__item}>
-          <a
+          <Link
             className={
               navbar
                 ? `${styles.nav__item__element} ${styles.active}`
                 : `${styles.nav__item__element}`
             }
-            href="gallery"
+            to="/gallery"
           >
             gallery
-          </a>
+          </Link>
         </div>
         <div className={styles.nav__item}>
-          <a
+          <Link
             className={
               navbar
                 ? `${styles.nav__item__element} ${styles.active}`
                 : `${styles.nav__item__element}`
             }
-            href="stories"
+            to="/stories"
           >
             stories
-          </a>
+          </Link>
         </div>
         <div className={styles.nav__item}>
-          <a
+          <Link
             className={
               navbar
                 ? `${styles.nav__item__element} ${styles.active}`
                 : `${styles.nav__item__element}`
             }
-            href="offers"
+            to="/offers"
           >
             offers
-          </a>
+          </Link>
         </div>
         <div className={styles.nav__item}>
-          <a
+          <Link
             className={
               navbar
                 ? `${styles.nav__item__element} ${styles.active}`
                 : `${styles.nav__item__element}`
             }
-            href="contact"
+            to="/contact"
           >
             contact
-          </a>
+          </Link>
         </div>
       </div>
       <div
