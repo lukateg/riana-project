@@ -1,7 +1,26 @@
 // @use '../../../styles/base.scss' as *;
 @use '../../styles/base.scss' as *;
 
-.samoZaPrimer {
-  height: 40rem;
-  background-color: bisque;
+.section {
+  position: relative;
+  overflow: hidden;
+  &__alert {
+    display: none !important;
+    padding: 0.35rem 4rem !important;
+    z-index: 100;
+    position: fixed !important;
+    top: 2.5rem;
+    width: fit-content;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 2s, height 4s;
+    -webkit-transition: opacity 2s ease-in-out;
+    -moz-transition: opacity 2s ease-in-out;
+    -o-transition: opacity 2s ease-in-out;
+    transition: opacity 2s ease-in-out;
+
+    &--active {
+      display: flex !important;
+    }
+  }
 }
