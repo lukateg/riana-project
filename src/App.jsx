@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-// import { Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Carousel from './components/Carousel/Carousel';
 import Navbar from './components/Navbar/Navbar';
 import YachtExperience from './components/YachtExperience/YachtExperience';
@@ -22,26 +22,34 @@ import ContactPage from './components/Contact/ContactPage';
 import Gallery from './components/Gallery/Gallery';
 
 const App = () => (
-  // <Routes>
-  //   <Route path="/" element={<Carousel />} />
-  // </Routes>
   <>
-    {/* <Navbar />
-    <HeroImage />
-    <YachtExperience />
-    <ClassicMotorSailingYacht />
-    <Design />
-    <InteriorExterior />
-    <Carousel images={[firstImage, secondImage, thirdImage, fourthImage]} />
-    <Specifications />
-    <Layout />
-    <Events />
-    <YachtStories />
-    <Dinning />
-    <Activities />
-    <Footer /> */}
-    {/* <ContactPage /> */}
-    <Gallery />
+    <Navbar />
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <>
+            <HeroImage />
+            <YachtExperience />
+            <ClassicMotorSailingYacht />
+            <Design />
+            <InteriorExterior />
+            <Carousel
+              images={[firstImage, secondImage, thirdImage, fourthImage]}
+            />
+            <Specifications />
+            <Layout />
+            <Events />
+            <YachtStories />
+            <Dinning />
+            <Activities />
+          </>
+        }
+      />
+      <Route path="gallery" element={<Gallery />} />
+      <Route path="contact" element={<ContactPage />} />
+    </Routes>
+    <Footer />
   </>
 );
 
