@@ -35,24 +35,29 @@ const Navbar = () => {
             : `${styles.nav__headline}`
         }
       >
-        <img
-          src={logoBlack}
-          alt=""
-          className={
-            navbar || !open
-              ? `${styles.logoImage} ${styles.active}`
-              : `${styles.logoImage}`
-          }
-        />
-        <img
-          src={logoWhite}
-          alt=""
-          className={
-            navbar || !open
-              ? `${styles.logoImage}`
-              : `${styles.logoImage} ${styles.active}`
-          }
-        />
+        <Link to="/">
+          <img
+            src={logoBlack}
+            alt=""
+            className={
+              navbar || !open
+                ? `${styles.logoImage} ${styles.active}`
+                : `${styles.logoImage}`
+            }
+          />
+        </Link>
+
+        <Link to="/">
+          <img
+            src={logoWhite}
+            alt=""
+            className={
+              navbar || !open
+                ? `${styles.logoImage}`
+                : `${styles.logoImage} ${styles.active}`
+            }
+          />
+        </Link>
 
         <i
           className={open ? 'fas fa-bars icon-3x' : 'fas fa-times'}
