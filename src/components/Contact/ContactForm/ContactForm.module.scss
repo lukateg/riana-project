@@ -21,15 +21,6 @@
       margin: 1.25rem 0;
     }
 
-    h2 {
-      margin: 2rem 0;
-      text-align: center;
-      font: normal normal normal 35px Baskerville;
-      letter-spacing: 3.5px;
-      color: #1a1a1a;
-      text-transform: uppercase;
-    }
-
     h3 {
       margin: 0.75rem 0;
       font: normal normal bold 20px Alright Sans;
@@ -37,14 +28,21 @@
       color: #1a1a1a;
       font-family: $ff-4;
       font-weight: 400;
+      @media only screen and (max-width: 400px) {
+        font-size: 14px;
+        margin: 0.25rem 0;
+      }
     }
 
     h5 {
       margin: 0.75rem 0;
-
       font: normal normal normal 20px Alright Sans;
       letter-spacing: 0.2px;
       color: #1a1a1a;
+      @media only screen and (max-width: 400px) {
+        font-size: 14px;
+        margin: 0.25rem 0;
+      }
     }
 
     p {
@@ -53,6 +51,11 @@
       max-width: 85ch;
       letter-spacing: 0.2px;
       color: #1a1a1a;
+      @media only screen and (max-width: 400px) {
+        font-size: 14px;
+        margin: 2.5rem auto;
+        line-height: 20px;
+      }
     }
   }
 
@@ -60,7 +63,22 @@
     display: flex;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
-    // justify-content: flex-start;
+    @media only screen and (max-width: 400px) {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  &__heading {
+    margin: 3rem 0;
+    text-align: center;
+    font: normal normal normal 35px Baskerville;
+    letter-spacing: 3.5px;
+    color: #1a1a1a;
+    text-transform: uppercase;
+    @media only screen and (max-width: 400px) {
+      font-size: 20px;
+    }
   }
 
   &__inputs {
@@ -68,13 +86,16 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @media only screen and (max-width: 400px) {
+      width: 100%;
+    }
   }
 
   &__inputContainer {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    margin: 1rem 0;
+    width: 90%;
+    margin: 1rem auto;
     align-items: center;
 
     input {
@@ -90,7 +111,8 @@
     textarea {
       max-width: 400px;
       width: 100%;
-      min-height: 150px;
+      // min-height: 150px;
+      height: 139px;
     }
 
     label {
@@ -112,5 +134,11 @@
     height: 50px;
     text-transform: uppercase;
     color: #fff;
+    @media only screen and (max-width: 400px) {
+      width: 250px;
+      height: 45px;
+      border-radius: 2px;
+      margin: 2.75rem auto;
+    }
   }
 }
