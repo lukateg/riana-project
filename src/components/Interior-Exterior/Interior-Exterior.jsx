@@ -1,13 +1,13 @@
 import styles from './Interior-Exterior.module.scss';
 import interiorImage from '../../images/interiorImage.jpg';
-import exteriorImage from '../../images/exteriorImage.jpg';
+import exteriorImage from '../../images/flydeck.jpg';
 
 const InteriorExterior = () => (
   <section className={styles.section}>
     <div className={styles.section__elements}>
       <div className={styles.section__element}>
         <img src={interiorImage} alt="interiorImage" className={styles.image} />
-        <h2 className={styles.section__element__heading}>INTERIOR</h2>
+        <h4 className={styles.section__element__heading}>INTERIOR</h4>
         <p className={styles.section__element__paragraph}>
           Dining and entertainment areas includes a lounge, bar and dinning area
           for up to 10 pax. Sleeping accommodation comprises 2 x Queen and 2 x
@@ -20,7 +20,7 @@ const InteriorExterior = () => (
       </div>
       <div className={styles.section__element}>
         <img src={exteriorImage} alt="exteriorImage" className={styles.image} />
-        <h2 className={styles.section__element__heading}>EXTERIOR</h2>
+        <h4 className={styles.section__element__heading}>EXTERIOR</h4>
         <p className={styles.section__element__paragraph}>
           With three extensive areas for sunbathing and entertaining, guests may
           relax on the flybridge, forward or aft decks. <br />
@@ -32,8 +32,10 @@ const InteriorExterior = () => (
       </div>
     </div>
     <div className={styles.section__discoverMore}>
-      <p className={styles.section__discoverMore__item}>DISCOVER MORE</p>
-      <p className={styles.section__discoverMore__item__right}>DISCOVER MORE</p>
+      <h1 className={styles.section__discoverMore__item}>DISCOVER MORE</h1>
+      <h1 className={styles.section__discoverMore__item__right}>
+        DISCOVER MORE
+      </h1>
     </div>
   </section>
 );

@@ -11,7 +11,7 @@ import HeroImage from '../HeroImage/HeroImage';
 import styles from './Gallery.module.scss';
 
 const Gallery = () => (
-  <>
+  <div className={styles.gallery}>
     <Navbar />
     <HeroImage
       text={
@@ -21,12 +21,12 @@ const Gallery = () => (
         </>
       }
     />
-    <h1 className={styles.mainHeading}>Gallery</h1>
+    <h4 className={styles.mainHeading}>Gallery</h4>
     <div className={styles.text}>
-      <h1>
+      <h4>
         DESIGN <br />
         CLASSIC YET MODERN
-      </h1>
+      </h4>
       <p>
         Living, dining and guest cabins are luxuriously fitted and furnished
         with high ceilings. Outdoor areas have expansive open decks with shaded
@@ -65,7 +65,7 @@ const Gallery = () => (
     <button type="button" className={styles.button}>
       DOWNLOAD E-BROCHURE
     </button>
-  </>
+  </div>
 );
 
 export default Gallery;

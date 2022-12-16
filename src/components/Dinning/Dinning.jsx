@@ -5,8 +5,8 @@ const Dinning = () => (
   <div className={styles.section}>
     <div className={styles.section__content}>
       <div className={styles.section__content__heading}>
-        <h1>dining</h1>
-        <h2>fresh and diverse</h2>
+        <h4>dining</h4>
+        <h4>fresh and diverse</h4>
       </div>
       <p className={styles.section__content__text}>
         Your chef may prepare a variety of local or international dishes. Upon
@@ -16,7 +16,7 @@ const Dinning = () => (
         dishes ensuring an unforgettable dining experience throughout your stay
         on the Riana.
       </p>
-      <div>
+      <div className={styles.buttonWrapper}>
         <button type="button" className={styles.niki}>
           EXPLORE
         </button>

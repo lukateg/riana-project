@@ -14,10 +14,12 @@
 }
 
 .mainHeading {
-    font-size: $fs-heading-medium;
-    text-align: center;
-    font-family: $ff-2;
+    // font-size: $fs-heading-medium;
+    // font-family: $ff-2;
+    font: normal normal normal 35px Baskerville;
+    letter-spacing: 3.5px;
     color: #1a1a1a;
+    text-align: center;
     margin-bottom: 2rem;
     @media only screen and (max-width: 480px) {
         margin-top: 0;
