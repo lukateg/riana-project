@@ -1,13 +1,17 @@
 import styles from './Footer.module.scss';
+import image from '../../images/LogoW.png';
 
 const Footer = () => (
   <div className={styles.sectionWrapper}>
     <div className={styles.section}>
       <div className={styles.section__navigation}>
         <div className={styles.section__navigation__logo}>
-          <h1>riana yach</h1>
+          <img src={image} alt="" />
         </div>
-        <div className={styles.section__navigation__element}>
+        <div
+          className={styles.section__navigation__element}
+          id={styles.aboutUs}
+        >
           <h2>ABOUT US</h2>
           {/* <p>Covid-19</p> */}
           <p>About Riana Yacht</p>
@@ -38,16 +42,13 @@ const Footer = () => (
             <i className="fa-brands fa-instagram">{/* instagram */}</i>
           </div>
           <div className={styles.section__links__icons__wrapper}>
-            <i className="fa-brands fa-linkedin">{/* linkedin */}</i>
-          </div>
-
-          <div className={styles.section__links__icons__wrapper}>
             <i className="fa-brands fa-facebook">{/* facebook */}</i>
           </div>
         </div>
         <div className={styles.section__links__rights}>
           <p>
-            2022 © NIKI & NORA. <span id="allRights">ALL RIGHTS RESERVED.</span>
+            2022 © NIKI & NORA. <br className={styles.br} /> ALL RIGHTS
+            RESERVED.
           </p>
         </div>
       </div>

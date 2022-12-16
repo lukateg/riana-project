@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Navbar.module.scss';
+import logoBlack from '../../images/logoBlack.png';
+import logoWhite from '../../images/LogoW.png';
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
@@ -33,7 +35,25 @@ const Navbar = () => {
             : `${styles.nav__headline}`
         }
       >
-        <h1>riana yacht</h1>
+        <img
+          src={logoBlack}
+          alt=""
+          className={
+            navbar || !open
+              ? `${styles.logoImage} ${styles.active}`
+              : `${styles.logoImage}`
+          }
+        />
+        <img
+          src={logoWhite}
+          alt=""
+          className={
+            navbar || !open
+              ? `${styles.logoImage}`
+              : `${styles.logoImage} ${styles.active}`
+          }
+        />
+
         <i
           className={open ? 'fas fa-bars icon-3x' : 'fas fa-times'}
           onClick={changeIcon}

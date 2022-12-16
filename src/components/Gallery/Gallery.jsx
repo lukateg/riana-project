@@ -1,5 +1,4 @@
 import Navbar from '../Navbar/Navbar';
-// import HeroGallery from './HeroGallery/HeroGallery';
 import TextGallery from './TextGallery/TextGallery';
 import Carousel from '../Carousel/Carousel';
 import firstImage from '../../images/_D812016.jpg';
@@ -7,6 +6,7 @@ import secondImage from '../../images/_D811904.jpg';
 import thirdImage from '../../images/_D812026.jpg';
 import fourthImage from '../../images/_D8E9211.jpg';
 import HeroImage from '../HeroImage/HeroImage';
+import HeroImageForGaller from '../../images/GalleryHero.jpg';
 
 import styles from './Gallery.module.scss';
 
@@ -20,6 +20,7 @@ const Gallery = () => (
           CLASSIC YET MODERN
         </>
       }
+      image={HeroImageForGaller}
     />
     <h4 className={styles.mainHeading}>Gallery</h4>
     <div className={styles.text}>
