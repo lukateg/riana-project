@@ -1,3 +1,5 @@
+@use '../../styles/base.scss' as *;
+
 .heroImage {
   height: 50%;
   background-position: center;
@@ -13,4 +15,25 @@
   @media only screen and (max-width: 400px) {
     height: 33vh;
 }
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    color: red;
+    text-transform: uppercase;
+    color: #f7f7f7;
+    font-family: $ff-2;
+    font-size: 28px;
+    letter-spacing: 2px;
+    @media only screen and (max-width: 1200px) {
+       top:40%;
+    }
+    @media only screen and (max-width: 1000px) {
+        top:30%;
+    }
+    @media only screen and (max-width: 760px) {
+        display: none;
+    }
 }

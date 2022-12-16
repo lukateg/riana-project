@@ -19,13 +19,14 @@ import Layout from './components/Layout/Layout';
 import Activities from './components/Activities/Activities';
 import YachtStories from './components/YachtStories/YachtStories';
 import ContactPage from './components/Contact/ContactPage';
+import Gallery from './components/Gallery/Gallery';
 
 const App = () => (
   // <Routes>
   //   <Route path="/" element={<Carousel />} />
   // </Routes>
   <>
-    <Navbar />
+    {/* <Navbar />
     <HeroImage />
     <YachtExperience />
     <ClassicMotorSailingYacht />
@@ -38,8 +39,9 @@ const App = () => (
     <YachtStories />
     <Dinning />
     <Activities />
-    <Footer />
+    <Footer /> */}
     {/* <ContactPage /> */}
+    <Gallery />
   </>
 );
 
