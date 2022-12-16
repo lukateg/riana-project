@@ -9,20 +9,20 @@ const Footer = () => (
         </div>
         <div className={styles.section__navigation__element}>
           <h2>ABOUT US</h2>
-          <p>Covid-19</p>
+          {/* <p>Covid-19</p> */}
           <p>About Riana Yacht</p>
           <p>Interactive Brochure</p>
+          <p>Partners</p>
         </div>
-        <div className={styles.section__navigation__element}>
+        {/* <div className={styles.section__navigation__element}>
           <h2>NEWS AND AWARDS</h2>
           <p>Awards</p>
           <p>Newsletter Signup</p>
-        </div>
+        </div> */}
         <div className={styles.section__navigation__element}>
           <h2>TERMS & CONDITIONS</h2>
           <p>Privacy Policy</p>
           <p>Website Terms</p>
-          <p>Sitemap</p>
         </div>
         <div className={styles.section__navigation__element}>
           <h2>CONTACT</h2>

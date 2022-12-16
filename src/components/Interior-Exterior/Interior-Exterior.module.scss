@@ -24,6 +24,7 @@
     width: 50%;
     padding-top: 1rem;
     font-family: $ff-1;
+    font-size: 15px;
     &__right {
         width: 47%;
         align-self: flex-start;
@@ -37,6 +38,15 @@
        display: none;
      }
 }
+.section__discoverMore__item__right {
+    font-size: 15px;
+}
+.section__discoverMore__item:hover {
+    text-decoration: underline;
+}
+.section__discoverMore__item__right:hover{
+    text-decoration: underline;
+}
 
 .discoverMore {
     display: none;
@@ -48,6 +58,8 @@
         font-size: 14px;
      }
 }
+
+
 
 .image {
     width: 40vw;
@@ -71,7 +83,8 @@
 
 .section__element__paragraph {
     width: 40vw;
-    font-size: 18px;
+    font-size: 20px;
+    letter-spacing: 0.5px;
     @media only screen and (max-width: 700px) {
         width: 100%;
      }
@@ -81,8 +94,9 @@
      }
 }
 
-.section__element__heading{
-    font-family: $ff-2;
+.section__element__heading {
+    font: normal normal normal 25px Baskerville;
+    letter-spacing: 2px;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
     color: #1a1a1a;

@@ -1,4 +1,4 @@
-import image from '../../images/HeroImage.jpg';
+import image from '../../images/GalleryHero.jpg';
 import styles from './HeroImage.module.scss';
 
 const HeroImage = ({ text }) => (

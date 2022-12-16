@@ -15,6 +15,10 @@
     }
   }
 
+  .gallery h4 {
+    font: normal normal normal 50px Baskerville;
+  }
+
 .mainHeading {
     font-size: 40px;
     text-align: center;
@@ -29,6 +33,7 @@
     }
   }
 
+
   .text {
     display: none;
     @media only screen and (max-width: 400px) {
@@ -38,7 +43,8 @@
    
   }
 
-  .text h1 {
+  .text h4 {
+    font: normal normal normal 25px Baskerville;
     font-size: 24px;
     margin-bottom: 1rem;
   }
