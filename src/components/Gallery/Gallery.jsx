@@ -7,7 +7,7 @@ import thirdImage from '../../images/_D812026.jpg';
 import fourthImage from '../../images/_D8E9211.jpg';
 import HeroImage from '../HeroImage/HeroImage';
 import HeroImageForGaller from '../../images/GalleryHero.jpg';
-
+import brochureRiana from '../../images/brochureRiana.pdf';
 import styles from './Gallery.module.scss';
 
 const Gallery = () => (
@@ -63,9 +63,11 @@ const Gallery = () => (
       }
     />
     <Carousel images={[firstImage, secondImage, thirdImage, fourthImage]} />
-    <button type="button" className={styles.button}>
-      DOWNLOAD E-BROCHURE
-    </button>
+    <a href={brochureRiana} download="Riana Brochure">
+      <button type="button" className={styles.button}>
+        DOWNLOAD E-BROCHURE
+      </button>
+    </a>
   </div>
 );
 

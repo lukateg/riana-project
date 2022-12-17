@@ -104,7 +104,7 @@ const Navbar = () => {
             gallery
           </Link>
         </div>
-        <div className={styles.nav__item}>
+        {/* <div className={styles.nav__item}>
           <Link
             className={
               navbar
@@ -115,8 +115,8 @@ const Navbar = () => {
           >
             stories
           </Link>
-        </div>
-        <div className={styles.nav__item}>
+        </div> */}
+        {/* <div className={styles.nav__item}>
           <Link
             className={
               navbar
@@ -127,7 +127,7 @@ const Navbar = () => {
           >
             offers
           </Link>
-        </div>
+        </div> */}
         <div className={styles.nav__item}>
           <Link
             className={

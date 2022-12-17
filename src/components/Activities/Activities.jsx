@@ -6,7 +6,10 @@ import image4 from '../../images/Artboard18.png';
 import image5 from '../../images/Artboard19.png';
 import image6 from '../../images/Artboard20.png';
 import image7 from '../../images/Artboard21.png';
+
+import brochure from '../../images/brochureRiana.pdf';
 import image8 from '../../images/PNRiana.jpg';
+
 
 const images = [image1, image2, image5, image3, image4, image6, image7];
 
@@ -36,10 +39,16 @@ const Activities = () => (
         ))}
       </div>
     </div>
+
+    <a href={brochure} download="Riana Brochure">
+      <button type="button">DOWNLOAD E-BROCHURE</button>
+    </a>
+
     <img src={image8} alt="riana" className={styles.section__hero} />
     <button type="button" className={styles.section__button}>
       DOWNLOAD E-BROCHURE
     </button>
+
   </div>
 );
 
