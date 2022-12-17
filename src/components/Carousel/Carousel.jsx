@@ -19,7 +19,7 @@ const Carousel = ({ images }) => (
       slidesPerView={2}
       spaceBetween={10}
       autoplay={{
-        delay: 150000,
+        delay: 7000,
         disableOnInteraction: false
       }}
       loop
