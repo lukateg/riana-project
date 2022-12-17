@@ -149,31 +149,20 @@ const Navbar = () => {
         }
       >
         <div className={styles.nav__mobile__row__contact}>
-          <i className="fa-solid fa-phone">{/* phone */}</i>
-          <i className="fa-regular fa-envelope">{/* mail */}</i>
+          <a href="tel:+382 32 678 890">
+            <i className="fa-solid fa-phone">{/* phone */}</i>
+          </a>
+          <Link to="/contact">
+            <i className="fa-regular fa-envelope">{/* mail */}</i>
+          </Link>
         </div>
         <div className={styles.nav__mobile__row}>
-          <a href="newsletter signup">newsletter signup</a>
+          <a href="/gallery">gallery</a>
           <i className="fa-solid fa-chevron-right">{/* arrow */}</i>
         </div>
+
         <div className={styles.nav__mobile__row}>
-          <a href="gallery">gallery</a>
-          <i className="fa-solid fa-chevron-right">{/* arrow */}</i>
-        </div>
-        <div className={styles.nav__mobile__row}>
-          <a href="stories">stories</a>
-          <i className="fa-solid fa-chevron-right">{/* arrow */}</i>
-        </div>
-        <div className={styles.nav__mobile__row}>
-          <a href="offers">offers</a>
-          <i className="fa-solid fa-chevron-right">{/* arrow */}</i>
-        </div>
-        <div className={styles.nav__mobile__row}>
-          <a href="events">events</a>
-          <i className="fa-solid fa-chevron-right">{/* arrow */}</i>
-        </div>
-        <div className={styles.nav__mobile__row}>
-          <a href="contact">contact</a>
+          <a href="/contact">contact</a>
           <i className="fa-solid fa-chevron-right">{/* arrow */}</i>
         </div>
       </div>
