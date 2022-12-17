@@ -14,10 +14,10 @@ import { Pagination, Autoplay, Navigation, Lazy } from 'swiper';
 import styles from './Carousel.module.scss';
 
 const Carousel = ({ images }) => (
-  <section className={styles.section__overflow}>
+  <section>
     <Swiper
-      slidesPerView={1}
-      spaceBetween={0}
+      slidesPerView={2}
+      spaceBetween={10}
       autoplay={{
         delay: 150000,
         disableOnInteraction: false
@@ -35,26 +35,14 @@ const Carousel = ({ images }) => (
       <div className={styles.carousel__wrapper}>
         {images.map((image) => (
           <SwiperSlide key={image}>
-            {/* {
+            {
               <div
                 className={`${styles.carousel__slide} ${styles['carousel__slide--first']} `}
                 style={{
                   backgroundImage: `url(${image})`
                 }}
               />
-            } */}
-            {({ isNext }) => (
-              <div
-                className={`${styles.carousel__slide} ${
-                  isNext
-                    ? styles['carousel__slide--active']
-                    : styles['carousel__slide--not-active']
-                }`}
-                style={{
-                  backgroundImage: `url(${image})`
-                }}
-              />
-            )}
+            }
           </SwiperSlide>
         ))}
       </div>
