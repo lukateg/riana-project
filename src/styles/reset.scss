@@ -11,13 +11,13 @@
 html,
 body {
   height: 100%;
-  // overflow-x: hidden;
+  // ovde je problem
+  overflow-x: hidden;
 }
 
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  // position: relative;
 }
 
 img,

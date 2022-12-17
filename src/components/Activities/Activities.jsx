@@ -10,7 +10,6 @@ import image7 from '../../images/Artboard21.png';
 import brochure from '../../images/brochureRiana.pdf';
 import image8 from '../../images/PNRiana.jpg';
 
-
 const images = [image1, image2, image5, image3, image4, image6, image7];
 
 const Activities = () => (
@@ -48,7 +47,6 @@ const Activities = () => (
     <button type="button" className={styles.section__button}>
       DOWNLOAD E-BROCHURE
     </button>
-
   </div>
 );
 
