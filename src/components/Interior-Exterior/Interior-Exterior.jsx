@@ -9,10 +9,10 @@ const InteriorExterior = () => (
         <img src={interiorImage} alt="interiorImage" className={styles.image} />
         <h4 className={styles.section__element__heading}>INTERIOR</h4>
         <p className={styles.section__element__paragraph}>
-          Dining and entertainment areas includes a lounge, bar and dinning area
-          for up to 10 pax. Sleeping accommodation comprises 2 x Queen and 2 x
-          Twin cabins (with an extra sleep sofa in each twin cabin). There is a
-          further double cabin adjacent to the wheel house which is ideal
+          Dining and entertainment areas includes a lounge, bar and dining area
+          for up to 10 people. Sleeping accommodation comprises 2 x Queen and 2
+          x Twin cabins (with an extra sleep sofa in each twin cabin). There is
+          a further double cabin adjacent to the wheel house which is ideal
           accommodation for nannies, security, staff or extra guests. All cabins
           are fitted with ensuite bathrooms.
         </p>

@@ -6,6 +6,7 @@ import image4 from '../../images/Artboard18.png';
 import image5 from '../../images/Artboard19.png';
 import image6 from '../../images/Artboard20.png';
 import image7 from '../../images/Artboard21.png';
+import brochure from '../../images/brochureRiana.pdf';
 
 const images = [image1, image2, image5, image3, image4, image6, image7];
 
@@ -33,7 +34,9 @@ const Activities = () => (
         />
       ))}
     </div>
-    <button type="button">DOWNLOAD E-BROCHURE</button>
+    <a href={brochure} download="Riana Brochure">
+      <button type="button">DOWNLOAD E-BROCHURE</button>
+    </a>
   </div>
 );
 

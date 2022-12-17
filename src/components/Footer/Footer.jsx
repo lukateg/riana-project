@@ -13,6 +13,7 @@ const Footer = () => (
           id={styles.aboutUs}
         >
           <h2>ABOUT US</h2>
+
           {/* <p>Covid-19</p> */}
           <p>About Riana Yacht</p>
           <p>Interactive Brochure</p>

@@ -5,7 +5,7 @@ import Alert from '@mui/material/Alert';
 import styles from './ContactPage.module.scss';
 
 import ContactForm from './ContactForm/ContactForm';
-import image from '../../images/RianaContact.jpg';
+import image from '../../images/heroContact3.jpg';
 import Brochure from './Brochure/Brochure';
 
 const ContactPage = () => {

@@ -1,5 +1,5 @@
 import styles from './YachtExperience.module.scss';
-import image from '../../images/2016-07-23 16.38.55.jpg';
+import image from '../../images/2.jpg';
 
 const YachtExperience = () => (
   <div className={styles.section}>
@@ -34,9 +34,7 @@ const YachtExperience = () => (
             knots at an outstanding fuel burn of circa 75 liters per hour
             inclusive of generators.
           </p>
-          <p>
-            *note: Fuel consumption varies based on weather and sea conditions.
-          </p>
+          <p>Fuel consumption varies based on weather and sea conditions.</p>
         </span>
       </div>
     </section>
