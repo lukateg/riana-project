@@ -31,12 +31,12 @@ const InteriorExterior = () => (
         <p className={styles.discoverMore}>DISCOVER MORE</p>
       </div>
     </div>
-    <div className={styles.section__discoverMore}>
+    {/* <div className={styles.section__discoverMore}>
       <h1 className={styles.section__discoverMore__item}>DISCOVER MORE</h1>
       <h1 className={styles.section__discoverMore__item__right}>
         DISCOVER MORE
       </h1>
-    </div>
+    </div> */}
   </section>
 );
 
