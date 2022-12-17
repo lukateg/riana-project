@@ -4,8 +4,11 @@
   @include wrapper;
   color: $primary-color;
   margin-top: 7rem;
-  margin-bottom: 7rem;
-  height: fit-content;
+  margin-bottom: 10rem;
+  height: 30rem;
+  @media only screen and (max-width: 600px) {
+    height: fit-content;
+  }
   &__content {
     margin: 2rem 0 0 0;
     display: flex;
