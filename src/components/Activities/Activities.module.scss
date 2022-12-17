@@ -79,6 +79,7 @@
   }
   &__arrowContainer {
     position: relative;
+   
   }
   &__arrow {
     width: 50px;
@@ -89,6 +90,9 @@
     position: absolute;
     right: 0;
     top: 13%;
+    @media only screen and (max-width: 550px) {
+      display: none;
+    }
   }
 
   &__button {
@@ -99,18 +103,21 @@
     background: #ffffff 0% 0% no-repeat padding-box;
     border: 1px solid #707070;
     opacity: 1;
-    font-family: $ff-1;
-    font-weight: 600;
     cursor: pointer;
-
-    @media only screen and (max-width: 600px) {
-      width: 280px;
-      height: 65px;
-    }
-    @media only screen and (max-width: 400px) {
-      width: 240px;
+    @media only screen and (max-width: 500px) {
+      margin: 2rem auto;
+      width: 270px;
       height: 50px;
     }
+
+    // @media only screen and (max-width: 600px) {
+    //   width: 280px;
+    //   height: 65px;
+    // }
+    // @media only screen and (max-width: 400px) {
+    //   width: 240px;
+    //   height:65px;
+    // }
   }
   &__button:hover {
     background-color: #1a1a1a;
