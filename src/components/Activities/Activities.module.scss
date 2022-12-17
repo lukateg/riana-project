@@ -104,13 +104,17 @@
     cursor: pointer;
 
     @media only screen and (max-width: 600px) {
-      width: 350px;
+      width: 280px;
       height: 65px;
     }
     @media only screen and (max-width: 400px) {
-      width: 280px;
+      width: 240px;
       height: 50px;
     }
+  }
+  &__button:hover {
+    background-color: #1a1a1a;
+    color: white;
   }
   &__hero {
     display: none;

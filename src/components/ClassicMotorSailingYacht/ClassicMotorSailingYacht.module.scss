@@ -30,19 +30,22 @@
 
 .button {
     background-color: white;
-    font-family: $ff-1;
+    font-family: normal normal normal  Baskerville;
     border: none;
     color: #1a1a1a;
     padding: 20px 60px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 10px;
-    margin-top: 3.5%;
-    font-weight: bold;
+    font-size: 16px;
+    margin-top: 2rem;
     @media only screen and (max-width: 400px) {
         padding: 10px 30px;
      }
+}
 
+.button:hover {
+    background-color: #1a1a1a;
+    color: white;
 }
 
