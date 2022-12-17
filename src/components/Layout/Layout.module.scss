@@ -5,13 +5,19 @@
   color: $primary-color;
   margin-top: 7rem;
   margin-bottom: 7rem;
-
+  height: fit-content;
   &__content {
     margin: 2rem 0 0 0;
     display: flex;
     flex-direction: row;
     padding: 1.5rem 0;
-    height: 30rem;
+    height: fit-content;
+    // @media only screen and (max-width: 1200px) {
+    //   height: 24rem;
+    // }
+    @media only screen and (max-width: 600px) {
+      flex-wrap: wrap;
+    }
   }
 
   &__buttons {
@@ -19,9 +25,17 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: space-around;
+    width: 30%;
     div {
       position: relative;
       margin-bottom: 2rem;
+      width: 100%;
+      @media only screen and (max-width: 900px) {
+        margin-bottom: 0.5rem;
+      }
+    }
+    @media only screen and (max-width: 600px) {
+      flex-direction: row;
       width: 100%;
     }
   }
@@ -57,13 +71,25 @@
     text-transform: uppercase;
     font-family: $ff-1;
     font-weight: 700;
-    width: 240px;
+    // width: 240px;
+    width: 100%;
+    min-width: 115px;
+    // min-width: 200px;
     height: 61px;
+    @media only screen and (max-width: 1000px) {
+      font-size: 12px;
+      height: 40px;
+    }
+    @media only screen and (max-width: 800px) {
+      font-size: 10px;
+      height: 40px;
+    }
   }
 
   &__container {
     position: relative;
     width: 100%;
+    min-height: 100px;
   }
   &__item {
     position: absolute;
@@ -99,11 +125,20 @@
   }
 
   p {
-    font-size: $fs-heading-small;
+    font-size: 19px;
     font-family: $ff-1;
-    margin: 1rem 0 0 0;
+    margin: 0.5rem 0 0 0;
     text-align: center;
     letter-spacing: 0.5px;
     max-width: 939px;
+    @media only screen and (max-width: 1000px) {
+      font-size: 16px;
+    }
+    @media only screen and (max-width: 800px) {
+      font-size: 13px;
+    }
+    @media only screen and (max-width: 600px) {
+      font-size: 11px;
+    }
   }
 }

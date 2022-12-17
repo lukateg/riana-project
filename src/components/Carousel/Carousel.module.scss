@@ -1,12 +1,16 @@
 @use '../../styles/base.scss' as *;
 
-section {
+.section__overflow {
   overflow-x: hidden;
 }
 .carousel {
   overflow: hidden !important;
-  width: 130%;
-  margin: 7rem 0 9rem 0;
+  width: 100%;
+  position: relative;
+  height: 30rem;
+  @media only screen and (max-width: 400px) {
+    margin: 3rem 0 3rem 0;
+  }
   :global(.swiper-pagination-bullet) {
     background-color: transparent;
     opacity: 1;
@@ -17,8 +21,12 @@ section {
   }
   :global(.swiper-wrapper) {
     width: fit-content !important;
-    // left: 13rem;
-    left: 13rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // position: absolute;
+    left: 50%;
+    transform: translateX(-100%);
   }
   :global(.swiper) {
     position: relative !important;
@@ -30,10 +38,10 @@ section {
   :global(.swiper-pagination-bullets) {
     display: flex;
     justify-content: center;
-    left: -10.5%;
+    // left: -10.5%;
   }
   :global(.swiper-button-next) {
-    right: 31vw !important;
+    // right: 31vw !important;
     padding: 30px 22px;
     background: #ffffff 0% 0% no-repeat padding-box;
     border: 1px solid $secondary-color !important;
@@ -52,26 +60,42 @@ section {
     background-color: black;
   }
   &__slide {
-    width: 1000px !important;
+    display: block;
+    width: 100% !important;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    height: 80%;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
     opacity: 0.9;
-    @include tablet {
-      height: 450px;
+    transform: scale(0.6) !important;
+
+    &--active {
+      height: 30rem;
+      @media only screen and (max-width: 400px) {
+        height: 20rem;
+      }
+    }
+    &--not-active {
+      height: 27rem;
+      @media only screen and (max-width: 400px) {
+        height: 17rem;
+      }
     }
   }
 
-  .carousel__wrapper {
-    width: fit-content;
-    display: flex;
-    justify-content: flex-end;
-  }
+  // &__wrapper {
+  //   width: fit-content;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  // }
 
   &__content {
     display: flex;
+
     flex-direction: column;
     @include tablet {
       align-items: center;
