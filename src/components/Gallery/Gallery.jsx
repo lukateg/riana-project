@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
+
 import Navbar from '../Navbar/Navbar';
 import TextGallery from './TextGallery/TextGallery';
 import Carousel from '../Carousel/Carousel';
@@ -63,11 +66,25 @@ const Gallery = () => (
       }
     />
     <Carousel images={[firstImage, secondImage, thirdImage, fourthImage]} />
-    <a href={brochureRiana} download="Riana Brochure">
+    {/* <a href={brochureRiana} download="Riana Brochure">
       <button type="button" className={styles.button}>
         DOWNLOAD E-BROCHURE
       </button>
-    </a>
+    </a> */}
+    <div className={styles.section__arrowContainer}>
+      <a href={brochureRiana} download="Riana Brochure">
+        <button type="button" className={styles.button}>
+          DOWNLOAD E-BROCHURE
+        </button>
+      </a>
+      <button
+        type="button"
+        className={styles.section__arrow}
+        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+      >
+        <FontAwesomeIcon icon={faArrowUp} />
+      </button>
+    </div>
   </div>
 );
 

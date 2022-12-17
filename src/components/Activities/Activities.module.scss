@@ -77,6 +77,20 @@
       margin: 3rem 0;
     }
   }
+  &__arrowContainer {
+    position: relative;
+  }
+  &__arrow {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border: none;
+    color: #ffffff;
+    position: absolute;
+    right: 0;
+    top: 13%;
+  }
+
   &__button {
     display: block;
     margin: 3rem auto;
@@ -85,9 +99,9 @@
     background: #ffffff 0% 0% no-repeat padding-box;
     border: 1px solid #707070;
     opacity: 1;
-
+    font-family: $ff-1;
+    font-weight: 600;
     cursor: pointer;
-
 
     @media only screen and (max-width: 600px) {
       width: 350px;
@@ -105,6 +119,5 @@
     @media only screen and (max-width: 400px) {
       display: inline;
     }
-
   }
 }

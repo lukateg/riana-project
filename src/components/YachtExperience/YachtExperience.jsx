@@ -1,8 +1,8 @@
 // export default YachtExperience;
 import styles from './YachtExperience.module.scss';
-// import image from '../../images/2.jpg';
+import firstImage from '../../images/2.jpg';
 
-import firstImage from '../../images/2016-07-23 16.38.55.jpg';
+// import firstImage from '../../images/2016-07-23 16.38.55.jpg';
 // import secondImage from '../../images/Left-Top.jpg';
 
 const YachtStories = () => (
@@ -53,8 +53,7 @@ const YachtStories = () => (
                 liters per hour inclusive of generators.
               </p>
               <p>
-                *note: Fuel consumption varies based on weather and sea
-                conditions.
+                Fuel consumption varies based on weather and sea conditions.
               </p>
             </span>
           </div>

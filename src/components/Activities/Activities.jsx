@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import styles from './Activities.module.scss';
 import image1 from '../../images/Artboard15.png';
 import image2 from '../../images/Artboard16.png';
@@ -38,15 +40,21 @@ const Activities = () => (
         ))}
       </div>
     </div>
-
-    <a href={brochure} download="Riana Brochure">
-      <button type="button">DOWNLOAD E-BROCHURE</button>
-    </a>
-
     <img src={image8} alt="riana" className={styles.section__hero} />
-    <button type="button" className={styles.section__button}>
-      DOWNLOAD E-BROCHURE
-    </button>
+    <div className={styles.section__arrowContainer}>
+      <a href={brochure} download="Riana Brochure">
+        <button type="button" className={styles.section__button}>
+          DOWNLOAD E-BROCHURE
+        </button>
+      </a>
+      <button
+        type="button"
+        className={styles.section__arrow}
+        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+      >
+        <FontAwesomeIcon icon={faArrowUp} />
+      </button>
+    </div>
   </div>
 );
 

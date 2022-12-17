@@ -21,9 +21,11 @@
     background: #ffffff;
     border: 1px solid #707070;
     opacity: 1;
-    width: 290px;
-    height: 65px;
     text-transform: uppercase;
+    width: 400px;
+    height: 80px;
+    font-family: $ff-1;
+    font-weight: 600;
   }
   &__arrow {
     width: 50px;
