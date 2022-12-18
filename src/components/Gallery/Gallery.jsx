@@ -4,14 +4,18 @@ import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import Navbar from '../Navbar/Navbar';
 import TextGallery from './TextGallery/TextGallery';
 import Carousel from '../Carousel/Carousel';
-import firstImage from '../../images/_D812016.jpg';
+import firstImage from '../../images/_D811900.jpg';
 import secondImage from '../../images/_D811904.jpg';
-import thirdImage from '../../images/_D812026.jpg';
-import fourthImage from '../../images/_D8E9211.jpg';
+import thirdImage from '../../images/deck-1.jpg';
+
 import HeroImage from '../HeroImage/HeroImage';
 import HeroImageForGaller from '../../images/GalleryHero.jpg';
 import brochureRiana from '../../images/brochureRiana.pdf';
 import styles from './Gallery.module.scss';
+
+import firstImage2 from '../../images/_D812016.jpg';
+import secondImage2 from '../../images/_D812026.jpg';
+import thirdImage2 from '../../images/interiorImage.jpg';
 
 const Gallery = () => (
   <div className={styles.gallery}>
@@ -50,7 +54,7 @@ const Gallery = () => (
         </p>
       }
     />
-    <Carousel images={[firstImage, secondImage, thirdImage, fourthImage]} />
+    <Carousel images={[firstImage, secondImage, thirdImage]} />
     <TextGallery
       headline1="INTERIOR"
       headline2="BESPOKE AND TIMELESS"
@@ -65,7 +69,7 @@ const Gallery = () => (
         </p>
       }
     />
-    <Carousel images={[firstImage, secondImage, thirdImage, fourthImage]} />
+    <Carousel images={[firstImage2, secondImage2, thirdImage2]} />
     {/* <a href={brochureRiana} download="Riana Brochure">
       <button type="button" className={styles.button}>
         DOWNLOAD E-BROCHURE
