@@ -1,6 +1,7 @@
 @use '../../styles/base.scss' as *;
 
 .section {
+  @include wrapper;
   &__arrowContainer {
     position: relative;
   }
@@ -28,10 +29,14 @@
   border: 1px solid #707070;
   opacity: 1;
   cursor: pointer;
+  font: normal normal bold 15px 'Alright-Sans';
+  letter-spacing: 3px;
   @media only screen and (max-width: 500px) {
     margin: 2rem auto;
     width: 270px;
     height: 50px;
+    font-size: 8pt;
+    letter-spacing: 1.6pt;
   }
 }
 
@@ -59,9 +64,10 @@
 
 .text {
   display: none;
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 500px) {
     display: block;
-    margin-left: 1rem;
+    margin-left: 1.3rem;
+    margin-right: 1.3rem;
     margin-top: 2rem;
   }
 }

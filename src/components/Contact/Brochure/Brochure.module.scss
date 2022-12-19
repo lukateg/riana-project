@@ -24,11 +24,13 @@
     text-transform: uppercase;
     width: 400px;
     height: 80px;
-    font-family: $ff-1;
-    font-weight: 600;
+    font: normal normal bold 15px 'Alright-Sans';
+    letter-spacing: 3px;
     @media only screen and (max-width: 500px) {
       width: 270px;
       height: 50px;
+      font-size: 8pt;
+      letter-spacing: 1.6pt;
     }
   }
   &__button:hover{
