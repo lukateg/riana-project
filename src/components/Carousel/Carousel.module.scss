@@ -1,16 +1,32 @@
 @use '../../styles/base.scss' as *;
 
-.section__overflow {
-  overflow-x: hidden;
+.section {
+  overflow-x: hidden !important;
 }
 .carousel {
   overflow: hidden !important;
-  margin: 0 0 5rem 0;
-  width: 100%;
   position: relative;
-  height: 30rem;
+  height: 42rem;
+  width: 120%;
+  // width: 170%;
+
+  @media only screen and (max-width: 1000px) {
+    height: 34rem;
+  }
+
+  @media only screen and (max-width: 800px) {
+    height: 30rem;
+  }
+  @media only screen and (max-width: 600px) {
+    margin: 0rem 0 3rem 0;
+    height: 23rem;
+    width: 160%;
+    // width: 170%;
+  }
   @media only screen and (max-width: 400px) {
     margin: 0rem 0 3rem 0;
+    height: 18rem;
+    // width: 170%;
   }
   :global(.swiper-pagination-bullet) {
     background-color: transparent;
@@ -22,6 +38,7 @@
   }
   :global(.swiper-wrapper) {
     width: fit-content !important;
+
     height: fit-content !important;
     display: flex;
     justify-content: center;
@@ -31,97 +48,151 @@
     position: relative !important;
   }
   :global(.swiper-pagination-bullet-active) {
-    background-color: #d7d5d4;
+    background-color: #efefee;
     opacity: 1;
   }
   :global(.swiper-pagination-bullets) {
     display: flex;
     justify-content: center;
-    // left: -10.5%;
+    left: -8%;
+    bottom: 12.5%;
+    border-radius: 50% !important;
+
+    @media only screen and (max-width: 1000px) {
+      left: -8.5% !important;
+      bottom: 8%;
+    }
+
+    @media only screen and (max-width: 800px) {
+      left: -8.5% !important;
+      bottom: 22%;
+    }
+
+    @media only screen and (max-width: 600px) {
+      left: -19% !important;
+      bottom: 16%;
+    }
+
+    @media only screen and (max-width: 400px) {
+      display: none;
+    }
+  }
+  :global(.swiper-pagination-bullet) {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50% !important;
   }
   :global(.swiper-button-next) {
     // right: 31vw !important;
-    top: 60% !important;
+    top: 56% !important;
+    right: 18% !important;
+    color: #ffffff !important;
+    background: transparent;
+    border: none;
     padding: 25px 22px;
-    background: #ffffff 0% 0% no-repeat padding-box;
-    border: 1px solid $secondary-color !important;
-    color: $secondary-color;
+    @media only screen and (max-width: 800px) {
+      top: 50% !important;
+    }
+    @media only screen and (max-width: 600px) {
+      display: none;
+    }
   }
   :global(.swiper-button-next:active) {
     transform: scale(1.1);
   }
   :global(.swiper-button-prev) {
-    top: 60% !important;
+    top: 56% !important;
     padding: 25px 22px;
-    background: #ffffff 0% 0% no-repeat padding-box;
-    border: 1px solid $secondary-color !important;
+    color: #ffffff !important;
+    background: transparent;
+    // background: #ffffff 0% 0% no-repeat padding-box;
+    // border: 1px solid $secondary-color !important;
+    border: none;
     color: $secondary-color;
+
+    @media only screen and (max-width: 800px) {
+      top: 50% !important;
+    }
+
+    @media only screen and (max-width: 600px) {
+      display: none;
+    }
   }
   :global(.swiper-button-prev:active) {
-    background-color: black;
+    transform: scale(1.1);
   }
   &__slide {
     display: block;
     position: absolute;
-    // width: 165% !important;
-    // left: 20% !important;
     width: 165% !important;
-    left: 20% !important;
+    // width: 167% !important;
+    left: 3% !important;
+    // left: -24% !important;
     transform: translateX(-50%) !important;
-    // padding: 0 50% !important;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 40rem;
+    height: 47rem;
     opacity: 0.9;
     transform: scale(0.6) !important;
 
-    // @media only screen and (max-width: 400px) {
-    //   height: 30rem;
-    // }
-
-    &--active {
-      height: 30rem;
-      @media only screen and (max-width: 400px) {
-        height: 20rem;
-      }
+    @media only screen and (max-width: 1000px) {
+      height: 40rem;
+      // width: 167% !important;
+      // left: 7% !important;
     }
-    &--not-active {
-      height: 27rem;
-      @media only screen and (max-width: 400px) {
-        height: 17rem;
-      }
+
+    @media only screen and (max-width: 800px) {
+      height: 30rem;
+      // width: 167% !important;
+      // left: -24% !important;
+    }
+
+    @media only screen and (max-width: 600px) {
+      height: 25rem;
+      // width: 167% !important;
+      left: -19% !important;
+    }
+
+    @media only screen and (max-width: 400px) {
+      height: 21rem;
+      // width: 167% !important;
+      left: -19% !important;
     }
   }
 
-  // &__wrapper {
-  //   width: fit-content;
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  // }
+  &__wrapper {
+    width: 20rem !important;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   &__content {
     display: flex;
-
     flex-direction: column;
+
     @include tablet {
       align-items: center;
       width: 80%;
       min-width: 320px;
       max-width: 500px;
     }
+
     @include desktop {
       width: 70%;
     }
+
     h4 {
       font-size: $fs-heading-small;
       line-height: 22px;
       font-weight: 400;
       white-space: normal;
+
       @include tablet {
         font-size: clamp($fs-paragraph-large, 8vw, $fs-heading-standard);
         font-weight: 400;
@@ -129,15 +200,18 @@
         margin: 1rem 0rem;
       }
     }
+
     h6 {
       display: none;
       font-size: clamp($fs-paragraph-small, 4vw, $fs-paragraph);
       text-transform: uppercase;
       font-weight: 500;
+
       @include tablet {
         display: inherit;
       }
     }
+
     .carousel__button {
       font-size: clamp($fs-paragraph-small, 4vw, $fs-paragraph-large);
       text-decoration: none;
@@ -148,18 +222,23 @@
       margin-top: 1rem;
       padding: 0.35rem 0.5rem;
       width: fit-content;
+
       @include tablet {
         margin: 0;
       }
+
       &--desktop {
         display: none;
+
         @include tablet {
           display: inherit;
           margin-top: 1rem;
         }
       }
+
       &--mobile {
         display: inherit;
+
         @include tablet {
           display: none;
         }

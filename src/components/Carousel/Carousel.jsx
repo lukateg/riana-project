@@ -14,7 +14,7 @@ import { Pagination, Autoplay, Navigation, Lazy } from 'swiper';
 import styles from './Carousel.module.scss';
 
 const Carousel = ({ images }) => (
-  <section>
+  <section className={styles.section}>
     <Swiper
       slidesPerView={2}
       spaceBetween={10}
