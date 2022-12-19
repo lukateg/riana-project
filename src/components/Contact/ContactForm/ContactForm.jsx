@@ -10,7 +10,7 @@ const ContactUs = ({ sendEmail, formRefference }) => (
       <h2 className={styles.section__heading}>CONTACT US</h2>
       <div>
         <h3>Tel:</h3>
-        <h5>+382 32 678 890</h5>
+        <h5 id={styles.number}>+382 32 678 890</h5>
       </div>
       <div>
         <h3>Email:</h3>

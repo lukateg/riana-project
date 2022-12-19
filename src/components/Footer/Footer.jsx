@@ -20,8 +20,7 @@ const Footer = () => {
   const ifContact = () => {
     if (pathname === '/contact') {
       document.documentElement.scrollTo({
-        top: 800,
-        left: 0,
+        top: 0,
         behavior: 'smooth'
       });
     }
@@ -38,7 +37,15 @@ const Footer = () => {
             className={styles.section__navigation__element}
             id={styles.aboutUs}
           >
-            <h2>ABOUT US</h2>
+            <Link
+              to="/"
+              onClick={() => {
+                ifHome();
+              }}
+            >
+              <h2>ABOUT US</h2>
+            </Link>
+
             <Link
               to="/"
               onClick={() => {
@@ -60,7 +67,15 @@ const Footer = () => {
             </Link>
           </div>
           <div className={styles.section__navigation__element}>
-            <h2>TERMS & CONDITIONS</h2>
+            <Link
+              to="/contact"
+              onClick={() => {
+                ifContact();
+              }}
+            >
+              <h2>TERMS & CONDITIONS</h2>
+            </Link>
+
             <Link
               to="/contact"
               onClick={() => {
@@ -79,7 +94,14 @@ const Footer = () => {
             </Link>
           </div>
           <div className={styles.section__navigation__element}>
-            <h2>CONTACT</h2>
+            <Link
+              to="/contact"
+              onClick={() => {
+                ifContact();
+              }}
+            >
+              <h2>CONTACT</h2>
+            </Link>
             <Link
               to="/contact"
               onClick={() => {

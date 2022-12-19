@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import styles from './Events.module.scss';
 import image from '../../images/WeddingImage.jpg';
 
@@ -22,7 +24,9 @@ const Events = () => (
       </div>
       <img src={image} alt="" className={styles.section__image} />
       <div className={styles.section__content__button}>
-        <button type="button">EXPLORE</button>
+        <Link to="/gallery">
+          <button type="button">EXPLORE</button>
+        </Link>
       </div>
       <img src={image} alt="" className={styles.imageMobile} />
     </div>

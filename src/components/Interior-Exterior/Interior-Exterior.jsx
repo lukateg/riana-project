@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import styles from './Interior-Exterior.module.scss';
 import interiorImage from '../../images/interiorImage.jpg';
 import exteriorImage from '../../images/flydeck.jpg';
@@ -17,7 +19,9 @@ const InteriorExterior = () => (
           are fitted with ensuite bathrooms.
         </p>
         <div className={styles.discoverWrapper}>
-          <p className={styles.discoverMore}>DISCOVER MORE</p>
+          <Link to="/gallery">
+            <p className={styles.discoverMore}>DISCOVER MORE</p>
+          </Link>
         </div>
       </div>
       <div className={styles.section__element}>
@@ -30,7 +34,9 @@ const InteriorExterior = () => (
           There are also two outdoor dining areas on the flybridge and aft decks
           which can be shaded during the day and open to the stars at night.
         </p>
-        <p className={styles.discoverMore}>DISCOVER MORE</p>
+        <Link to="/gallery">
+          <p className={styles.discoverMore}>DISCOVER MORE</p>
+        </Link>
       </div>
     </div>
     {/* <div className={styles.section__discoverMore}>
