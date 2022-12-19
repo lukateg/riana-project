@@ -1,53 +1,117 @@
+import { Link, useLocation } from 'react-router-dom';
+
 import styles from './Footer.module.scss';
 import image from '../../images/beliLogo.svg';
+import brochure from '../../images/brochureRiana.pdf';
 
-const Footer = () => (
-  <div className={styles.sectionWrapper}>
-    <div className={styles.section}>
-      <div className={styles.section__navigation}>
-        <div className={styles.section__navigation__logo}>
-          <img src={image} alt="" />
-        </div>
-        <div
-          className={styles.section__navigation__element}
-          id={styles.aboutUs}
-        >
-          <h2>ABOUT US</h2>
-          <p>About Riana Yacht</p>
-          <p>Interactive Brochure</p>
-          <p>Partners</p>
-        </div>
-        <div className={styles.section__navigation__element}>
-          <h2>TERMS & CONDITIONS</h2>
-          <p>Privacy Policy</p>
-          <p>Website Terms</p>
-        </div>
-        <div className={styles.section__navigation__element}>
-          <h2>CONTACT</h2>
-          <p>Contact us</p>
-        </div>
-      </div>
-      <div className={styles.section__links}>
-        <div className={styles.section__links__icons}>
-          <div className={styles.section__links__icons__wrapper}>
-            <i className="fa-brands fa-youtube">{/* youtube */}</i>
+const Footer = () => {
+  const { pathname } = useLocation();
+
+  const ifHome = () => {
+    if (pathname === '/') {
+      document.documentElement.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+      });
+    }
+  };
+
+  const ifContact = () => {
+    if (pathname === '/contact') {
+      document.documentElement.scrollTo({
+        top: 800,
+        left: 0,
+        behavior: 'smooth'
+      });
+    }
+  };
+
+  return (
+    <div className={styles.sectionWrapper}>
+      <div className={styles.section}>
+        <div className={styles.section__navigation}>
+          <div className={styles.section__navigation__logo}>
+            <img src={image} alt="" />
           </div>
-          <div className={styles.section__links__icons__wrapper}>
-            <i className="fa-brands fa-instagram">{/* instagram */}</i>
+          <div
+            className={styles.section__navigation__element}
+            id={styles.aboutUs}
+          >
+            <h2>ABOUT US</h2>
+            <Link
+              to="/"
+              onClick={() => {
+                ifHome();
+              }}
+            >
+              <p>About Riana Yacht</p>
+            </Link>
+            <a href={brochure} download="Riana Brochure">
+              <p>Interactive Brochure</p>
+            </a>
+            <Link
+              to="/contact"
+              onClick={() => {
+                ifContact();
+              }}
+            >
+              <p>Partners</p>
+            </Link>
           </div>
-          <div className={styles.section__links__icons__wrapper}>
-            <i className="fa-brands fa-facebook">{/* facebook */}</i>
+          <div className={styles.section__navigation__element}>
+            <h2>TERMS & CONDITIONS</h2>
+            <Link
+              to="/contact"
+              onClick={() => {
+                ifContact();
+              }}
+            >
+              <p>Privacy Policy</p>
+            </Link>
+            <Link
+              to="/contact"
+              onClick={() => {
+                ifContact();
+              }}
+            >
+              <p>Website Terms</p>
+            </Link>
+          </div>
+          <div className={styles.section__navigation__element}>
+            <h2>CONTACT</h2>
+            <Link
+              to="/contact"
+              onClick={() => {
+                ifContact();
+              }}
+            >
+              <p>Contact us</p>
+            </Link>
           </div>
         </div>
-        <div className={styles.section__links__rights}>
-          <p>
-            2022 © NIKI & NORA. <br className={styles.br} /> ALL RIGHTS
-            RESERVED.
-          </p>
+        <div className={styles.section__links}>
+          <div className={styles.section__links__icons}>
+            <div className={styles.section__links__icons__wrapper}>
+              <i className="fa-brands fa-youtube">{/* youtube */}</i>
+            </div>
+            <div className={styles.section__links__icons__wrapper}>
+              <i className="fa-brands fa-instagram">{/* instagram */}</i>
+            </div>
+            <div className={styles.section__links__icons__wrapper}>
+              <i className="fa-brands fa-facebook">{/* facebook */}</i>
+            </div>
+          </div>
+          <div className={styles.section__links__rights}>
+            <p>
+              2022 © N&N Design. <br className={styles.br} /> ALL RIGHTS
+              RESERVED.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default Footer;
