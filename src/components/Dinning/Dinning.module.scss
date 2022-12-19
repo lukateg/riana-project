@@ -58,7 +58,10 @@
     text-transform: uppercase;
     margin-bottom: 1rem;
     @media only screen and (max-width: 400px) {
-      padding: 10px 30px;
+      width: 162pt;
+      height: 41pt;
+      font-size: 10pt;
+      letter-spacing: 2pt;
     }
   }
   button:hover{

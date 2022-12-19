@@ -108,21 +108,17 @@
     background: #ffffff 0% 0% no-repeat padding-box;
     border: 1px solid #707070;
     opacity: 1;
+    font: normal normal bold 15px 'Alright-Sans';
+    letter-spacing: 3px;
     cursor: pointer;
     @media only screen and (max-width: 500px) {
       margin: 2rem auto;
       width: 270px;
       height: 50px;
+      font-size: 8pt;
+      letter-spacing: 1.6pt;
     }
 
-    // @media only screen and (max-width: 600px) {
-    //   width: 280px;
-    //   height: 65px;
-    // }
-    // @media only screen and (max-width: 400px) {
-    //   width: 240px;
-    //   height:65px;
-    // }
   }
   &__button:hover {
     background-color: #1a1a1a;
