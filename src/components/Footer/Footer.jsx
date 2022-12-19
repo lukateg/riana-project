@@ -1,5 +1,5 @@
 import styles from './Footer.module.scss';
-import image from '../../images/LogoW.png';
+import image from '../../images/beliLogo.svg';
 
 const Footer = () => (
   <div className={styles.sectionWrapper}>
@@ -13,17 +13,10 @@ const Footer = () => (
           id={styles.aboutUs}
         >
           <h2>ABOUT US</h2>
-
-          {/* <p>Covid-19</p> */}
           <p>About Riana Yacht</p>
           <p>Interactive Brochure</p>
           <p>Partners</p>
         </div>
-        {/* <div className={styles.section__navigation__element}>
-          <h2>NEWS AND AWARDS</h2>
-          <p>Awards</p>
-          <p>Newsletter Signup</p>
-        </div> */}
         <div className={styles.section__navigation__element}>
           <h2>TERMS & CONDITIONS</h2>
           <p>Privacy Policy</p>

@@ -26,6 +26,10 @@
     height: 80px;
     font-family: $ff-1;
     font-weight: 600;
+    @media only screen and (max-width: 500px) {
+      width: 270px;
+      height: 50px;
+    }
   }
   &__button:hover{
     background-color: black;

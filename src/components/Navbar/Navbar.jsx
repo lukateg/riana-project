@@ -1,12 +1,19 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+
 import styles from './Navbar.module.scss';
 import logoBlack from '../../images/logoBlack.png';
-import logoWhite from '../../images/LogoW.png';
+import logoWhite from '../../images/beliLogo.svg';
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
   const [open, setOpen] = useState(true);
+  const { pathname } = useLocation();
+  let previousState = false;
+
+  useEffect(() => {
+    setOpen(true);
+  }, [pathname]);
 
   const changeBackground = () => {
     if (window.scrollY >= 80) {
@@ -19,6 +26,18 @@ const Navbar = () => {
   const changeIcon = () => {
     setOpen(!open);
   };
+
+  const changeNavbarOnMouseEnter = (input) => {
+    if (!input) {
+      setNavbar(true);
+    }
+    previousState = input;
+  };
+
+  const changeNavbarOnMouseLeave = () => {
+    setNavbar(previousState);
+  };
+
   window.addEventListener('scroll', changeBackground);
   return (
     <nav
@@ -27,6 +46,8 @@ const Navbar = () => {
           ? `${styles.navbar} ${styles.active}`
           : `${styles.navbar}`
       }
+      onMouseEnter={() => changeNavbarOnMouseEnter(navbar)}
+      onMouseLeave={() => changeNavbarOnMouseLeave(navbar)}
     >
       <div
         className={
@@ -92,6 +113,17 @@ const Navbar = () => {
             home
           </Link>
         </div>
+
+        <div className={styles.nav__item}>
+          <div
+            className={
+              navbar ? `${styles.dot} ${styles.active}` : `${styles.dot}`
+            }
+          >
+            <i className="fa-sharp fa-solid fa-circle">{/* icon */}</i>
+          </div>
+        </div>
+
         <div className={styles.nav__item}>
           <Link
             className={
@@ -103,6 +135,15 @@ const Navbar = () => {
           >
             gallery
           </Link>
+        </div>
+        <div className={styles.nav__item}>
+          <div
+            className={
+              navbar ? `${styles.dot} ${styles.active}` : `${styles.dot}`
+            }
+          >
+            <i className="fa-sharp fa-solid fa-circle">{/* icon */}</i>
+          </div>
         </div>
         {/* <div className={styles.nav__item}>
           <Link
@@ -150,19 +191,19 @@ const Navbar = () => {
       >
         <div className={styles.nav__mobile__row__contact}>
           <a href="tel:+382 32 678 890">
-            <i className="fa-solid fa-phone">{/* phone */}</i>
+            <i className="fa-solid fa-phone fa-lg">{/* phone */}</i>
           </a>
           <Link to="/contact">
-            <i className="fa-regular fa-envelope">{/* mail */}</i>
+            <i className="fa-regular fa-envelope fa-lg">{/* mail */}</i>
           </Link>
         </div>
         <div className={styles.nav__mobile__row}>
-          <a href="/gallery">gallery</a>
+          <Link to="/gallery">gallery</Link>
           <i className="fa-solid fa-chevron-right">{/* arrow */}</i>
         </div>
 
         <div className={styles.nav__mobile__row}>
-          <a href="/contact">contact</a>
+          <Link to="/contact">contact</Link>
           <i className="fa-solid fa-chevron-right">{/* arrow */}</i>
         </div>
       </div>

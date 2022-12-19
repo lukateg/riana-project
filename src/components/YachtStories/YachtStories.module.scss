@@ -85,15 +85,19 @@
         font-size: 14px;
       }
     }
-
     button {
-      width: 220px;
-      height: 50px;
       background: #1a1a1a00 0% 0% no-repeat padding-box;
       border: 1px solid #000000;
-      opacity: 1;
+      width: 240px;
+      height: 61px;
+      font: normal normal bold 15px 'Alright-Sans';
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      @media only screen and (max-width: 400px) {
+        padding: 10px 30px;
+      }
     }
-
     button:hover{
       background-color: #1a1a1a;
       color: white;

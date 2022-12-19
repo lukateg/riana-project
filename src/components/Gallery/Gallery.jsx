@@ -1,7 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 
-import Navbar from '../Navbar/Navbar';
 import TextGallery from './TextGallery/TextGallery';
 import Carousel from '../Carousel/Carousel';
 import firstImage from '../../images/_D811900.jpg';
@@ -19,22 +18,15 @@ import thirdImage2 from '../../images/interiorImage.jpg';
 
 const Gallery = () => (
   <div className={styles.gallery}>
-    <Navbar />
     <HeroImage
-      text={
-        <>
-          DESIGN <br />
-          CLASSIC YET MODERN
-        </>
-      }
+      text1={<>DESIGN</>}
+      text2={<>CLASSIC YET MODERN</>}
       image={HeroImageForGaller}
     />
     <h4 className={styles.mainHeading}>Gallery</h4>
     <div className={styles.text}>
-      <h4>
-        DESIGN <br />
-        CLASSIC YET MODERN
-      </h4>
+      <h3>DESIGN</h3>
+      <h4>CLASSIC YET MODERN</h4>
       <p>
         Living, dining and guest cabins are luxuriously fitted and furnished
         with high ceilings. Outdoor areas have expansive open decks with shaded

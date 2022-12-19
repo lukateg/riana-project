@@ -10,7 +10,8 @@
     height: fit-content;
   }
   position: relative;
-  height: 40rem;
+  //height: 50rem;
+  margin-bottom: 5rem;
 }
 
 .section__content {
@@ -41,10 +42,12 @@
 }
 
 .section__content__text p {
+  font: normal normal normal 20px 'Alright-Sans';
+  letter-spacing: 0.2px;
   margin-top: 1rem;
-  font-family: $ff-1;
   @media only screen and (max-width: 500px) {
-    font-size: 16px;
+    font-size: 13pt;
+    letter-spacing: 0.13pt;
   }
 }
 
@@ -56,8 +59,8 @@
     letter-spacing: 2px;
   }
   @media only screen and (max-width: 500px) {
-    font-size: 24px;
-    letter-spacing: 2px;
+    font-size: 18pt;
+    letter-spacing: 1.8pt;
   }
 }
 
@@ -77,19 +80,23 @@
 .section__content button {
   background: #1a1a1a00 0% 0% no-repeat padding-box;
   border: 1px solid #000000;
+  color: #1a1a1a;
+  width: 240px;
+  height: 61px;
+
+  font: normal normal bold 15px 'Alright-Sans';
   letter-spacing: 3px;
   text-transform: uppercase;
-  // width: 240px;
-  // height: 61px;
-  padding: 10px 40px;
+
+
   margin-bottom: 1rem;
-  margin-left: 20%;
-  //align-self: center;
+  margin-left: 15%;
   @media only screen and (max-width: 1000px) {
     margin-left: 0;
   }
   @media only screen and (max-width: 400px) {
-    padding: 10px 30px;
+    width: 162px;
+    height: 41px;
   }
 }
 
@@ -100,8 +107,8 @@
 
 .section__image {
   max-width: 1000px;
-  max-height: 520px;
-  height: 500px;
+  max-height: 720px;
+  height: 640px;
   width: 60%;
   position: absolute;
   top: 50px;
