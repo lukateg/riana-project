@@ -14,8 +14,8 @@
         background: white ;
     }
 
-   
-    @media only screen and (min-width: 651px) {
+
+    @media only screen and (min-width: 650px) {
         margin-bottom: 0;
         background: transparent;
         &.active {
@@ -29,6 +29,18 @@
        padding-right: 0;
 
     }
+}
+
+.dot {
+    color: white;
+    font-size: 5px;
+    padding-top: 7px;
+
+    &.active {
+        color:  #645C59;
+
+    }
+
 }
 
 
@@ -90,10 +102,6 @@
 }
 
 
-
-.nav__item a:hover {
-    border-bottom: 1px solid white;
-}
 
 .nav__item__element {
     //text-decoration: none;
@@ -168,9 +176,9 @@ hr {
 
 .nav__mobile a {
     color: black;
+    font: bold 10pt 'Alright-Sans';
+    letter-spacing: 1.5pt;
     text-transform: uppercase;
-    font-family: $ff-6;
-    font-size: 12px;
     margin-left: 10px;
 }
 .nav__mobile__row__contact {
@@ -179,8 +187,7 @@ hr {
 }
 
 .nav__mobile__row__contact i {
-    margin-left: 1.5rem;
-    margin-right: 0.5rem;
+    margin-left: 1rem;
 }
 
 #nav-icon {

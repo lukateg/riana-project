@@ -1,9 +1,12 @@
 import styles from './HeroImage.module.scss';
 
-const HeroImage = ({ text, image }) => (
-  <div>
+const HeroImage = ({ text1, text2, image }) => (
+  <div className={styles.wrap}>
     <img src={image} alt="hero" className={styles.heroImage} />
-    <p className={styles.text}>{text}</p>
+    <div className={styles.text}>
+      <h2>{text1}</h2>
+      <h3>{text2}</h3>
+    </div>
   </div>
 );
 

@@ -34,9 +34,10 @@
   background: #ffffff 0% 0% no-repeat padding-box;
   border: 1px solid #707070;
   opacity: 1;
+  cursor: pointer;
   @media only screen and (max-width: 500px) {
-      margin: 2rem auto;
-      width: 270px;
-      height: 50px;
+    margin: 2rem auto;
+    width: 270px;
+    height: 50px;
   }
 }

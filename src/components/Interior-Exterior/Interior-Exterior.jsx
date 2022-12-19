@@ -16,7 +16,9 @@ const InteriorExterior = () => (
           accommodation for nannies, security, staff or extra guests. All cabins
           are fitted with ensuite bathrooms.
         </p>
-        <p className={styles.discoverMore}>DISCOVER MORE</p>
+        <div className={styles.discoverWrapper}>
+          <p className={styles.discoverMore}>DISCOVER MORE</p>
+        </div>
       </div>
       <div className={styles.section__element}>
         <img src={exteriorImage} alt="exteriorImage" className={styles.image} />

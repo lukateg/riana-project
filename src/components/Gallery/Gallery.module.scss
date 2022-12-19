@@ -45,16 +45,15 @@
 }
 
 .mainHeading {
-  font-size: 40px;
+  font: normal normal normal 50px 'Baskerville';
+  letter-spacing: 5px;
   text-align: center;
-  font-family: $ff-2;
   color: #1a1a1a;
   margin-bottom: 3rem;
   margin-top: 3rem;
-  letter-spacing: 10px;
   text-transform: uppercase;
   @media only screen and (max-width: 500px) {
-    font-size: 26px;
+    display: none;
   }
 }
 
@@ -67,13 +66,19 @@
   }
 }
 
+.text h3 {
+  font: normal normal normal 22pt 'Baskerville';
+  letter-spacing: 2.2pt;
+}
+
 .text h4 {
-  font: normal normal normal 25px Baskerville;
-  font-size: 24px;
+  font: normal normal normal 15pt 'Baskerville';
+  letter-spacing: 1.5pt;
   margin-bottom: 1rem;
 }
 
 .text p {
-  font-size: 20px;
-  font-style: $ff-1;
+  font: normal normal normal 20px 'Alright-Sans';
+  font-size: 13pt;
+  letter-spacing: 0.13pt;
 }

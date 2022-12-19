@@ -12,49 +12,50 @@
   }
 
   h2 {
-    font-size: $fs-heading-medium;
+    font: normal 35px 'Baskerville';
+    letter-spacing: 3.5px;
     text-align: center;
-    font-family: $ff-2;
-    @media only screen and (max-width: 400px) {
-      font-weight: 500;
+    
+    @media only screen and (max-width: 500px) {
+      font-size: 22pt;
+      letter-spacing: 2.2pt;
     }
   }
   h3 {
-    font-size: 25px;
+    font: normal 25px 'Baskerville';
     text-align: center;
-    font-family: $ff-2;
     @media only screen and (max-width: 600px) {
       font-size: 22px;
       font-weight: 300;
     }
-    @media only screen and (max-width: 400px) {
-      font-size: 20px;
-      font-weight: 300;
+    @media only screen and (max-width: 500px) {
+      font-size: 15pt;
+      letter-spacing: 1.5pt;
     }
   }
   p {
-    font-size: $fs-heading-small;
-    font-family: $ff-1;
+    font: normal normal normal 20px "Alright-Sans";
+    letter-spacing: 0.5px;
     margin: 2rem 0;
     text-align: center;
-    letter-spacing: 0.5px;
     max-width: 939px;
-    @media only screen and (max-width: 600px) {
-      font-size: 18px;
-    }
     @media only screen and (max-width: 400px) {
-      font-size: 16px;
+      font-size: 13pt;
+      letter-spacing: 0.13pt;
     }
   }
   button {
     background: #1a1a1a00 0% 0% no-repeat padding-box;
     border: 1px solid #000000;
+    width: 240px;
+    height: 61px;
+    font: normal normal bold 15px 'Alright-Sans';
     letter-spacing: 3px;
     text-transform: uppercase;
-    padding: 10px 40px;
     margin-bottom: 1rem;
     @media only screen and (max-width: 400px) {
-      padding: 10px 30px;
+      width: 162px;
+      height: 41px;
     }
   }
   button:hover{

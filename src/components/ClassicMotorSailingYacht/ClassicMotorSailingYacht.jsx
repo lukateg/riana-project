@@ -8,7 +8,9 @@ const ClassicMotorSailingYacht = () => (
       target="_blank"
       rel="noreferrer noopener"
     >
-      <div className={styles.button}>EXPLORE 360 VIRTUAL TOUR</div>
+      <button type="button" className={styles.button}>
+        EXPLORE <span id={styles.number}> 360</span> VIRTUAL TOUR
+      </button>
     </a>
   </div>
 );
