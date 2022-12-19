@@ -10,7 +10,7 @@ import image6 from '../../images/Artboard20.png';
 import image7 from '../../images/Artboard21.png';
 
 import brochure from '../../images/brochureRiana.pdf';
-import image8 from '../../images/PNRiana.jpg';
+import image8 from '../../images/toys-gallery.jpg';
 
 const images = [image1, image2, image5, image3, image4, image6, image7];
 
