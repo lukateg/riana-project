@@ -43,7 +43,7 @@ const App = () => (
             <Layout />
             {/* <Events /> */}
             <YachtStories />
-            {/* <Dinning /> */}
+            <Dinning />
             <Activities />
           </>
         }

@@ -16,7 +16,7 @@ const Specifications = () => (
           </h1>
           <div className={styles.section__brochure__specifications__info__data}>
             <h2>length</h2>
-            <p>42M|138FT</p>
+            <p>42M | 138FT</p>
           </div>
           <div className={styles.section__brochure__specifications__info__data}>
             <h2>build year</h2>
@@ -47,8 +47,8 @@ const Specifications = () => (
             <p>7</p>
           </div>
           <div className={styles.section__brochure__specifications__info__data}>
-            <h2>vat registred</h2>
-            <p>yes(eu)</p>
+            <h2>vat registered</h2>
+            <p>yes (eu)</p>
           </div>
           <div className={styles.section__brochure__specifications__info__data}>
             <h2>engines</h2>
@@ -150,8 +150,8 @@ const Specifications = () => (
             <p>8-10</p>
           </div>
           <div className={styles.section__brochure__specifications__info__data}>
-            <h2>cabin/suited</h2>
-            <p>2 double/2twin, 1extra double (behind the wheelhouse)</p>
+            <h2>cabin/suites</h2>
+            <p>2 double/2 twin, 1 extra double (behind the wheelhouse)</p>
           </div>
           <div className={styles.section__brochure__specifications__info__data}>
             <h2>in-room ameneties</h2>
