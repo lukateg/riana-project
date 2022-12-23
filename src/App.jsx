@@ -41,7 +41,7 @@ const App = () => (
             />
             <Specifications />
             <Layout />
-            {/* <Events /> */}
+            <Events />
             <YachtStories />
             <Dinning />
             <Activities />
