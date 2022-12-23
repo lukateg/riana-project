@@ -108,8 +108,8 @@
     }
   }
   &__text {
-    padding: 1rem 3rem 1rem 5rem;
-    margin: 0 0 -3rem -8rem;
+    padding: 1rem 3rem 1rem 6rem;
+    margin: 0 0 -3rem -9rem;
     background-color: #eeefef;
     max-width: 1020px;
 
@@ -148,18 +148,15 @@
       }
       @media only screen and (max-width: 400px) {
         font-size: 16px;
+        // margin-bottom: 1rem;
       }
     }
 
     p {
-      margin: 3.5rem 0;
+      margin: 3rem 0;
       text-align: left;
-      // font: normal normal normal 18px Alright Sans;
       font: normal normal normal 20px Arial, Helvetica, sans-serif;
-      // max-width: 852px;
-      font-size: 15px;
       font-family: $ff-1;
-      // letter-spacing: 0.5px;
       letter-spacing: 0.2px;
       color: #1a1a1a;
       opacity: 1;
@@ -174,6 +171,7 @@
       }
       @media only screen and (max-width: 400px) {
         font-size: 10px;
+        margin: 2rem 0;
       }
     }
 
