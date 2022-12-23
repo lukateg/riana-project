@@ -2,21 +2,22 @@
 
 .section {
   @include wrapper;
+  margin-bottom: 12rem;
   position: relative;
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 500px) {
     width: 100%;
   }
   @media only screen and (max-width: 1000px) {
     height: fit-content;
+    margin-bottom: 6rem;
   }
-  position: relative;
-  //height: 50rem;
-  margin-bottom: 5rem;
+ 
 }
 
 .section__content {
   background-color: #eeefef;
-  width: 60%;
+  width: 80%;
+  max-width: 830px;
   display: flex;
   flex-direction: column;
   height: fit-content;
@@ -29,9 +30,9 @@
 
 .section__content__text {
   margin-bottom: 1rem;
-  width: 400px;
+  width: 490px;
   @media only screen and (max-width: 1200px) {
-    width: fit-content;
+    width: 100%;
   }
   @media only screen and (max-width: 1000px) {
     width: 100%;
@@ -42,9 +43,13 @@
 }
 
 .section__content__text p {
-  font: normal normal normal 20px 'Alright-Sans';
+  font: normal normal normal 20px 'Arial';
   letter-spacing: 0.2px;
+  line-height: 28px !important;
+  color: #1a1a1a;
+  line-height: 32px !important;
   margin-top: 1rem;
+  min-width: 400px;
   @media only screen and (max-width: 500px) {
     font-size: 13pt;
     letter-spacing: 0.13pt;
@@ -52,12 +57,14 @@
 }
 
 .section__content__text h1 {
-  font: normal normal normal 35px Baskerville;
+  font: normal normal normal 35px "Times New Roman";
   letter-spacing: 3.5px;
-  @media only screen and (max-width: 800px) {
-    font-size: 30px;
-    letter-spacing: 2px;
-  }
+  color: #1a1a1a;
+  margin-bottom: 2rem;
+  // @media only screen and (max-width: 800px) {
+  //   font-size: 30px;
+  //   letter-spacing: 2px;
+  // }
   @media only screen and (max-width: 500px) {
     font-size: 18pt;
     letter-spacing: 1.8pt;
@@ -71,6 +78,8 @@
 }
 
 .section__content__button {
+  margin-top: 1rem;
+  margin-bottom: 1.9rem;
   @media only screen and (max-width: 1000px) {
     display: flex;
     align-items: center;
@@ -84,7 +93,7 @@
   width: 240px;
   height: 61px;
 
-  font: normal normal bold 15px 'Alright-Sans';
+  font: normal normal bold 15px 'Arial';
   letter-spacing: 3px;
   text-transform: uppercase;
 
@@ -109,19 +118,21 @@
 }
 
 .section__image {
-  max-width: 1000px;
-  max-height: 720px;
-  height: 640px;
-  width: 60%;
-  position: absolute;
-  top: 50px;
-  // left: 460px;
-  object-fit: cover;
-  left: 40%;
 
-  @media only screen and (max-width: 1200px) {
-    left: 43%;
-  }
+  height: 630px !important;
+  width: 50% !important;
+  max-width: 600px;
+  position: absolute;
+  top: 80px;
+  object-fit:fill;
+  left: 570px;
+  margin-right: 2rem;
+
+  // @media only screen and (max-width: 1200px) {
+  //  width: 90%;
+  //  height: 750px;
+  //  left: 470px;
+  // }
 
   @media only screen and (max-width: 1000px) {
     display: none;

@@ -10,14 +10,19 @@ const InteriorExterior = () => (
       <div className={styles.section__element}>
         <img src={interiorImage} alt="interiorImage" className={styles.image} />
         <h4 className={styles.section__element__heading}>INTERIOR</h4>
-        <p className={styles.section__element__paragraph}>
-          Dining and entertainment areas includes a lounge, bar and dining area
-          for up to 10 people. Sleeping accommodation comprises 2 x Queen and 2
-          x Twin cabins (with an extra sleep sofa in each twin cabin). There is
-          a further double cabin adjacent to the wheel house which is ideal
-          accommodation for nannies, security, staff or extra guests. All cabins
-          are fitted with ensuite bathrooms.
-        </p>
+        <div className={styles.section__element__paragraph}>
+          <p>
+            Dining and entertainment areas includes a lounge, bar and dining
+            area for up to 10 people. Sleeping accommodation comprises 2 x Queen
+            and 2 x Twin cabins (with an extra sleep sofa in each twin cabin).
+          </p>
+          <p>
+            There is a further double cabin adjacent to the wheel house which is
+            ideal accommodation for nannies, security, staff or extra guests.All
+            cabins are fitted with ensuite bathrooms.
+          </p>
+        </div>
+
         <div className={styles.discoverWrapper}>
           <Link to="/gallery">
             <p className={styles.discoverMore}>DISCOVER MORE</p>
@@ -35,7 +40,9 @@ const InteriorExterior = () => (
           which can be shaded during the day and open to the stars at night.
         </p>
         <Link to="/gallery">
-          <p className={styles.discoverMore}>DISCOVER MORE</p>
+          <p className={styles.discoverMore} id={styles.two}>
+            DISCOVER MORE
+          </p>
         </Link>
       </div>
     </div>

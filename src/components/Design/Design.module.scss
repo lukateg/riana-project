@@ -4,6 +4,11 @@
   @include wrapper;
   color: $primary-color;
 
+  @media only screen and (max-width: 500px) {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
   &__content {
     display: flex;
     flex-direction: column;
@@ -12,47 +17,54 @@
   }
 
   h2 {
-    font: normal 35px 'Baskerville';
+    font: normal 35px 'Times New Roman';
     letter-spacing: 3.5px;
+    line-height: 40px !important;
     text-align: center;
-    
+    margin-top: 4rem;
     @media only screen and (max-width: 500px) {
       font-size: 22pt;
       letter-spacing: 2.2pt;
+      line-height: 24pt !important;
     }
   }
   h3 {
-    font: normal 25px 'Baskerville';
+    font: normal 25px 'Times New Roman';
+    letter-spacing: 2.5px;
+    line-height: 40px!important;
+    margin-bottom: 5rem;
     text-align: center;
-    @media only screen and (max-width: 600px) {
-      font-size: 22px;
-      font-weight: 300;
-    }
     @media only screen and (max-width: 500px) {
       font-size: 15pt;
       letter-spacing: 1.5pt;
+      line-height: 24pt !important;
+      margin-bottom: 2rem;
     }
   }
   p {
-    font: normal normal normal 20px "Alright-Sans";
+    font: normal normal normal 20px "Arial";
     letter-spacing: 0.5px;
-    margin: 2rem 0;
+    line-height: 28px !important;
+    margin-bottom: 5rem;
     text-align: center;
     max-width: 939px;
     @media only screen and (max-width: 500px) {
       font-size: 13pt;
       letter-spacing: 0.13pt;
+      line-height: 20pt !important;
+      margin-bottom: 2rem;
     }
   }
   button {
     background: #1a1a1a00 0% 0% no-repeat padding-box;
-    border: 1px solid #000000;
+    border: 1px solid #1a1a1a;
+    color: #1a1a1a;
     width: 240px;
     height: 61px;
-    font: normal normal bold 15px 'Alright-Sans';
+    font: normal normal bold 15px 'Arial';
     letter-spacing: 3px;
     text-transform: uppercase;
-    margin-bottom: 1rem;
+    margin-bottom: 5rem;
     @media only screen and (max-width: 400px) {
       width: 162pt;
       height: 41pt;

@@ -36,14 +36,14 @@ function Layout() {
               }
             >
               FLYBRIDGE
+              <span
+                className={`${styles.section__span} ${
+                  images.firstImage
+                    ? styles['section__span--active']
+                    : styles['section__span--not-active']
+                }`}
+              />
             </button>
-            <span
-              className={`${styles.section__span} ${
-                images.firstImage
-                  ? styles['section__span--active']
-                  : styles['section__span--not-active']
-              }`}
-            />
           </div>
           <div>
             <button
@@ -65,14 +65,14 @@ function Layout() {
               }
             >
               MIDDLE DECK
+              <span
+                className={`${styles.section__span} ${
+                  images.secondImage
+                    ? styles['section__span--active']
+                    : styles['section__span--not-active']
+                }`}
+              />
             </button>
-            <span
-              className={`${styles.section__span} ${
-                images.secondImage
-                  ? styles['section__span--active']
-                  : styles['section__span--not-active']
-              }`}
-            />
           </div>
           <div>
             <button
@@ -94,14 +94,14 @@ function Layout() {
               }
             >
               LOWER DECK
+              <span
+                className={`${styles.section__span} ${
+                  images.thirdImage
+                    ? styles['section__span--active']
+                    : styles['section__span--not-active']
+                }`}
+              />
             </button>
-            <span
-              className={`${styles.section__span} ${
-                images.thirdImage
-                  ? styles['section__span--active']
-                  : styles['section__span--not-active']
-              }`}
-            />
           </div>
         </div>
         <section className={styles.section__container}>

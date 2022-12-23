@@ -3,7 +3,9 @@
 .section {
   @include wrapper;
   color: $primary-color;
-  font-family: $ff-1;
+  @media only screen and (max-width: 500px) {
+    width: 93%;
+  }
 
   &__contactInfo {
     & > * {
@@ -23,40 +25,45 @@
 
     h3 {
       margin: 0.75rem 0;
-      font: normal normal bold 20px 'Alright-Sans';
+      font: normal normal bold 20px 'Arial';
       letter-spacing: 0.2px;
       color: #1a1a1a;
-      font-family: $ff-4;
-      font-weight: 400;
       @media only screen and (max-width: 500px) {
-        font-size: 14px;
+        font-size: 13pt;
+        letter-spacing: 0.13pt;
         margin: 0.25rem 0;
       }
     }
 
     h5 {
       margin: 0.75rem 0;
-      font: normal normal normal 20px 'Alright-Sans';
+      margin-bottom: 3rem;
+      font: normal normal normal 20px 'Arial';
       letter-spacing: 0.2px;
       color: #1a1a1a;
       @media only screen and (max-width: 500px) {
-        font-size: 14px;
-        margin: 0.25rem 0;
+        font-size: 13pt;
+        letter-spacing: 0.13pt;
+        margin: 0.8rem 0;
       }
     }
 
    
 
     p {
-      margin: 2rem auto;
-      font: normal normal normal 20px 'Alright-Sans';
-      max-width: 85ch;
+      margin: 4rem auto;
+      margin-bottom: 7rem;
+      font: normal normal normal 20px 'Arial';
+      max-width: 83ch;
       letter-spacing: 0.2px;
       color: #1a1a1a;
+      line-height: 35px !important;
       @media only screen and (max-width: 500px) {
-        font-size: 14px;
-        margin: 2.5rem auto;
-        line-height: 20px;
+        font-size: 13pt;
+        letter-spacing: 0.13pt;
+        line-height: 20pt;
+        margin: 4rem auto;
+        line-height: 20pt !important;
       }
     }
   }
@@ -72,14 +79,19 @@
   }
 
   &__heading {
-    margin: 3rem 0;
+   margin-top: 9rem;
+   margin-bottom: 4rem;
     text-align: center;
-    font: normal normal normal 35px Baskerville;
+    font: normal normal normal 35px "Times New Roman";
     letter-spacing: 3.5px;
     color: #1a1a1a;
     text-transform: uppercase;
     @media only screen and (max-width: 500px) {
-      font-size: 20px;
+      font-size: 18pt;
+      letter-spacing: 1.8pt;
+      margin-top: 5rem;
+      margin-bottom: 3rem;
+
     }
   }
 
@@ -99,7 +111,7 @@
     width: 90%;
     margin: 1rem auto;
     align-items: center;
-    font: normal normal bold 15px 'Alright-Sans';
+    font: normal normal bold 15px 'Arial';
     letter-spacing: 0.15px;
    
 
@@ -123,12 +135,11 @@
     }
 
     label {
-      font: normal normal normal 15px 'Alright-Sans';
+      font: normal normal bold 15px 'Arial';
       letter-spacing: 0.15px;
       text-transform: uppercase;
       width: 100%;
       max-width: 400px;
-      font-weight: 700;
       text-align: left;
       margin-bottom: 0.5rem;
       @media only screen and (max-width: 500px) {
@@ -141,7 +152,10 @@
   }
 
   &__button {
+    font: normal normal bold 15px Arial;
+    letter-spacing: 3px;
     margin: 4rem auto;
+    margin-bottom: 6rem;
     border: 1px solid var(--unnamed-color-707070);
     background: #1a1a1a 0% 0% no-repeat padding-box;
     border: 1px solid #1a1a1a;
@@ -150,18 +164,24 @@
     text-transform: uppercase;
     color: #fff;
 
-
-    font-weight: 600;
     @media only screen and (max-width: 500px) {
       width: 250px;
       height: 45px;
       border-radius: 2px;
       margin: 2.75rem auto;
+      font-size: 10pt;
+      letter-spacing: 2pt;
     }
   }
 }
 
 
 #number {
-  font-family: Arial;
+  font: normal normal normal 20px Arial;
+  letter-spacing: 0.2px;
+
+  @media only screen and (max-width: 500px) {
+      font-size: 13pt;
+      letter-spacing: 0.13pt;
+    }
 }

@@ -5,7 +5,7 @@ const Design = () => (
     <div className={styles.section__content}>
       <span>
         <h2>DESIGN</h2>
-        <h3>DESIGN CLASSIC YET MODERN</h3>
+        <h3>CLASSIC YET MODERN</h3>
       </span>
       <p>
         Living, dining and guest cabins are luxuriously fitted and furnished

@@ -5,16 +5,22 @@ const Dinning = () => (
   <div className={styles.section}>
     <div className={styles.section__content}>
       <div className={styles.section__content__heading}>
-        <h4>dining</h4>
+        <h3>dining</h3>
         <h4>fresh and diverse</h4>
       </div>
       <p className={styles.section__content__text}>
-        Your chef may prepare a variety of local or international dishes. Upon
-        request, special dietary requirements may also be accommodated. Our chef
-        has over 10+ years of experience across the culinary world. They are
-        passionate about working with fresh produce and creating innovative
-        dishes ensuring an unforgettable dining experience throughout your stay
-        on the Riana.
+        Your chef may prepare a variety of local or international dishes.
+      </p>
+      <p className={styles.section__content__text}>
+        Upon request, special dietary requirements may also be accommodated.
+      </p>
+      <p className={styles.section__content__text}>
+        Our chef has over 10+ years of experience across the culinary world.
+      </p>
+      <p className={styles.section__content__text}>
+        They are passionate about working with fresh produce and creating
+        innovative dishes ensuring an unforgettable dining experience throughout
+        your stay on the Riana.
       </p>
       <div className={styles.buttonWrapper}>
         <button type="button" className={styles.niki}>
