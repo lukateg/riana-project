@@ -9,7 +9,7 @@ const ClassicMotorSailingYacht = () => (
       rel="noreferrer noopener"
     >
       <button type="button" className={styles.button}>
-        EXPLORE <span id={styles.number}> 360</span> VIRTUAL TOUR
+        EXPLORE 360 VIRTUAL TOUR
       </button>
     </a>
   </div>

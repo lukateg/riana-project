@@ -29,14 +29,16 @@
   border: 1px solid #707070;
   opacity: 1;
   cursor: pointer;
-  font: normal normal bold 15px 'Alright-Sans';
+  font: normal normal bold 15px 'Arial';
   letter-spacing: 3px;
+  margin-bottom: 7rem;
   @media only screen and (max-width: 500px) {
-    margin: 2rem auto;
+  
     width: 270px;
     height: 50px;
     font-size: 8pt;
     letter-spacing: 1.6pt;
+    
   }
 }
 
@@ -46,16 +48,16 @@
 }
 
 .gallery h4 {
-  font: normal normal normal 50px Baskerville;
+  font: normal normal normal 50px "Times New Roman";
 }
 
 .mainHeading {
-  font: normal normal normal 50px 'Baskerville';
+  font: normal normal normal 50px 'Times New Roman';
   letter-spacing: 5px;
   text-align: center;
   color: #1a1a1a;
   margin-bottom: 3rem;
-  margin-top: 3rem;
+  margin-top: 6rem;
   text-transform: uppercase;
   @media only screen and (max-width: 500px) {
     display: none;
@@ -73,18 +75,22 @@
 }
 
 .text h3 {
-  font: normal normal normal 22pt 'Baskerville';
+  font: normal normal normal 22pt 'Times New Roman';
   letter-spacing: 2.2pt;
+  line-height: 20pt !important;
 }
 
 .text h4 {
-  font: normal normal normal 15pt 'Baskerville';
+  font: normal normal normal 15pt 'Times New Roman';
   letter-spacing: 1.5pt;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;  
+  line-height: 20pt !important;
+
 }
 
 .text p {
-  font: normal normal normal 20px 'Alright-Sans';
+  font: normal normal normal 20px 'Arial';
   font-size: 13pt;
   letter-spacing: 0.13pt;
+  line-height: 20pt !important;
 }

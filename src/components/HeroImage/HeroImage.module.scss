@@ -13,7 +13,10 @@
   background-size: cover;
   
   @media only screen and (max-width: 500px) {
-      height: 250px;
+      height: 300px !important;
+  }
+  @media only screen and (max-width: 375px) {
+    height: 250px !important;
   }
 }
 
@@ -31,12 +34,12 @@
 }
 
 .text h2 {
-    font: normal normal normal 35px 'Baskerville';
+    font: normal normal normal 35px 'Times New Roman';
     letter-spacing: 3.5px;
 }
 
 .text h3 {
-    font: normal normal normal 25px 'Baskerville';
+    font: normal normal normal 25px 'Times New Roman';
     font-size: 25px;
     letter-spacing: 2.5px;
 }

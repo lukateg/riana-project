@@ -5,6 +5,7 @@ import Alert from '@mui/material/Alert';
 import styles from './ContactPage.module.scss';
 
 import ContactForm from './ContactForm/ContactForm';
+import HeroImage from '../HeroImage/HeroImage';
 import image from '../../images/heroContact3.jpg';
 import Brochure from './Brochure/Brochure';
 
@@ -45,9 +46,7 @@ const ContactPage = () => {
 
   return (
     <div className={styles.section}>
-      <div>
-        <img src={image} alt="hero" className={styles.heroImage} />
-      </div>
+      <HeroImage image={image} />
       {alert && (
         <Alert
           severity="success"

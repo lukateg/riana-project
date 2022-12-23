@@ -26,7 +26,7 @@ const YachtStories = () => (
           <p>
             There is a further double cabin adjacent to the wheel house which is
             ideal accommodation for nannies, security, staff or extra guests.
-            All cabins are fitted with ensuite bathrooms.
+            <br /> All cabins are fitted with ensuite bathrooms.
           </p>
           <button type="button">DISCOVER MORE</button>
         </div>

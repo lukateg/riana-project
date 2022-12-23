@@ -62,11 +62,7 @@ const Gallery = () => (
       }
     />
     <Carousel images={[firstImage2, secondImage2, thirdImage2]} />
-    {/* <a href={brochureRiana} download="Riana Brochure">
-      <button type="button" className={styles.button}>
-        DOWNLOAD E-BROCHURE
-      </button>
-    </a> */}
+
     <div className={styles.section__arrowContainer}>
       <a href={brochureRiana} download="Riana Brochure">
         <button type="button" className={styles.button}>

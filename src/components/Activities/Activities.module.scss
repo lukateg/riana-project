@@ -4,6 +4,7 @@
   @include wrapper;
   color: $primary-color;
   padding: 3rem 0;
+  margin-top: 4rem;
 
   @media only screen and (max-width: 500px) {
     width: 100%;
@@ -20,7 +21,7 @@
   }
   &__image {
     max-height: 6rem;
-    width: 6rem;
+    width: 4.5rem;
     object-fit: contain;
     @media only screen and (max-width: 900px) {
       max-height: 4rem;
@@ -38,7 +39,7 @@
 
   h1 {
     text-align: center;
-    font: normal normal normal 35px Baskerville;
+    font: normal normal normal 35px 'Times New Roman';
     letter-spacing: 3.5px;
     color: #1a1a1a;
     text-transform: uppercase;
@@ -53,9 +54,10 @@
   }
   p {
     text-align: center;
-    font: normal normal normal 20px Alright-Sans;
+    font: normal normal normal 20px "Arial";
     letter-spacing: 0.2px;
     color: #1a1a1a;
+    line-height: 32px !important;
     opacity: 1;
     max-width: 83ch;
     margin: 2rem auto;
@@ -68,8 +70,10 @@
   }
   h3 {
     margin: 7rem 0 5rem 0;
+    margin-top: 8rem;
+    margin-bottom: 6;
     text-align: center;
-    font: normal normal normal 25px Baskerville;
+    font: normal normal normal 25px "Times New Roman";
     letter-spacing: 2px;
     color: #1a1a1a;
     text-transform: uppercase;
@@ -108,9 +112,10 @@
     background: #ffffff 0% 0% no-repeat padding-box;
     border: 1px solid #707070;
     opacity: 1;
-    font: normal normal bold 15px 'Alright-Sans';
+    font: normal normal bold 15px 'Arial';
     letter-spacing: 3px;
     cursor: pointer;
+    margin-bottom: 9rem;
     @media only screen and (max-width: 500px) {
       margin: 2rem auto;
       width: 270px;
