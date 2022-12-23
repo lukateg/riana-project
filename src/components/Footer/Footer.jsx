@@ -43,7 +43,7 @@ const Footer = () => {
                 ifHome();
               }}
             >
-              <h2>ABOUT US</h2>
+              <h2>ABOUT </h2>
             </Link>
 
             <Link
@@ -52,7 +52,7 @@ const Footer = () => {
                 ifHome();
               }}
             >
-              <p>About Riana Yacht</p>
+              <p>About Us</p>
             </Link>
             <a href={brochure} download="Riana Brochure">
               <p>Interactive Brochure</p>
@@ -108,7 +108,7 @@ const Footer = () => {
                 ifContact();
               }}
             >
-              <p>Contact us</p>
+              <p>Contact Us</p>
             </Link>
           </div>
         </div>

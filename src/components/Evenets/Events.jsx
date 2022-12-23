@@ -18,8 +18,11 @@ const Events = () => (
           destination partners we offer a seamless transition from wedding to
           party to event including bespoke themes, decoration and music to suit
           the occasion.
-          <br /> <br /> Riana yacht will bring any event to life and make those
-          celebrations even more memorable.
+          <br /> <br />
+          <span id={styles.mobile}>
+            Riana yacht will bring any event to life and make those celebrations
+            even more memorable.
+          </span>
         </p>
       </div>
       <img src={image} alt="" className={styles.section__image} />
