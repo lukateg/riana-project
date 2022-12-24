@@ -4,12 +4,13 @@
   @include wrapper;
   margin-bottom: 12rem;
   position: relative;
-  @media only screen and (max-width: 500px) {
-    width: 100%;
-  }
+ 
   @media only screen and (max-width: 1000px) {
     height: fit-content;
     margin-bottom: 6rem;
+  }
+  @media only screen and (max-width: 500px) {
+    width: 100%;
   }
  
 }
@@ -41,6 +42,10 @@
   
     padding-top: 1rem;
   }  
+  @media only screen and (max-width: 500px) {
+    padding-left:0.5rem;
+    padding-right: 0.5rem;
+  }  
 
 }
 .section__image {
@@ -54,19 +59,23 @@
   left: 570px;
   margin-right: 2rem;
   @media only screen and (max-width: 1300px) {
-    left: 500px;
+    left: 400px;
     height: 700px !important;
-    width: 55% !important;
+    width: 60% !important;
   }
-  @media only screen and (max-width: 1250px) {
-    left: 450px;
-    height: 700px !important;
-    width: 55% !important;
-  }
-  @media only screen and (max-width: 1110px) {
+  // @media only screen and (max-width: 1250px) {
+  //   left: 450px;
+  //   height: 700px !important;
+  //   width: 55% !important;
+  // }
+  @media only screen and (max-width: 1125px) {
     width: 45%;
-    left:430px;
+    left:370px;
   }
+  // @media only screen and (max-width: 1110px) {
+  //   width: 45%;
+  //   left:430px;
+  // }
 
 
   @media only screen and (max-width: 1000px) {
@@ -120,6 +129,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  @media only screen and (max-width: 500px) {
+    margin-top: 0;
   }
 }
 .section__content button {

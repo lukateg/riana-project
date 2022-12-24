@@ -3,6 +3,11 @@
 .section {
   @include wrapper;
 
+  @media only screen and (max-width: 500px) {
+    width: 90%;
+    margin-bottom: 0px;
+  }
+
   &__heading {
     margin: 3rem auto 0 auto;
     text-align: center;
