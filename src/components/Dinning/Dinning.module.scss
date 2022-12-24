@@ -49,6 +49,10 @@
     width: 100%;
     margin-right: 0;
   }
+  @media only screen and (max-width: 500px) {
+    padding-left:  0.1rem;
+    padding-right: 0.1rem;
+  }
   button {
     background: #1a1a1a00 0% 0% no-repeat padding-box;
     border: 1px solid #000000;
