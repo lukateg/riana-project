@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 import styles from './Events.module.scss';
-import image from '../../images/WeddingImage.jpg';
+import image from '../../images/8F9A1084.jpeg';
 
 const Events = () => (
   <div className={styles.section}>
@@ -9,7 +9,7 @@ const Events = () => (
       <div className={styles.section__content__text}>
         <h1>
           WEDDINGS,
-          <br className={styles.headingResponsive} /> PARTIES & EVENTS
+          <br className={styles.headingMobile} /> PARTIES & EVENTS
         </h1>
         <p>
           Riana Yacht provides a unique floating venue that will comfortably
@@ -20,7 +20,7 @@ const Events = () => (
           the occasion.
           <br /> <br />
           <span id={styles.mobile}>
-            Riana yacht will bring any event to life and make those celebrations
+            Riana Yacht will bring any event to life and make those celebrations
             even more memorable.
           </span>
         </p>

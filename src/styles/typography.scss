@@ -47,3 +47,46 @@ $fs-paragraph: 1rem; // 16px
   font-family: 'FontsFree-4';
   src: url('../fonts/FontsFree-4.ttf');
 }
+
+
+@mixin bodyTextStyling {
+  font: normal normal normal 16px 'Alright-Sans' !important;
+  letter-spacing: 0.5px !important;
+  line-height: 32px !important;
+  color: #1a1a1a !important;
+  @media only screen and (max-width: 500px) {
+    font-size: 13pt !important;
+    letter-spacing: 0.13pt !important;
+    line-height: 20pt !important;
+  }
+}
+@mixin subheadingStyling {
+  font: normal normal normal 25px 'Baskerville' !important;
+  letter-spacing: 2px !important;
+  line-height: 40px !important;
+  color: #1a1a1a !important;
+  text-transform: uppercase;
+  @media only screen and (max-width: 500px) {
+    font-size: 18pt !important;
+    letter-spacing: 1.8pt !important;
+    line-height: 20pt !important;
+  }
+}
+@mixin mainHeadingStyling {
+  font: normal normal normal 35px 'Baskerville' !important;
+  letter-spacing: 5px !important;
+  line-height: 40px !important;
+  color: #1a1a1a !important;
+  text-transform: uppercase;
+  @media only screen and (max-width: 500px) {
+    font-size: 18pt !important;
+    letter-spacing: 1.8pt !important;
+    line-height: 20pt !important;
+  }
+}
+
+
+
+
+
+

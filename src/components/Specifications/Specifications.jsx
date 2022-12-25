@@ -60,7 +60,7 @@ const Specifications = () => (
           </div>
           <div className={styles.section__brochure__specifications__info__data}>
             <h2>designer</h2>
-            <p>roberto scal vini</p>
+            <p>roberto scalvini</p>
           </div>
           <div className={styles.section__brochure__specifications__info__data}>
             <h2>refit</h2>
@@ -72,7 +72,7 @@ const Specifications = () => (
           </div>
           <div className={styles.section__brochure__specifications__info__data}>
             <h2>location</h2>
-            <p>adricatic and mediterranean</p>
+            <p>adriatic and mediterranean</p>
           </div>
         </div>
         {/* equipment */}
@@ -96,7 +96,7 @@ const Specifications = () => (
           </div>
           <div className={styles.section__brochure__specifications__info__data}>
             <h2>water ski</h2>
-            <p>7 full sets and ba uer</p>
+            <p>7 full sets and bauer</p>
           </div>
           <div className={styles.section__brochure__specifications__info__data}>
             <h2>scuba diving</h2>
@@ -113,7 +113,7 @@ const Specifications = () => (
           <div className={styles.section__brochure__specifications__info__data}>
             <h2>safety</h2>
             <p>
-              life raft x 4, epirb, fire ext adv, medical kit, 24 lifej ackets,
+              life raft x 4, epirb, fire ext adv, medical kit, 24 life jackets,
               flares
             </p>
           </div>
@@ -154,12 +154,12 @@ const Specifications = () => (
             <p>2 double/2 twin, 1 extra double (behind the wheelhouse)</p>
           </div>
           <div className={styles.section__brochure__specifications__info__data}>
-            <h2>in-room ameneties</h2>
-            <p>safe, fridge, flat screen tv and entertainments system ensuit</p>
+            <h2>in-room amenities</h2>
+            <p>safe, fridge, flat screen tv and entertainment system ensuite</p>
           </div>
           <div className={styles.section__brochure__specifications__info__data}>
             <h2>bathrooms</h2>
-            <p>ensuit</p>
+            <p>ensuite</p>
           </div>
           <div className={styles.section__brochure__specifications__info__data}>
             <h2>crew cabins</h2>
@@ -175,15 +175,17 @@ const Specifications = () => (
           </div>
           <div className={styles.section__brochure__specifications__info__data}>
             <h2>sun covers</h2>
-            <p>bimini protected sunareas at flybridge, aft deck and bow deck</p>
+            <p>
+              bimini protected sun areas at flybridge, aft deck and bow deck
+            </p>
           </div>
           <div className={styles.section__brochure__specifications__info__data}>
-            <h2>coctail area</h2>
-            <p>large coctail area with seating at bow</p>
+            <h2>cocktail area</h2>
+            <p>large cocktail area with seating at bow</p>
           </div>
           <div className={styles.section__brochure__specifications__info__data}>
             <h2>saloon equipment</h2>
-            <p>flatscreen tv with surrpund sound and entertainment system</p>
+            <p>flatscreen tv with surround sound and entertainment system</p>
           </div>
           <div className={styles.section__brochure__specifications__info__data}>
             <h2>crew cabins</h2>

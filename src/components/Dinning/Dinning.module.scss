@@ -22,135 +22,112 @@
     width: 100%;
     padding: 1rem 0.5rem;
   }
-}
-
-.section__content {
-  width: 40%;
-  height: fit-content;
-  padding: 6rem 0;
-  padding-bottom: 2rem;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-right: 5%;
-
-  @media only screen and (max-width: 1100px) {
-    width: 50%;
-  }
-  @media only screen and (max-width: 880px) {
-    border-bottom: 0;
-    padding-top:2rem;
-  }
-  @media only screen and (max-width: 890px) {
-    width: 100%;
-    margin-right: 0;
-  }
-  @media only screen and (max-width: 500px) {
-    padding-left:  0.1rem;
-    padding-right: 0.1rem;
-  }
-  button {
-    background: #1a1a1a00 0% 0% no-repeat padding-box;
-    border: 1px solid #000000;
-    color: #1a1a1a;
-    width: 240px;
-    height: 61px;
-    font: normal normal bold 15px 'Arial';
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-    @media only screen and (max-width: 400px) {
-      width: 162pt;
-      height: 41pt;
-      font-size: 10pt;
-      letter-spacing: 2pt;
+  &__content {
+    width: 40%;
+    height: fit-content;
+    padding: 6rem 0;
+    padding-bottom: 2rem;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 5%;
+    @media only screen and (max-width: 1100px) {
+      width: 50%;
+    }
+    @media only screen and (max-width: 880px) {
+      border-bottom: 0;
+      padding-top:2rem;
+    }
+    @media only screen and (max-width: 890px) {
+      width: 100%;
+      margin-right: 0;
+    }
+    @media only screen and (max-width: 500px) {
+      padding-left:  0.3rem;
+      padding-right: 0.3rem;
+    }
+    &__heading {
+      h3 {
+        @include mainHeadingStyling;
+      }
+      h4 {
+        @include subheadingStyling;
+        margin-bottom: 2rem;
+      }
+    }
+    &__text {
+      @include bodyTextStyling; 
+      width: 35ch;
+      text-align: center;
+      @media only screen and (max-width: 890px) {
+        width: 100% !important;
+      }
+      @media only screen and (max-width: 400px) {
+        padding: 0 0.5rem;
+      }
+    }
+    button {
+      background: #1a1a1a00 0% 0% no-repeat padding-box;
+      border: 1px solid #000000;
+      color: #1a1a1a;
+      width: 240px;
+      height: 61px;
+      font: normal normal bold 15px 'Arial';
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      @media only screen and (max-width: 400px) {
+        width: 162pt;
+        height: 41pt;
+        font-size: 10pt;
+        letter-spacing: 2pt;
+      }
+    }
+    button:hover{
+      background-color: #1a1a1a;
+      color: white;
     }
   }
-  button:hover{
-    background-color: #1a1a1a;
-    color: white;
+  &__image {
+    overflow: hidden;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    background-image: url('../../images/Dinning.jpg');
+    width: 60%;
+    @media only screen and (max-width: 1100px) {
+      width: 50%;
+    }
+    @media only screen and (max-width: 890px) {
+      display: none;
+    }
   }
-}
-
-.section__content__heading h3 {
-  font: normal normal normal 35px "Times New Roman";
-  text-transform: uppercase;
-  color: #1a1a1a;
-  letter-spacing: 3px;
-  @media only screen and (max-width: 500px) {
-    font-size: 22pt;
-    letter-spacing: 2.2pt;
-  }
-}
-
-.section__content__heading h4 {
-  font: normal normal normal 25px "Times New Roman";
-  text-transform: uppercase;
-  color: #1a1a1a;
-  letter-spacing: 2.5px;
-  margin-bottom: 2rem;
-  
-  @media only screen and (max-width: 500px) {
-    font-size: 15pt;
-    letter-spacing: 1.5pt;
-  }
-}
-
-.section__content__text {
-  font: normal normal normal 20px "Arial"; 
-  letter-spacing: 0.2px; 
-  line-height: 32px !important;
-  color: #1a1a1a;  
-  width: 35ch;
-  font-size: 18px;
-  text-align: center;
-  @media only screen and (max-width: 890px) {
-    width: 100% !important;
-  }
-  @media only screen and (max-width: 500px) {
-    font-size: 13pt;
-    letter-spacing: 0.13pt;
-  }
-  @media only screen and (max-width: 400px) {
-    padding: 0 0.5rem;
-  }
-}
-
-.section__image {
-  overflow: hidden;
-  background-position: center;
-  background-repeat: repeat;
-  background-size: cover;
-  background-image: url('../../images/Dinning.jpg');
-  width: 60%;
-  @media only screen and (max-width: 1100px) {
-    width: 50%;
-  }
-  @media only screen and (max-width: 890px) {
+  .image {
     display: none;
+    @media only screen and (max-width: 890px) {
+      display: block;
+      margin-top: 1rem;
+    }
+    @media only screen and (max-width: 400px) {
+      height: 210pt;
+    }
+  }
+  .buttonWrapper {
+    margin-top: 3rem;
+    @media only screen and (max-width: 1120px) {
+      padding-top: 1rem;
+    }
   }
 }
 
-.image {
-  display: none;
-  @media only screen and (max-width: 890px) {
-    display: block;
-    margin-top: 1rem;
-  }
-  @media only screen and (max-width: 400px) {
-    // padding: 0 .5rem;
-    height: 210pt;
-  }
-}
 
-.buttonWrapper {
-  margin-top: 3rem;
-  @media only screen and (max-width: 1120px) {
-    padding-top: 1rem;
-  }
-}
+
+
+
+
+
 

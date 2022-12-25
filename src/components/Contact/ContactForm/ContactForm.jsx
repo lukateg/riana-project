@@ -9,10 +9,6 @@ const ContactUs = ({ sendEmail, formRefference }) => (
     <div className={styles.section__contactInfo}>
       <h2 className={styles.section__heading}>CONTACT US</h2>
       <div>
-        <h3>Tel:</h3>
-        <h5 id={styles.number}>+382 32 678 890</h5>
-      </div>
-      <div>
         <h3>Email:</h3>
         <h5>info@rianayacht.com </h5>
       </div>

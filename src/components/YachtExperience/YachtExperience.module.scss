@@ -2,42 +2,33 @@
 
 .section {
   @include wrapper;
-
+  @media only screen and (max-width: 1660px) {
+    width: 90%;
+  }
+  @media only screen and (max-width: 1250px) {
+    width: 98% !important;
+  }
   @media only screen and (max-width: 500px) {
     width: 90%;
     margin-bottom: 0px;
   }
-
   &__heading {
-    margin: 3rem auto 0 auto;
+    @include mainHeadingStyling;
+    margin: 5rem auto 0 auto;
     text-align: center;
-
-    // font: normal normal normal 50px Baskerville;
-    font: normal normal normal 50px 'Times New Roman', Times, serif;
     max-width: 50ch;
-    letter-spacing: 5px;
-    color: #1a1a1a;
-    text-transform: uppercase;
+
     @media only screen and (max-width: 1000px) {
-      font-size: 38px;
-    }
-    @media only screen and (max-width: 800px) {
-      font-size: 28px;
-      margin-bottom: 2rem;
+      margin-bottom: 5rem;
     }
     @media only screen and (max-width: 600px) {
       margin: 1rem 0;
-      font-size: 22px;
-      letter-spacing: 3px;
     }
     @media only screen and (max-width: 500px) {
       margin-bottom: 1rem;
       margin-top: 2rem;
-      font-size: 18pt;
-      letter-spacing: 1.8pt;
     }
   }
-
   &__wrapper {
     height: 55rem;
     height: 70rem;
@@ -49,38 +40,29 @@
     @media only screen and (max-width: 800px) {
       height: 40rem;
     }
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 1000px) {
       height: fit-content;
       margin: 0;
       padding: 0;
     }
   }
-
   &__container {
     flex: 1;
     padding: 3rem;
-    // height: 70rem;
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 1000px) {
       padding: 1rem;
     }
     &--first {
-      @media only screen and (max-width: 900px) {
+      @media only screen and (max-width: 1000px) {
         display: none;
       }
     }
     &--second {
-      @media only screen and (max-width: 900px) {
+      @media only screen and (max-width: 1000px) {
         height: fit-content;
       }
     }
-    // &--first {
-    //   @media only screen and (max-width: 900px) {
-    //     margin: 0;
-    //     padding: 0;
-    //   }
-    // }
   }
-
   &__content {
     opacity: 1;
     display: flex;
@@ -90,15 +72,13 @@
     @media only screen and (max-width: 1000px) {
       justify-content: center;
     }
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 1000px) {
       height: fit-content;
     }
   }
   &__image {
     opacity: 1;
-    // object-fit: contain;
-    object-fit: cover;
-
+    object-fit: fill;
     &--second {
       width: 85%;
       height: 30% !important;
@@ -120,8 +100,7 @@
     background-color: #eeefef;
     width: 133%;
     max-width: 1020px;
-
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 1000px) {
       width: fit-content;
       margin: 0;
       padding: 2rem 3rem;
@@ -136,38 +115,21 @@
       padding: 0;
       background-color: transparent;
     }
-
     h3 {
+      @include subheadingStyling;
       text-align: left;
-      font: normal normal normal 35px 'Times New Roman', Times, serif;
-      letter-spacing: 2px;
-      color: #1a1a1a;
       margin-bottom: 3rem;
-      text-transform: uppercase;
-      font-weight: 500;
       @media only screen and (max-width: 1200px) {
-        font-size: 22px;
         margin-bottom: 1rem;
       }
       @media only screen and (max-width: 1000px) {
-        font-size: 18pt;
-        letter-spacing: 1.8pt;
         margin-bottom: 0;
       }
-      @media only screen and (max-width: 500px) {
-        font-size: 18pt;
-        letter-spacing: 1.8pt;
-      }
     }
-
     p {
+      @include bodyTextStyling;
       margin: 3.5rem 0;
-      line-height: 32px !important;
       text-align: left;
-      font: normal normal normal 20px Arial, Helvetica, sans-serif;
-      font-family: $ff-1;
-      letter-spacing: 0.2px;
-      color: #1a1a1a;
       opacity: 1;
       @media only screen and (max-width: 1700px) {
         line-height: 29px;
@@ -175,19 +137,7 @@
         margin: 2.85rem 0;
       }
       @media only screen and (max-width: 1500px) {
-        line-height: 25px;
-        font-size: 16px;
         margin: 2.5rem 0;
-      }
-      @media only screen and (max-width: 1200px) {
-        font-size: 14px;
-      }
-      @media only screen and (max-width: 1000px) {
-        font-size: 13px;
-      }
-      @media only screen and (max-width: 900px) {
-        font-size: 13pt;
-        letter-spacing: 0.13pt;
       }
       @media only screen and (max-width: 400px) {
         margin: 2rem 0;
@@ -202,4 +152,7 @@
       opacity: 1;
     }
   }
+}
+#about {
+  margin-top: 2rem;
 }

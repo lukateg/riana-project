@@ -25,10 +25,10 @@ const Activities = () => (
         fun experience.
       </p>
       <p>
-        *Diving experiences and a certified dive master is available upon
-        request and with advance notice.
+        Diving experiences and a certified dive master is available upon request
+        and with advance notice.
       </p>
-      <h3>AMMENITIES</h3>
+      <h3>AMENITIES</h3>
       <div className={styles.section__images}>
         {images.map((image) => (
           <img
