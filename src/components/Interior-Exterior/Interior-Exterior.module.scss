@@ -5,45 +5,42 @@
     width: 95%;
     display: flex;
     flex-direction: column;
-}
-
-.section__elements {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    @media only screen and (max-width: 700px) {
-        flex-direction: column;
-        padding: 0 1.5rem;
-     }
-}
-
-
-
-.section__discoverMore {
-    display: flex;
-    justify-content: space-between;
-}
-
-.section__discoverMore__item {
-    width: 50%;
-    padding-top: 1rem;
-    font-family: $ff-1;
-    font-size: 15px;
-    &__right {
-        width: 47%;
-        align-self: flex-start;
-        padding-top: 1rem;
-        font-family: $ff-1;
-        @media only screen and (max-width: 700px) {
-            display: none;
-        }
+    &__elements {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      @media only screen and (max-width: 700px) {
+          flex-direction: column;
+          padding: 0 1.5rem;
+       }
     }
-    @media only screen and (max-width: 700px) {
-       display: none;
-     }
+    &__element {
+      &__heading {
+        @include subheadingStyling;
+        margin-bottom: 1.6rem;
+        margin-top: 2rem;
+        padding-left: 20px;
+        @media only screen and (max-width: 700px) {
+            padding-left: 0;
+        }
+      }
+      &__paragraph {
+        @include bodyTextStyling;
+        padding-left: 20px;
+        width: 45vw;
+        height: 190px;
+        max-width: 700px;
+        max-height: 400px;
+        @media only screen and (max-width: 700px) {
+         width: 100%;
+         padding-left: 0;
+        }
+        @media only screen and (max-width: 500px) {
+          height: 100px;
+        }
+      }
+    }
 }
-
-
 .image {
     width: 45vw;
     height: 25vw;
@@ -60,51 +57,6 @@
       height: 220pt;
    }
 }
-
-.section__element__heading {
-    font: normal normal normal 25px "Times New Roman";
-    letter-spacing: 2px;
-    color: #1a1a1a;
-    margin-bottom: 1.6rem;
-    margin-top: 2rem;
-    padding-left: 20px;
-    color: #1a1a1a;
-    @media only screen and (max-width: 700px) {
-        padding-left: 0;
-     }
-    @media only screen and (max-width: 500px) {
-        font-size: 15pt;
-        letter-spacing: 1.5pt;
-     }
-}
-
-
-.section__element__paragraph {
-    font: normal normal normal 20px "Arial" !important;
-    color: #1a1a1a;
-    letter-spacing: 0.5px;
-    line-height: 32px !important;
-    color: #1a1a1a;
-    padding-left: 20px;
-    width: 45vw;
-    height: 190px;
-    max-width: 700px;
-    max-height: 400px;
-    @media only screen and (max-width: 700px) {
-     width: 100%;
-     padding-left: 0;
-    }
-     @media only screen and (max-width: 500px) {
-       font-size: 13pt !important;
-       letter-spacing: 0.13pt;
-       height: 100px;
-       line-height: 20pt !important;
-
-     }
-}
-
-
-
 .discoverMore {  
    color: #1a1a1a;
     display: block;
@@ -114,8 +66,7 @@
     letter-spacing: 3px;
     width: fit-content;
     padding-left: 20px;
-    padding-top: 0.2rem;
-
+    padding-top: 2rem;
     @media only screen and (max-width: 1530px) {
       padding-top: 0.8rem;
     }
@@ -128,86 +79,68 @@
     @media only screen and (max-width: 1278px) {
       padding-top: 4rem;
     }
-
     @media only screen and (max-width: 1200px) {
       padding-top: 3rem;
     }
     @media only screen and (max-width: 1125px) {
       padding-top: 4rem;
     }
-
     @media only screen and (max-width: 1119px) {
       padding-top: 5rem;
     }
-
-
-    @media only screen and (max-width: 1005px) {
-      padding-top: 5rem;
-    }
-
-    @media only screen and (max-width: 1003px) {
-      padding-top: 7rem;
-    }
-  
-    @media only screen and (max-width: 960px) {
-      padding-top: 9rem;
-    }
-    @media only screen and (max-width: 870px) {
-      padding-top: 10rem;
+    @media only screen and (max-width: 940px) {
+      padding-top: 7.5rem;
     }
     @media only screen and (max-width: 857px) {
+      padding-top: 9.5rem;
+    }
+    @media only screen and (max-width: 810px) {
+      padding-top: 10rem;
+    }
+    @media only screen and (max-width: 809px) {
       padding-top: 11.5rem;
     }
-    @media only screen and (max-width: 805px) {
-      padding-top: 12rem;
-    }
-    @media only screen and (max-width: 792px) {
-      padding-top: 14rem;
-
+    @media only screen and (max-width: 740px) {
+      padding-top: 13rem;
     }
     @media only screen and (max-width: 700px) {
-        padding-left: 0;
-        padding-top: 1.7rem;
-        margin-bottom: 1rem;
-   }
-   @media only screen and (max-width: 635px) {
+      padding-left: 0;
+      padding-top: 1.7rem;
+      margin-bottom: 1rem;
+    }
+    @media only screen and (max-width: 635px) {
       padding-top: 2.7rem;
-   }
+    }
+   @media only screen and (max-width: 624px) {
+      padding-top: 3.5rem;
+    }
    @media only screen and (max-width: 560px) {
-    padding-top: 5rem;
-  } 
-  @media only screen and (max-width: 505px) {
-    
-    padding-top: 6rem;
-   }
-
-   @media only screen and (max-width: 500px) {
+      padding-top: 5rem;
+    } 
+    @media only screen and (max-width: 505px) {
+      padding-top: 6rem;
+    }
+    @media only screen and (max-width: 500px) {
       font-size: 10pt;
       letter-spacing: 1.6pt;
-      padding-top: 6rem;
-     }
-     @media only screen and (max-width: 476px) {
       padding-top: 8rem;
-     }
-      @media only screen and (max-width: 431px) {
-      padding-top: 9.5rem;
-     }
-     @media only screen and (max-width: 416px) {
-      padding-top: 11rem;
-     }
-     @media only screen and (max-width: 374px) {
+    }
+    @media only screen and (max-width: 489px) {
+      padding-top: 10rem;
+    }
+    @media only screen and (max-width: 448px) {
       padding-top: 12rem;
-     }
-     @media only screen and (max-width: 347px) {
-      padding-top: 14rem;
-     }
-
-
-
-    
-    
+    }
+    @media only screen and (max-width: 427px) {
+      padding-top: 13.5rem;
+    } 
+    @media only screen and (max-width: 355px) {
+      padding-top: 16.5rem;
+    } 
+    @media only screen and (max-width: 321px) {
+      padding-top: 17.5rem;
+    } 
 }
-
 .discoverMore::after {
     display:block;
     content: '';
@@ -216,36 +149,33 @@
     transition: transform 250ms ease-in-out;
     transform-origin:  0% 50%;
 }
-
 .discoverMore:hover:after { 
     transform: scaleX(1);
 }
-
 #two {
   @media only screen and (max-width: 700px) {
-    padding-top: 0rem !important;
+    padding-top: 0.5rem;
+    margin-top: 0;
+  }
+   @media only screen and (max-width: 631px) {
+    padding-top: 3rem !important;
    }
-   @media only screen and (max-width: 700px) {
-    padding-top: 2.5rem;
+   @media only screen and (max-width: 541px) {
+    padding-top: 4rem !important;
    }
-   @media only screen and (max-width: 632px) {
-    padding-top: 1.5rem !important;
-   }
-   @media only screen and (max-width: 511px) {
-    padding-top: 3.5rem  !important;
-   } 
    @media only screen and (max-width: 500px) {
-    padding-top: 5rem;
-   } 
-   @media only screen and (max-width: 437px) {
-    padding-top: 6rem !important;
+    padding-top: 7.5rem !important;
    }
-
-   @media only screen and (max-width: 395px) {
-    padding-top: 8rem !important;
+   @media only screen and (max-width: 452px) {
+    padding-top: 9.5rem !important;
    }
-   @media only screen and (max-width: 346px) {
-    padding-top: 9rem !important;
+   @media only screen and (max-width: 409px) {
+    padding-top: 11rem !important;
    }
-
+   @media only screen and (max-width: 356px) {
+    padding-top: 13rem !important;
+   }
+   @media only screen and (max-width: 314px) {
+    padding-top: 14rem !important;
+   }
 }

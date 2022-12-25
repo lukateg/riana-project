@@ -190,7 +190,7 @@ const Navbar = () => {
         }
       >
         <div className={styles.nav__mobile__row__contact}>
-          <a href="tel:+382 32 678 890">
+          <a href="tel:+971 50 478 4660">
             <i className="fa-solid fa-phone fa-lg">{/* phone */}</i>
           </a>
           <Link to="/contact">

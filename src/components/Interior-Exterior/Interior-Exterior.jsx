@@ -16,10 +16,12 @@ const InteriorExterior = () => (
             area for up to 10 people. Sleeping accommodation comprises 2 x Queen
             and 2 x Twin cabins (with an extra sleep sofa in each twin cabin).
           </p>
+          <br />
+
           <p>
             There is a further double cabin adjacent to the wheel house which is
-            ideal accommodation for nannies, security, staff or extra guests.All
-            cabins are fitted with ensuite bathrooms.
+            ideal accommodation for nannies, security, staff or extra guests.
+            All cabins are fitted with ensuite bathrooms.
           </p>
         </div>
 
@@ -46,12 +48,6 @@ const InteriorExterior = () => (
         </Link>
       </div>
     </div>
-    {/* <div className={styles.section__discoverMore}>
-      <h1 className={styles.section__discoverMore__item}>DISCOVER MORE</h1>
-      <h1 className={styles.section__discoverMore__item__right}>
-        DISCOVER MORE
-      </h1>
-    </div> */}
   </section>
 );
 

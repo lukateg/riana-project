@@ -2,7 +2,6 @@
 
 .section {
   @include wrapper;
-  // margin: 7rem auto 3rem;
   height: 55rem;
   display: flex;
   flex-direction: row;
@@ -21,7 +20,6 @@
   &__container {
     flex: 1;
     padding: 3rem;
-    // height: 70rem;
     @media only screen and (max-width: 900px) {
       padding: 1rem;
     }
@@ -39,7 +37,6 @@
   &__image {
     opacity: 1;
     object-fit: cover;
-
     &--second {
       width: 85%;
       height: 85%;
@@ -56,35 +53,15 @@
   }
   &__text {
     padding: 3rem 0;
-
     h4 {
+      @include subheadingStyling;
       text-align: left;
-      font: normal normal normal 25px "Times New Roman";
-      letter-spacing: 2px;
-      color: #1a1a1a;
-      text-transform: uppercase;
-      @media only screen and (max-width: 1000px) {
-        font-size: 22px;
-      }
-      @media only screen and (max-width: 900px) {
-        font-size: 19px;
-      }
     }
-
     p {
+      @include bodyTextStyling;
       margin: 1.5rem 0;
       text-align: left;
-      font: normal normal normal 20px "Arial";
-      letter-spacing: 0.5px;
-      line-height: 32px !important;
-      color: #1a1a1a;
       opacity: 1;
-      @media only screen and (max-width: 1000px) {
-        font-size: 18px;
-      }
-      @media only screen and (max-width: 900px) {
-        font-size: 14px;
-      }
     }
     button {
       background: #1a1a1a00 0% 0% no-repeat padding-box;

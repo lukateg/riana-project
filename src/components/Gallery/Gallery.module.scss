@@ -48,17 +48,14 @@
 }
 
 .gallery h4 {
-  font: normal normal normal 50px "Times New Roman";
+  font: normal normal normal 35px "Times New Roman";
 }
 
 .mainHeading {
-  font: normal normal normal 50px 'Times New Roman';
-  letter-spacing: 5px;
+  @include mainHeadingStyling;
   text-align: center;
-  color: #1a1a1a;
   margin-bottom: 3rem;
   margin-top: 6rem;
-  text-transform: uppercase;
   @media only screen and (max-width: 500px) {
     display: none;
   }
@@ -89,8 +86,6 @@
 }
 
 .text p {
-  font: normal normal normal 20px 'Arial';
-  font-size: 13pt;
-  letter-spacing: 0.13pt;
+  @include bodyTextStyling;
   line-height: 20pt !important;
 }

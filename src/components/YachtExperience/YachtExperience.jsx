@@ -28,7 +28,7 @@ const YachtStories = () => (
         <div className={styles.section__content}>
           <div className={styles.section__text}>
             <span>
-              <h3>ABOUT</h3>
+              <h3 id={styles.about}>ABOUT</h3>
               <p>
                 Launched in 2009 and fully refitted in 2022, Riana is a custom
                 built 42 meter, 220 ton, luxury sailing yacht with the elegance

@@ -16,18 +16,13 @@
         width: 100% !important;
      }
 }
-
 .section__heading {
-    color: white;
+    @include subheadingStyling;
+    letter-spacing: 5px !important;
+    color: white !important;
     max-width: 600px;
     text-align: center;
-    font: normal normal normal 2.188rem "Times New Roman";
-    letter-spacing: 5px;
-    line-height: 57px !important;
     @media only screen and (max-width: 500px) {
-        font-size: 18pt;
-        letter-spacing: 1.8pt;
-        line-height: 20pt !important;
         width: 100%;
      }
 }
@@ -43,7 +38,7 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    margin-top: 4rem;
+    margin-top: 2rem;
     @media only screen and (max-width: 500px) {
        width: 181pt;
        height: 40pt;

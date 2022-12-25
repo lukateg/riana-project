@@ -6,7 +6,7 @@ import styles from './ContactPage.module.scss';
 
 import ContactForm from './ContactForm/ContactForm';
 import HeroImage from '../HeroImage/HeroImage';
-import image from '../../images/heroContact3.jpg';
+import image from '../../images/PNRiana-0799 2.jpeg';
 import Brochure from './Brochure/Brochure';
 
 const ContactPage = () => {
