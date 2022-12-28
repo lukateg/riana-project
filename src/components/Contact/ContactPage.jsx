@@ -27,10 +27,10 @@ const ContactPage = () => {
     setAlert(true);
     emailjs
       .sendForm(
-        'service_pftux5l',
-        'template_pb2yq4r',
+        'service_5pxnp3l',
+        'template_wla08ps',
         form.current,
-        'LrnBWidm970xOvZ8g'
+        'NP46B3XMIJvwxHdh8'
       )
       .then(
         (success) => {

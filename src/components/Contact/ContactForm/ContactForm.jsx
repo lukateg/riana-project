@@ -40,7 +40,7 @@ const ContactUs = ({ sendEmail, formRefference }) => (
       <div className={styles.section__inputs}>
         <div className={styles.section__inputContainer}>
           <label>enquiry type</label>
-          <input type="text" name="nquiry" />
+          <input type="text" name="inquiry" />
         </div>
         <div className={styles.section__inputContainer}>
           <label>Email *</label>
