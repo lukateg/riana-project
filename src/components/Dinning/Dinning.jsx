@@ -1,5 +1,6 @@
 import styles from './Dinning.module.scss';
 import image from '../../images/Dinning.jpg';
+import brochure from '../../images/brochureRiana.pdf';
 
 const Dinning = () => (
   <div className={styles.section}>
@@ -26,9 +27,11 @@ const Dinning = () => (
       {/* <p className={styles.section__content__text}></p>
       <p className={styles.section__content__text}></p> */}
       <div className={styles.buttonWrapper}>
-        <button type="button" className={styles.niki}>
-          EXPLORE
-        </button>
+        <a href={brochure} download="Riana Brochure">
+          <button type="button" className={styles.niki}>
+            EXPLORE
+          </button>
+        </a>
       </div>
     </div>
     <div className={styles.section__image}>
