@@ -34,14 +34,13 @@ const ContactUs = ({ sendEmail, formRefference }) => (
         </div>
         <div className={styles.section__inputContainer}>
           <label>company name</label>
-          <input type="text" name="phone" />
+          <input type="text" name="companyName" />
         </div>
       </div>
       <div className={styles.section__inputs}>
         <div className={styles.section__inputContainer}>
           <label>phone</label>
-          <input type="text" name="nquiry" />
-
+          <input type="text" name="phone" />
         </div>
         <div className={styles.section__inputContainer}>
           <label>Email *</label>
