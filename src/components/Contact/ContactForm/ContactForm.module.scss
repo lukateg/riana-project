@@ -48,8 +48,6 @@
       }
     }
 
-   
-
     p {
       margin: 4rem auto;
       margin-bottom: 7rem;
@@ -79,10 +77,10 @@
   }
 
   &__heading {
-   margin-top: 9rem;
-   margin-bottom: 4rem;
+    margin-top: 9rem;
+    margin-bottom: 4rem;
     text-align: center;
-    font: normal normal normal 35px "Times New Roman";
+    font: normal normal normal 35px 'Times New Roman';
     letter-spacing: 3.5px;
     color: #1a1a1a;
     text-transform: uppercase;
@@ -91,7 +89,6 @@
       letter-spacing: 1.8pt;
       margin-top: 5rem;
       margin-bottom: 3rem;
-
     }
   }
 
@@ -113,9 +110,6 @@
     align-items: center;
     font: normal normal bold 15px 'Arial';
     letter-spacing: 0.15px;
-   
-
-
 
     input {
       width: 100%;
@@ -147,7 +141,6 @@
         font-size: 10pt;
         letter-spacing: 0.1pt;
       }
-  
     }
   }
 
@@ -163,6 +156,7 @@
     height: 50px;
     text-transform: uppercase;
     color: #fff;
+    cursor: pointer;
 
     @media only screen and (max-width: 500px) {
       width: 250px;
@@ -175,13 +169,12 @@
   }
 }
 
-
 #number {
   font: normal normal normal 20px Arial;
   letter-spacing: 0.2px;
 
   @media only screen and (max-width: 500px) {
-      font-size: 13pt;
-      letter-spacing: 0.13pt;
-    }
+    font-size: 13pt;
+    letter-spacing: 0.13pt;
+  }
 }
