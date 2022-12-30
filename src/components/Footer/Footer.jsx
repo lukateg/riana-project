@@ -114,21 +114,31 @@ const Footer = () => {
         </div>
         <div className={styles.section__links}>
           <div className={styles.section__links__icons}>
-            <div className={styles.section__links__icons__wrapper}>
-              <i className="fa-brands fa-youtube">{/* youtube */}</i>
-            </div>
-            <div className={styles.section__links__icons__wrapper}>
-              <i className="fa-brands fa-instagram">{/* instagram */}</i>
-            </div>
+            <a
+              href="https://www.youtube.com/watch?v=Z5uyENAWEAA"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <div className={styles.section__links__icons__wrapper}>
+                <i className="fa-brands fa-youtube">{/* youtube */}</i>
+              </div>
+            </a>
+
+            <a
+              href="https://instagram.com/rianayacht?igshid=MWI4MTIyMDE="
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <div className={styles.section__links__icons__wrapper}>
+                <i className="fa-brands fa-instagram">{/* instagram */}</i>
+              </div>
+            </a>
             <div className={styles.section__links__icons__wrapper}>
               <i className="fa-brands fa-facebook">{/* facebook */}</i>
             </div>
           </div>
           <div className={styles.section__links__rights}>
-            <p>
-              2022 © N&N Design. <br className={styles.br} /> ALL RIGHTS
-              RESERVED.
-            </p>
+            <p>ALL RIGHTS RESERVED.</p>
           </div>
         </div>
       </div>

@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import styles from './Design.module.scss';
 
 const Design = () => (
@@ -13,7 +15,9 @@ const Design = () => (
         areas for an optimum experience of the nature and oceanic surroundings
         that abound en-route, at anchor or at port.
       </p>
-      <button type="button">EXPLORE</button>
+      <Link to="/gallery">
+        <button type="button">EXPLORE</button>
+      </Link>
     </div>
   </div>
 );

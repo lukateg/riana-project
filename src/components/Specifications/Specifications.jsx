@@ -123,7 +123,7 @@ const Specifications = () => (
           </div>
           <div className={styles.section__brochure__specifications__info__data}>
             <h2>safety monit origin</h2>
-            <p>ship location 24/7 monit origin b y satellite ashore</p>
+            <p>ship location 24/7 monit origin by satellite ashore</p>
           </div>
           <div className={styles.section__brochure__specifications__info__data}>
             <h2>internet</h2>

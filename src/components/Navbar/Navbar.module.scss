@@ -40,8 +40,10 @@
 
 
 .nav__headline {
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    width: 100%;
     text-transform: uppercase;
     color: white;
     padding: 0.94rem 0;
@@ -53,6 +55,12 @@
         margin-bottom: 13px;
     }
 }
+
+.nav__headline img {
+    margin: 0 auto;
+}
+
+
 
 .nav__headline i {
     display: none;

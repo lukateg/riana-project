@@ -1,5 +1,9 @@
 @use '../../styles/base.scss' as *;
 
+a {
+  text-decoration: none;
+}
+
 .sectionWrapper {
   background-color: #1a1a1a;
   width: 100vw;

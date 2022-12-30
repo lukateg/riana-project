@@ -7,9 +7,7 @@
   @media only screen and (max-width: 1400px) {
     width: 93%;
   }
-  @media only screen and (max-width: 1300px) {
-    width: 97%;
-  }
+
   @media only screen and (max-width: 1085px) {
     @include wrapper;
     height: fit-content;
@@ -107,6 +105,7 @@
     top: 80px;
     left: 570px;
     margin-right: 2rem;
+    object-fit: cover;
     @media only screen and (max-width: 1400px) {
       top: 80px;
       left: 550px;
