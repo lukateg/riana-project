@@ -26,7 +26,7 @@ const InteriorExterior = () => (
         </div>
 
         <div className={styles.discoverWrapper}>
-          <Link to="/gallery">
+          <Link to="/gallery#interior">
             <p className={styles.discoverMore}>DISCOVER MORE</p>
           </Link>
         </div>
@@ -41,7 +41,7 @@ const InteriorExterior = () => (
           There are also two outdoor dining areas on the flybridge and aft decks
           which can be shaded during the day and open to the stars at night.
         </p>
-        <Link to="/gallery">
+        <Link to="/gallery#exterior">
           <p className={styles.discoverMore} id={styles.two}>
             DISCOVER MORE
           </p>
