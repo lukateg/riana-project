@@ -1,7 +1,7 @@
 import brochure from '../../images/brochureRiana.pdf';
 
 import styles from './Events.module.scss';
-import image from '../../images/8F9A1084.jpeg';
+import image from '../../images/8F9A1084-min.jpeg';
 
 const Events = () => (
   <div className={styles.section}>

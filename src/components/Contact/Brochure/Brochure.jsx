@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import styles from './Brochure.module.scss';
-import image from '../../../images/kontaktSlika.jpg';
+import image from '../../../images/kontaktSlika-min.jpg';
 import brochureRiana from '../../../images/brochureRiana.pdf';
 
 const Brochure = () => (

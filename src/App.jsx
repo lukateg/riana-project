@@ -7,10 +7,10 @@ import YachtExperience from './components/YachtExperience/YachtExperience';
 import HeroImage from './components/HeroImage/HeroImage';
 import ClassicMotorSailingYacht from './components/ClassicMotorSailingYacht/ClassicMotorSailingYacht';
 import Design from './components/Design/Design';
-import firstImage from './images/_D812016.jpg';
-import secondImage from './images/_D811904.jpg';
-import thirdImage from './images/_D812026.jpg';
-import fourthImage from './images/_D8E9211.jpg';
+import firstImage from './images/_D812016-min.jpg';
+import secondImage from './images/_D811904-min.jpg';
+import thirdImage from './images/_D812026-min.jpg';
+import fourthImage from './images/_D8E9211-min.jpg';
 import InteriorExterior from './components/Interior-Exterior/Interior-Exterior';
 import Specifications from './components/Specifications/Specifications';
 import Events from './components/Evenets/Events';
@@ -21,7 +21,7 @@ import Activities from './components/Activities/Activities';
 import YachtStories from './components/YachtStories/YachtStories';
 import ContactPage from './components/Contact/ContactPage';
 import Gallery from './components/Gallery/Gallery';
-import HeroImageForHome from './images/HeroImage.jpg';
+import HeroImageForHome from './images/HeroImage-min.jpg';
 
 const App = () => (
   <>

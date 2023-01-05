@@ -1,9 +1,9 @@
 /* eslint-disable import/no-unresolved */
 import { useState } from 'react';
 import styles from './Layout.module.scss';
-import lowerDeck from '../../images/lower-deck.png';
-import flybridgeDeck from '../../images/flybridge-deck.png';
-import mainDeck from '../../images/main-deck.png';
+import lowerDeck from '../../images/lower-deck-min.png';
+import flybridgeDeck from '../../images/flybridge-deck-min.png';
+import mainDeck from '../../images/main-deck-min.png';
 
 function Layout() {
   const [images, setImages] = useState({

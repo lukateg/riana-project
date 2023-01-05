@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 
 import styles from './Interior-Exterior.module.scss';
-import interiorImage from '../../images/interiorImage.jpg';
-import exteriorImage from '../../images/flydeck.jpg';
+import interiorImage from '../../images/interiorImage-min.jpg';
+import exteriorImage from '../../images/flydeck-min.jpg';
 
 const InteriorExterior = () => (
   <section className={styles.section}>

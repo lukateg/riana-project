@@ -1,5 +1,5 @@
 import styles from './Dinning.module.scss';
-import image from '../../images/Dinning.jpg';
+import image from '../../images/Dinning-min.jpg';
 import brochure from '../../images/brochureRiana.pdf';
 
 const Dinning = () => (

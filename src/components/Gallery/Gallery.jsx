@@ -4,19 +4,19 @@ import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 
 import TextGallery from './TextGallery/TextGallery';
 import Carousel from '../Carousel/Carousel';
-import firstImage from '../../images/_D811900.jpg';
-import secondImage from '../../images/_D8E9214.jpg';
-import thirdImage from '../../images/IMG_6812.JPG';
-import fourthImage from '../../images/_D811726.jpg';
+import firstImage from '../../images/_D811900-min.jpg';
+import secondImage from '../../images/_D8E9214-min.jpg';
+import thirdImage from '../../images/IMG_6812-min.JPG';
+import fourthImage from '../../images/_D811726-min.jpg';
 
 import HeroImage from '../HeroImage/HeroImage';
-import HeroImageForGaller from '../../images/GalleryHero.jpg';
+import HeroImageForGaller from '../../images/GalleryHero-min.jpg';
 import brochureRiana from '../../images/brochureRiana.pdf';
 import styles from './Gallery.module.scss';
 
-import firstImage2 from '../../images/_D812016.jpg';
-import secondImage2 from '../../images/_D812026.jpg';
-import thirdImage2 from '../../images/interiorImage.jpg';
+import firstImage2 from '../../images/_D812016-min.jpg';
+import secondImage2 from '../../images/_D812026-min.jpg';
+import thirdImage2 from '../../images/interiorImage-min.jpg';
 
 const Gallery = () => {
   useEffect(() => {

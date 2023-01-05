@@ -1,13 +1,13 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import styles from './Activities.module.scss';
-import image1 from '../../images/Artboard15.png';
-import image2 from '../../images/Artboard16.png';
-import image3 from '../../images/Artboard17.png';
-import image4 from '../../images/Artboard18.png';
-import image5 from '../../images/Artboard19.png';
-import image6 from '../../images/Artboard20.png';
-import image7 from '../../images/Artboard21.png';
+import image1 from '../../images/Artboard15-min.png';
+import image2 from '../../images/Artboard16-min.png';
+import image3 from '../../images/Artboard17-min.png';
+import image4 from '../../images/Artboard18-min.png';
+import image5 from '../../images/Artboard19-min.png';
+import image6 from '../../images/Artboard20-min.png';
+import image7 from '../../images/Artboard21-min.png';
 
 import brochure from '../../images/brochureRiana.pdf';
 import image8 from '../../images/toys-gallery.jpg';
