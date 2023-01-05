@@ -1,7 +1,7 @@
 import styles from './YachtStories.module.scss';
 import brochure from '../../images/brochureRiana.pdf';
-import firstImage from '../../images/IMG_9213.jpg';
-import secondImage from '../../images/Left-Top.jpg';
+import firstImage from '../../images/IMG_9213-min.jpg';
+import secondImage from '../../images/Left-Top-min.jpg';
 
 const YachtStories = () => (
   <div className={styles.section}>

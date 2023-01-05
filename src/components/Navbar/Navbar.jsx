@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 import styles from './Navbar.module.scss';
-import logoBlack from '../../images/logoBlack.png';
+import logoBlack from '../../images/logoBlack-min.png';
 import logoWhite from '../../images/beliLogo.svg';
 
 const Navbar = () => {
