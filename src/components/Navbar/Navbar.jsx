@@ -199,12 +199,16 @@ const Navbar = () => {
         </div>
         <div className={styles.nav__mobile__row}>
           <Link to="/gallery">gallery</Link>
-          <i className="fa-solid fa-chevron-right">{/* arrow */}</i>
+          <Link to="/gallery">
+            <i className="fa-solid fa-chevron-right">{/* arrow */}</i>
+          </Link>
         </div>
 
         <div className={styles.nav__mobile__row}>
           <Link to="/contact">contact</Link>
-          <i className="fa-solid fa-chevron-right">{/* arrow */}</i>
+          <Link to="/contact">
+            <i className="fa-solid fa-chevron-right">{/* arrow */}</i>
+          </Link>
         </div>
       </div>
     </nav>
