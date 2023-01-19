@@ -1,0 +1,42 @@
+@use '../../styles/base.scss' as *;
+
+.imageWrapper {
+    margin: 0 auto;
+    margin-top: 151px;
+    max-width: 1680px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include laptop {
+        max-width: 1210px;
+        margin-top: 97px;
+    }
+    @include tablet {
+        max-width: 730px;
+        margin-top: 50px;
+    }
+    @include mobile {
+        max-width: 90%;
+    }
+    img {
+        width: 1700px;
+        height: 1036px;
+        @include laptop {
+            width: 1192px;
+            height: 779px;
+        }
+        @include tablet {
+         width: 727px;
+         height: 475px;
+        }
+        @include mobile {
+            width: 90%;
+            height: auto;
+            @media only screen and (max-width: 500px){
+                width: 334px;
+                height: 218px;
+            }
+        }
+    }
+}

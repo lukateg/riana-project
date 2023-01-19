@@ -22,6 +22,7 @@ import YachtStories from './components/YachtStories/YachtStories';
 import ContactPage from './components/Contact/ContactPage';
 import Gallery from './components/Gallery/Gallery';
 import HeroImageForHome from './images/HeroImage-min.jpg';
+import DiningPage from './components/Dining-Page/DiningPage';
 
 const App = () => (
   <>
@@ -50,6 +51,7 @@ const App = () => (
       />
       <Route path="gallery" element={<Gallery />} />
       <Route path="contact" element={<ContactPage />} />
+      <Route path="dining" element={<DiningPage />} />
     </Routes>
     <Footer />
   </>

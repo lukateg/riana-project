@@ -1,0 +1,51 @@
+@use '../../styles/base.scss' as *;
+
+.section {
+    margin: 143px 0;
+    @include laptop {
+        margin-top: 74px;
+        margin-bottom: 83px;
+    }
+    @include tablet {
+        margin-top: 55px;
+        margin-bottom: 51px;
+    }
+    @include mobile {
+        margin: 55px 0;
+    }
+    &__button {
+    margin: 0 auto;
+    color: black;
+    display: block;
+    width: 210px;
+    height: 46px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    opacity: 1;
+    font: bold 9px 'Alright-Sans';
+    letter-spacing: 1.8px;
+    cursor: pointer;
+  }
+  &__button:hover {
+    background-color: #1a1a1a;
+    color: white;
+  }
+
+  &__arrowContainer {
+    position: relative;
+  }
+  &__arrow {
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border: none;
+    color: #ffffff;
+    position: absolute;
+    right: 0;
+    top: 13%;
+    padding-left: 8px;
+    
+  }
+
+}
+

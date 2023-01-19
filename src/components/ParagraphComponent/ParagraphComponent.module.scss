@@ -1,0 +1,57 @@
+@use '../../styles/base.scss' as *;
+
+.section {
+    margin: 0 auto;
+    margin-top: 132px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    @include laptop {
+      margin-top: 93px
+    }
+    @include tablet {
+      margin-top: 50px
+    }
+    @include mobile {
+      margin-top: 47px;
+    }
+    &__heading {
+        @include subheading;
+        letter-spacing: 3.15px !important;
+        margin-bottom: 20px;
+        text-align: center;
+        @include laptop {
+          margin-bottom: 18px;
+          letter-spacing: 1.8px !important;
+        }
+        @include tablet {
+          letter-spacing: 1.95px !important;
+        }
+        @include mobile {
+          letter-spacing: 1.57px !important;
+        }
+    }
+    &__text {
+        @include bodyText;
+        text-align: center;
+        width: 792px;
+        letter-spacing: 0.28px !important;
+        line-height: 16px !important;
+        @include laptop {
+          width: 700px;
+          text-align: justify;
+          line-height: 22px !important;
+          letter-spacing: 0.28px!important;
+        }
+        @include tablet {
+          width: 480px;
+          text-align: center;
+          letter-spacing:0.28px !important;
+          line-height: 22px !important;
+        }
+        @include mobile {
+          width: 335px;
+        }
+    }
+}

@@ -1,0 +1,205 @@
+@use '../../../styles/base.scss' as *;
+
+.section {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 150px;
+    max-width: 1280px;
+    height: 800px;
+    @include laptop {
+        max-width: 1192px;
+        height: 810px;
+        margin-top: 74px;
+    }
+    @include tablet {
+        max-width: 730px;
+        height: 500px;
+        margin-top: 66px;
+    }
+    @include mobile {
+        max-width: 100%;
+        margin-top: 95px;
+        height: fit-content;
+    }
+    img {
+        width: 502px;
+        height: 754px;
+        z-index: 1;
+        position: absolute;
+        @include laptop {
+            width: 514px;
+            height: 770px; 
+        }
+        @include tablet {
+            width: 313px;
+            height: 470px;
+        }
+        @include mobile {
+            display: none;
+        }
+    }
+    &__content {
+        position: absolute;
+        z-index: 0;
+        top: 179px;
+        left: 280px;
+        background-color: #EEEFEF;
+        width: 1021px;
+        height: 621px;
+        @include laptop {
+            width: 755px;
+            height: 620px;
+            left: 450px;
+            top: 190px;
+        }
+        @include tablet {
+            width: 461px;
+            height: 446px;
+            height: 460px;
+            top: 30px;
+            left: 270px;
+        }
+        @include mobile {
+            position: relative;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 0;
+            margin: 0;
+            padding-top: 60px;
+            padding-bottom: 20px;
+            margin: 0 auto;
+            width: 100%;
+            height: fit-content;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        &__text {
+            border-top: 1px solid #707070;
+            border-bottom: 1px solid #707070;
+            padding-top: 3rem;
+            padding-bottom: 5rem;
+            width: 374px;
+            margin-left: 420px;
+            margin-top: 120px;
+            text-align: center;  
+            @include laptop {
+                width: 462px;
+                margin-left: 200px;
+                margin-top: 86px;
+                padding-bottom: 6rem;
+            }
+            @include tablet {
+                margin-left: 105px;
+                margin-top: 30px;
+                width: 287px;
+                padding-bottom: 1rem;
+                padding-top: 1.5rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 50px;
+            }
+            @include mobile {
+                padding: 0;
+                margin: 0;
+                width: 340px;
+            }
+            
+            &__heading {
+                margin-bottom: 2.5rem;
+                @include laptop {
+                    margin-bottom: 4rem;
+                }
+                @include tablet {
+                    margin-bottom: 1.8rem;
+                }
+                @include mobile {
+                    margin: 20px 0;
+                }
+                h2 {
+                    @include subheading;
+                    letter-spacing:1.8px !important;
+                    @include tablet {
+                        letter-spacing: 1.8pt;
+                    }
+                    @include mobile {
+                        letter-spacing: 1.57px;
+                    }
+                }
+            }
+            &__body {
+                @include tablet {
+                    width: 365px
+                }
+                @include mobile {
+                    width: 340px;
+                    height: fit-content;
+                    height: 850px;
+                }
+                @media only screen and (max-width: 340px) {
+                    width: fit-content;
+                }
+
+                p {
+                    @include bodyText;
+                    line-height: 22px !important;
+                    letter-spacing: 0.11px!important;
+                    margin-bottom: 1rem;
+                    @include tablet {
+                        font-size: 11.25px;
+                        letter-spacing: 0.11px !important;
+                        margin-bottom: 1.55rem;
+                    }
+                    @include mobile {
+                        line-height: 22px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#logo {
+    width: 97px;
+    height: 124px;
+    position: absolute;
+    right: 360px;
+    top: -70px;
+    @include laptop {
+        right: 280px;
+        top: -70px;
+        width: 87px;
+        height: 111px;
+    }
+    @include tablet {
+        width: 53px;
+        height: 68px;
+        right: 190px;
+        top: -43px;
+    }
+    @include mobile {
+        display: block;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        top: -37px;
+        text-align: center;
+    }
+}
+
+#imageMobile {
+    display: none;
+    @include mobile {
+        display: block;
+        width: 340px;
+        height: 502px;
+    }
+}

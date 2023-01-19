@@ -2,17 +2,24 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 import styles from './Navbar.module.scss';
-import logoBlack from '../../images/logoBlack-min.png';
+import logoBlack from '../../images/logoBlackSolid.png';
 import logoWhite from '../../images/beliLogo.svg';
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
   const [open, setOpen] = useState(true);
+  const [dining, setDining] = useState(false);
   const { pathname } = useLocation();
   let previousState = false;
 
   useEffect(() => {
     setOpen(true);
+    if (pathname === '/dining') {
+      setDining(true);
+    }
+    if (pathname !== '/dining') {
+      setDining(false);
+    }
   }, [pathname]);
 
   const changeBackground = () => {
@@ -42,13 +49,29 @@ const Navbar = () => {
   return (
     <nav
       className={
-        navbar || !open
-          ? `${styles.navbar} ${styles.active}`
-          : `${styles.navbar}`
+        navbar || !open ? `${styles.nav} ${styles.active}` : `${styles.nav}`
       }
       onMouseEnter={() => changeNavbarOnMouseEnter(navbar)}
       onMouseLeave={() => changeNavbarOnMouseLeave(navbar)}
     >
+      <div
+        className={
+          navbar
+            ? `${styles.nav__newsletter} ${styles.active}`
+            : `${styles.nav__newsletter} `
+        }
+      >
+        <i className="fa-regular fa-envelope">{/* envelope */}</i>
+        <p>newsletter</p>
+      </div>
+      <div className={styles.nav__bookNowButtonWrapper}>
+        <button
+          type="button"
+          id={navbar || !open ? `${styles.buttonActive}` : ''}
+        >
+          book <span>now</span>
+        </button>
+      </div>
       <div
         className={
           navbar || !open
@@ -61,27 +84,25 @@ const Navbar = () => {
             src={logoBlack}
             alt=""
             className={
-              navbar || !open
+              navbar || dining || !open
                 ? `${styles.logoImage} ${styles.active}`
                 : `${styles.logoImage}`
             }
           />
         </Link>
-
         <Link to="/">
           <img
             src={logoWhite}
             alt=""
             className={
-              navbar || !open
+              navbar || !open || dining
                 ? `${styles.logoImage}`
                 : `${styles.logoImage} ${styles.active}`
             }
           />
         </Link>
-
         <i
-          className={open ? 'fas fa-bars icon-3x' : 'fas fa-times'}
+          className={open ? 'fas fa-bars fa-light' : 'fas fa-times'}
           onClick={changeIcon}
           role="presentation"
           id={navbar ? 'nav-icon-acitve' : 'nav-icon'}
@@ -91,7 +112,9 @@ const Navbar = () => {
       </div>
       <hr
         className={
-          navbar && open ? `${styles.hr} ${styles.active}` : `${styles.hr}`
+          (navbar || dining) && open
+            ? `${styles.hr} ${styles.active}`
+            : `${styles.hr}`
         }
       />
       <div
@@ -104,7 +127,7 @@ const Navbar = () => {
         <div className={styles.nav__item}>
           <Link
             className={
-              navbar
+              navbar || dining
                 ? `${styles.nav__item__element} ${styles.active}`
                 : `${styles.nav__item__element}`
             }
@@ -117,7 +140,9 @@ const Navbar = () => {
         <div className={styles.nav__item}>
           <div
             className={
-              navbar ? `${styles.dot} ${styles.active}` : `${styles.dot}`
+              navbar || dining
+                ? `${styles.dot} ${styles.active}`
+                : `${styles.dot}`
             }
           >
             <i className="fa-sharp fa-solid fa-circle">{/* icon */}</i>
@@ -127,7 +152,7 @@ const Navbar = () => {
         <div className={styles.nav__item}>
           <Link
             className={
-              navbar
+              navbar || dining
                 ? `${styles.nav__item__element} ${styles.active}`
                 : `${styles.nav__item__element}`
             }
@@ -139,16 +164,18 @@ const Navbar = () => {
         <div className={styles.nav__item}>
           <div
             className={
-              navbar ? `${styles.dot} ${styles.active}` : `${styles.dot}`
+              navbar || dining
+                ? `${styles.dot} ${styles.active}`
+                : `${styles.dot}`
             }
           >
             <i className="fa-sharp fa-solid fa-circle">{/* icon */}</i>
           </div>
         </div>
-        {/* <div className={styles.nav__item}>
+        <div className={styles.nav__item}>
           <Link
             className={
-              navbar
+              navbar || dining
                 ? `${styles.nav__item__element} ${styles.active}`
                 : `${styles.nav__item__element}`
             }
@@ -156,11 +183,22 @@ const Navbar = () => {
           >
             stories
           </Link>
-        </div> */}
-        {/* <div className={styles.nav__item}>
+        </div>
+        <div className={styles.nav__item}>
+          <div
+            className={
+              navbar || dining
+                ? `${styles.dot} ${styles.active}`
+                : `${styles.dot}`
+            }
+          >
+            <i className="fa-sharp fa-solid fa-circle">{/* icon */}</i>
+          </div>
+        </div>
+        <div className={styles.nav__item}>
           <Link
             className={
-              navbar
+              navbar || dining
                 ? `${styles.nav__item__element} ${styles.active}`
                 : `${styles.nav__item__element}`
             }
@@ -168,11 +206,45 @@ const Navbar = () => {
           >
             offers
           </Link>
-        </div> */}
+        </div>
+        <div className={styles.nav__item}>
+          <div
+            className={
+              navbar || dining
+                ? `${styles.dot} ${styles.active}`
+                : `${styles.dot}`
+            }
+          >
+            <i className="fa-sharp fa-solid fa-circle">{/* icon */}</i>
+          </div>
+        </div>
         <div className={styles.nav__item}>
           <Link
             className={
-              navbar
+              navbar || dining
+                ? `${styles.nav__item__element} ${styles.active}`
+                : `${styles.nav__item__element}`
+            }
+            to="/dining"
+          >
+            dining
+          </Link>
+        </div>
+        <div className={styles.nav__item}>
+          <div
+            className={
+              navbar || dining
+                ? `${styles.dot} ${styles.active}`
+                : `${styles.dot}`
+            }
+          >
+            <i className="fa-sharp fa-solid fa-circle">{/* icon */}</i>
+          </div>
+        </div>
+        <div className={styles.nav__item}>
+          <Link
+            className={
+              navbar || dining
                 ? `${styles.nav__item__element} ${styles.active}`
                 : `${styles.nav__item__element}`
             }
@@ -191,10 +263,10 @@ const Navbar = () => {
       >
         <div className={styles.nav__mobile__row__contact}>
           <a href="tel:+971 50 478 4660">
-            <i className="fa-solid fa-phone fa-lg">{/* phone */}</i>
+            <i className="fa-solid fa-phone">{/* phone */}</i>
           </a>
           <Link to="/contact">
-            <i className="fa-regular fa-envelope fa-lg">{/* mail */}</i>
+            <i className="fa-regular fa-envelope">{/* mail */}</i>
           </Link>
         </div>
         <div className={styles.nav__mobile__row}>
