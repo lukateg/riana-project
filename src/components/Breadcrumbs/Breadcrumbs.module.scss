@@ -1,0 +1,33 @@
+@use '../../styles/base.scss' as *;
+
+.section {
+    display: flex;
+    align-items: center;
+    gap: 37px;
+    max-width: 1680px;
+    margin: 0 auto;
+    margin-top: 53px;
+    @include laptop {
+        margin-top: 30px;
+        max-width: 1210px;
+        gap: 28px;
+    }
+    @include tablet {
+        display: none;
+    }
+    h1 {
+        font: bold 9px 'Alright-Sans';
+        color: #1a1a1a;
+        letter-spacing: 0.68px !important;
+        text-transform: uppercase;
+        @include laptop {
+            font-size: 11.25px;
+            letter-spacing: 0.84px;
+        }
+    }
+    i {
+        @include laptop {
+            font-size: 11.25px;
+        }
+    }
+}

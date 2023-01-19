@@ -24,8 +24,6 @@ const Dinning = () => (
         Upon request, special dietary requirements may also be accommodated.
       </p>
 
-      {/* <p className={styles.section__content__text}></p>
-      <p className={styles.section__content__text}></p> */}
       <div className={styles.buttonWrapper}>
         <a href={brochure} download="Riana Brochure">
           <button type="button" className={styles.niki}>

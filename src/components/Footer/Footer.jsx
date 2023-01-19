@@ -31,7 +31,7 @@ const Footer = () => {
       <div className={styles.section}>
         <div className={styles.section__navigation}>
           <div className={styles.section__navigation__logo}>
-            <img src={image} alt="" />
+            <img src={image} alt="Riana Yacht" />
           </div>
           <div
             className={styles.section__navigation__element}
@@ -75,7 +75,6 @@ const Footer = () => {
             >
               <h2>TERMS & CONDITIONS</h2>
             </Link>
-
             <Link
               to="/contact"
               onClick={() => {
@@ -123,7 +122,6 @@ const Footer = () => {
                 <i className="fa-brands fa-youtube">{/* youtube */}</i>
               </div>
             </a>
-
             <a
               href="https://instagram.com/rianayacht?igshid=MWI4MTIyMDE="
               target="_blank"

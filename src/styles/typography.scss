@@ -85,6 +85,26 @@ $fs-paragraph: 1rem; // 16px
   }
 }
 
+// font, font-size,color
+@mixin bodyText {
+  font: normal 11.25px 'Alright-Sans';
+  color: #1a1a1a;
+  @media only screen and (max-width: 1439px) { // from 321 - 1440
+    font-size: 11.25px;
+  }
+}
+// font, font-size, color, text-transform
+@mixin subheading {
+  font: normal 18px 'Baskerville' ;
+  color: #1a1a1a;
+  text-transform: uppercase;
+  @media only screen and (max-width: 1439px) { // from 768 - 1440
+    font-size: 18px;
+  }
+  @media only screen and (max-width: 767px) { // from 320 - 767
+    font-size: 15.75px;
+  }
+}
 
 
 
