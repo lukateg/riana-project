@@ -248,6 +248,30 @@ const Navbar = () => {
                 ? `${styles.nav__item__element} ${styles.active}`
                 : `${styles.nav__item__element}`
             }
+            to="/events"
+          >
+            events
+          </Link>
+        </div>
+
+        <div className={styles.nav__item}>
+          <div
+            className={
+              navbar || dining
+                ? `${styles.dot} ${styles.active}`
+                : `${styles.dot}`
+            }
+          >
+            <i className="fa-sharp fa-solid fa-circle">{/* icon */}</i>
+          </div>
+        </div>
+        <div className={styles.nav__item}>
+          <Link
+            className={
+              navbar || dining
+                ? `${styles.nav__item__element} ${styles.active}`
+                : `${styles.nav__item__element}`
+            }
             to="/contact"
           >
             contact
@@ -275,7 +299,30 @@ const Navbar = () => {
             <i className="fa-solid fa-chevron-right">{/* arrow */}</i>
           </Link>
         </div>
-
+        <div className={styles.nav__mobile__row}>
+          <Link to="/stories">stories</Link>
+          <Link to="/stories">
+            <i className="fa-solid fa-chevron-right">{/* arrow */}</i>
+          </Link>
+        </div>
+        <div className={styles.nav__mobile__row}>
+          <Link to="/offers">offers</Link>
+          <Link to="/offers">
+            <i className="fa-solid fa-chevron-right">{/* arrow */}</i>
+          </Link>
+        </div>
+        <div className={styles.nav__mobile__row}>
+          <Link to="/dining">dining</Link>
+          <Link to="/dining">
+            <i className="fa-solid fa-chevron-right">{/* arrow */}</i>
+          </Link>
+        </div>
+        <div className={styles.nav__mobile__row}>
+          <Link to="/events">events</Link>
+          <Link to="/events">
+            <i className="fa-solid fa-chevron-right">{/* arrow */}</i>
+          </Link>
+        </div>
         <div className={styles.nav__mobile__row}>
           <Link to="/contact">contact</Link>
           <Link to="/contact">
