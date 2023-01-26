@@ -1,53 +1,69 @@
 @use '../../styles/base.scss' as *;
 
 .section {
-    @include wrapper;
-    margin-top: 100px ;
+    width: 1194px;
+    height: 291px;
+    margin: 0 auto;
+    margin-top: 126px;
     background-color: #645C59;
-    opacity: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 4rem 0;
-    @media only screen and (max-width: 500px) {
-        height: 161pt;
-        margin-top:0px;
-        width: 100% !important;
-     }
-}
-.section__heading {
-    @include subheadingStyling;
-    letter-spacing: 5px !important;
-    color: white !important;
-    max-width: 600px;
-    text-align: center;
-    @media only screen and (max-width: 500px) {
-        width: 100%;
-     }
-}
-
-.button {
-    background-color: white;
-    font: normal normal bold 15px 'Arial';
-    width: 426px;
-    height: 61px;
-    letter-spacing: 3px;
-    border: none;
-    color: #1a1a1a;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 2rem;
-    @media only screen and (max-width: 500px) {
-       width: 181pt;
-       height: 40pt;
-       font-size: 8pt;
-       letter-spacing: 1.6pt;
-       margin-top: 2rem;
+    @include laptop {
+        width: 1240px;
+    }
+    @include tablet {
+        width: 768px;
+        height: 291px;
+    }
+    @include mobile {
+        width: 375px;
+        height: 165px;
+        margin-top: 20px;
+    }
+     &__heading {
+        @include subheading;
+        letter-spacing: 1.8px !important;
+        color: white !important;
+        @include mobile {
+            font-size: 16px;
+            letter-spacing: 1.6px;
+            text-align: center;
+        }
+    }
+    &__br {
+        display: none;
+        @include mobile {
+            display: block;
+        }
+    }
+    button {
+        margin-top: 33px;
+        width: 247px;
+        height: 46px;
+        background-color: white;
+        font: bold 8.25px 'Arial';
+        letter-spacing: 1.65px;
+        border: none;
+        color: #1a1a1a;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        @include tablet {
+            margin-top: 50px;
+        }
+        @include mobile {
+            width: 180px;
+            height: 46px;
+            margin-top: 20px;
+        }
+    }
+    button:hover {
+        background-color: #1a1a1a;
+        color: white;
     }
 }
-
 #number {
     font: normal normal bold 15px 'Arial';
     font-weight: bold;
@@ -56,8 +72,5 @@
      }
 }
 
-.button:hover {
-    background-color: #1a1a1a;
-    color: white;
-}
+
 

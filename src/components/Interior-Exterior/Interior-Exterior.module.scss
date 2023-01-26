@@ -1,181 +1,130 @@
 @use '../../styles/base.scss' as *;
 
 .section {
-    @include wrapper;
-    width: 95%;
+    width: 1194px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    &__elements {
-      display: flex;
-      justify-content: space-between;
+    @include laptop {
+      width: 1240px;
+    }
+    @include tablet {
+      width: 768px;
+    }
+    @include mobile {
       width: 100%;
-      @media only screen and (max-width: 700px) {
-          flex-direction: column;
-          padding: 0 1.5rem;
-       }
     }
-    &__element {
-      &__heading {
-        @include subheadingStyling;
-        margin-bottom: 1.6rem;
-        margin-top: 2rem;
-        padding-left: 20px;
-        @media only screen and (max-width: 700px) {
-            padding-left: 0;
+    &__content {
+      display: flex;
+      justify-content: center;
+      gap: 43px;
+      @include laptop {
+        gap: 60px;
+      }
+      @include tablet {
+        gap: 36px;
+      }
+      @include mobile {
+        flex-direction: column;
+        margin: 0 auto;
+        width: 344px;
+      }
+       &__element {      
+        &__image {
+          width: 576px;
+          height: 384px;
+          object-fit: cover;
+          @include tablet {
+            width: 346px;
+            height: 231px;
+          }
+          @include mobile {
+            width: 344px;
+            height: 287px;
+          }
+      }
+        &__heading {
+          margin-top: 20px;
+          font: normal 14px 'Baslerville';
+          letter-spacing: 1.12px;
+          margin-left: 20px;
+          @include laptop {
+            margin-left: 0;
+          }
+          @include tablet {
+            margin-left: 20px;
+          }
+          @include mobile {
+            margin-left: 10px;
+          }
+        }
+        &__paragraph {
+          margin-top: 19px;
+          width: 490px;
+          height: 195px;
+          margin-left: 20px;
+          @include bodyText;
+          letter-spacing: 0.28px;
+          line-height: 22px;
+          @include laptop {
+            margin-left: 0;
+          }
+          @include tablet {
+            width: 291px;
+            height: 265px;
+            margin-left: 20px;
+          }
+          @include mobile {
+            width: 322px;
+            margin-left: 10px;
+            height: fit-content;
+            font-size: 11px !important;
+            line-height: 20px;
+            letter-spacing: 0.11px;
+          }
+        }
+        &__discoverMore {  
+          color: #1a1a1a;
+          margin-top: 20px;
+          font: bold 8.25px 'Alright-Sans';
+          letter-spacing: 1.65px;
+          width: fit-content;
+          margin-left: 20px;
+          @include laptop {
+            margin-left: 0;
+          }
+          @include tablet {
+            margin-top: 0px;
+            margin-left: 20px;
+          }
+          @include mobile {
+            margin-top: 20px;
+            margin-left: 10px;
+          }
+        }
+        &__discoverMore::after {
+          display:block;
+          content: '';
+          border-bottom: solid 1.5px #1a1a1a;  
+          transform: scaleX(0);  
+          transition: transform 250ms ease-in-out;
+          transform-origin:  0% 50%;
+        }
+        &__discoverMore:hover:after { 
+          transform: scaleX(1);
         }
       }
-      &__paragraph {
-        @include bodyTextStyling;
-        padding-left: 20px;
-        width: 45vw;
-        height: 190px;
-        max-width: 700px;
-        max-height: 400px;
-        @media only screen and (max-width: 700px) {
-         width: 100%;
-         padding-left: 0;
-        }
-        @media only screen and (max-width: 500px) {
-          height: 100px;
-        }
-      }
     }
 }
-.image {
-    width: 45vw;
-    height: 25vw;
-    min-height: 150pt;
-    max-width: 700px;
-    max-height: 500px;
-    object-fit: cover;
-    @media only screen and (max-width: 700px) {
-        width: 100%;
-        height: 200pt;
-        margin-top: 2rem;
-     }
-     @media only screen and (max-width: 500px) {
-      height: 220pt;
-   }
-}
-.discoverMore {  
-   color: #1a1a1a;
-    display: block;
-    margin-top: 3rem;
-    font: 15px 'Arial';
-    font-weight: bolder;
-    letter-spacing: 3px;
-    width: fit-content;
-    padding-left: 20px;
-    padding-top: 2rem;
-    @media only screen and (max-width: 1530px) {
-      padding-top: 0.8rem;
-    }
-    @media only screen and (max-width: 1507px) {
-      padding-top: 2rem;
-    }
-    @media only screen and (max-width: 1310px) {
-      padding-top: 2rem;
-    }
-    @media only screen and (max-width: 1278px) {
-      padding-top: 4rem;
-    }
-    @media only screen and (max-width: 1200px) {
-      padding-top: 3rem;
-    }
-    @media only screen and (max-width: 1125px) {
-      padding-top: 4rem;
-    }
-    @media only screen and (max-width: 1119px) {
-      padding-top: 5rem;
-    }
-    @media only screen and (max-width: 940px) {
-      padding-top: 7.5rem;
-    }
-    @media only screen and (max-width: 857px) {
-      padding-top: 9.5rem;
-    }
-    @media only screen and (max-width: 810px) {
-      padding-top: 10rem;
-    }
-    @media only screen and (max-width: 809px) {
-      padding-top: 11.5rem;
-    }
-    @media only screen and (max-width: 740px) {
-      padding-top: 13rem;
-    }
-    @media only screen and (max-width: 700px) {
-      padding-left: 0;
-      padding-top: 1.7rem;
-      margin-bottom: 1rem;
-    }
-    @media only screen and (max-width: 635px) {
-      padding-top: 2.7rem;
-    }
-   @media only screen and (max-width: 624px) {
-      padding-top: 3.5rem;
-    }
-   @media only screen and (max-width: 560px) {
-      padding-top: 5rem;
-    } 
-    @media only screen and (max-width: 505px) {
-      padding-top: 6rem;
-    }
-    @media only screen and (max-width: 500px) {
-      font-size: 10pt;
-      letter-spacing: 1.6pt;
-      padding-top: 8rem;
-    }
-    @media only screen and (max-width: 489px) {
-      padding-top: 10rem;
-    }
-    @media only screen and (max-width: 448px) {
-      padding-top: 12rem;
-    }
-    @media only screen and (max-width: 427px) {
-      padding-top: 13.5rem;
-    } 
-    @media only screen and (max-width: 355px) {
-      padding-top: 16.5rem;
-    } 
-    @media only screen and (max-width: 321px) {
-      padding-top: 17.5rem;
-    } 
-}
-.discoverMore::after {
-    display:block;
-    content: '';
-    border-bottom: solid 1.5px #1a1a1a;  
-    transform: scaleX(0);  
-    transition: transform 250ms ease-in-out;
-    transform-origin:  0% 50%;
-}
-.discoverMore:hover:after { 
-    transform: scaleX(1);
-}
-#two {
-  @media only screen and (max-width: 700px) {
-    padding-top: 0.5rem;
-    margin-top: 0;
+
+#fuelConsuption {
+  @include tablet {
+    display: none;
   }
-   @media only screen and (max-width: 631px) {
-    padding-top: 3rem !important;
-   }
-   @media only screen and (max-width: 541px) {
-    padding-top: 4rem !important;
-   }
-   @media only screen and (max-width: 500px) {
-    padding-top: 7.5rem !important;
-   }
-   @media only screen and (max-width: 452px) {
-    padding-top: 9.5rem !important;
-   }
-   @media only screen and (max-width: 409px) {
-    padding-top: 11rem !important;
-   }
-   @media only screen and (max-width: 356px) {
-    padding-top: 13rem !important;
-   }
-   @media only screen and (max-width: 314px) {
-    padding-top: 14rem !important;
-   }
+  @include mobile {
+    display: block;
+  }
 }
+
+ 
+

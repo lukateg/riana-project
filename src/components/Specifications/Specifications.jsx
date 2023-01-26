@@ -1,8 +1,9 @@
 import styles from './Specifications.module.scss';
+import image from '../../images/birdView-min.jpg';
 
 const Specifications = () => (
   <div className={styles.section}>
-    <h1 className={styles.mainHeading}>Specifications</h1>
+    <h1 className={styles.section__mainHeading}>Specifications</h1>
     <div className={styles.section__brochure}>
       {/* Left side */}
       <div className={styles.section__brochure__specifications}>
@@ -112,8 +113,8 @@ const Specifications = () => (
           <div className={styles.section__brochure__specifications__info__data}>
             <h2>safety</h2>
             <p>
-              life raft x 4, epirb, fire ext adv, medical kit, 24 life jackets,
-              flares
+              life raft x 4, epirb, fire ext <br /> adv, medical kit, 24 life
+              jackets, flares
             </p>
           </div>
           <div className={styles.section__brochure__specifications__info__data}>
@@ -175,7 +176,8 @@ const Specifications = () => (
           <div className={styles.section__brochure__specifications__info__data}>
             <h2>sun covers</h2>
             <p>
-              bimini protected sun areas at flybridge, aft deck and bow deck
+              bimini protected sun areas at flybridge, <br /> aft deck and bow
+              deck
             </p>
           </div>
           <div className={styles.section__brochure__specifications__info__data}>
@@ -193,9 +195,7 @@ const Specifications = () => (
         </div>
       </div>
       {/* Right side */}
-      <div className={styles.section__brochure__image}>
-        {/* <img src={image} alt="birdViewImage" /> */}
-      </div>
+      <img src={image} alt="birdViewImage" />
     </div>
   </div>
 );

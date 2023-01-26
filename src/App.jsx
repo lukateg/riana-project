@@ -23,6 +23,8 @@ import ContactPage from './components/Contact/ContactPage';
 import Gallery from './components/Gallery/Gallery';
 import HeroImageForHome from './images/HeroImage-min.jpg';
 import DiningPage from './components/Dining-Page/DiningPage';
+import UltimateYachtExperience from './components/UltimateYachtExperience/UltimateYachtExperience';
+import RianaYachtStories from './components/RianaYachtStories/RianaYachtStories';
 
 const App = () => (
   <>
@@ -33,7 +35,8 @@ const App = () => (
         element={
           <>
             <HeroImage image={HeroImageForHome} />
-            <YachtExperience />
+            {/* <YachtExperience /> */}
+            <UltimateYachtExperience />
             <ClassicMotorSailingYacht />
             <Design />
             <InteriorExterior />
@@ -43,7 +46,8 @@ const App = () => (
             <Specifications />
             <Layout />
             <Events />
-            <YachtStories />
+            {/* <YachtStories /> */}
+            <RianaYachtStories />
             <Dinning />
             <Activities />
           </>
