@@ -1,12 +1,11 @@
 import styles from './Dinning.module.scss';
-import image from '../../images/Dinning-min.jpg';
 import brochure from '../../images/brochureRiana.pdf';
 
 const Dinning = () => (
   <div className={styles.section}>
     <div className={styles.section__content}>
       <div className={styles.section__content__heading}>
-        <h3>dining</h3>
+        <h4>dining</h4>
         <h4>fresh and diverse</h4>
       </div>
       <p className={styles.section__content__text}>
@@ -20,7 +19,7 @@ const Dinning = () => (
         throughout your stay.
       </p>
 
-      <p className={styles.section__content__text}>
+      <p className={styles.section__content__text} id={styles.mobile}>
         Upon request, special dietary requirements may also be accommodated.
       </p>
 
@@ -35,7 +34,6 @@ const Dinning = () => (
     <div className={styles.section__image}>
       {/* <img src={image} alt="dinningImage" className={styles.image} /> */}
     </div>
-    <img src={image} alt="dinningImage" className={styles.image} />
   </div>
 );
 

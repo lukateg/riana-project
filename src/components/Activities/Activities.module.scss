@@ -1,10 +1,20 @@
 @use '../../styles/base.scss' as *;
 
 .section {
-  @include wrapper;
+  margin: 0 auto;
+  width: 1194px;
   color: $primary-color;
   padding: 3rem 0;
   margin-top: 4rem;
+  @include laptop {
+    width: 1240px;
+  }
+  @include tablet {
+    width: 720px;
+  }
+  @include mobile {
+    width: 375px;
+  }
 
   @media only screen and (max-width: 500px) {
     width: 100%;
@@ -26,40 +36,49 @@
       max-height: 4rem;
       width: 4rem;
     }
-    @media only screen and (max-width: 600px) {
-      max-height: 3rem;
-      width: 3rem;
+    @include tablet {
+      max-width: 3.2rem;
+      width: 3.2rem;
     }
-    @media only screen and (max-width: 400px) {
-      max-height: 1.75rem;
-      width: 1.75rem;
+    @include mobile {
+      max-height: 2rem;
+      width: 2rem;
     }
   }
   h1 {
-    @include subheadingStyling;
+    @include subheading;
+    line-height: 20px;
+    letter-spacing: 1.8px;
     text-align: center;
     opacity: 1;
-    @media only screen and (max-width: 800px) {
-      font-size: 30px;
-    }
   }
   p {
-    @include bodyTextStyling;
+    @include bodyText;
+    line-height: 22px;
+    letter-spacing: 0.11px;
     text-align: center;
     opacity: 1;
-    max-width: 83ch;
-    margin: 2rem auto;
-    @media only screen and (max-width: 500px) {
-      margin-left: 1rem;
-      margin-right: 1rem;
+    width: 690px;
+    margin: 20px auto;
+    @include tablet {
+      width: 436px;
+    }
+    @include mobile {
+      width: 344px;
     }
   }
   h3 {
-    @include subheadingStyling;
+    @include subheading;
+    letter-spacing: 1.44px;
+    line-height: 20px;
     margin: 7rem 0 5rem 0;
     margin-top: 8rem;
     text-align: center;
     opacity: 1;
+    @include laptop {
+      margin-top: 70px;
+      margin-bottom: 62px;
+    }
     @media only screen and (max-width: 500px) {
       margin: 3rem 0;
     }
@@ -68,39 +87,38 @@
     position: relative;
   }
   &__arrow {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     background-color: black;
     border: none;
     color: #ffffff;
     position: absolute;
     right: 0;
     top: 13%;
-    @media only screen and (max-width: 550px) {
-      display: none;
-    }
+    padding-left: 8px;
   }
   &__button {
     color: black;
     display: block;
     margin: 3rem auto;
-    width: 426px;
-    height: 88px;
+    width: 210px;
+    height: 46px;
     background: #ffffff 0% 0% no-repeat padding-box;
     border: 1px solid #707070;
     opacity: 1;
-    font: normal normal bold 15px 'Arial';
-    letter-spacing: 3px;
+    font: bold 9px 'Alright-Sans';
+    letter-spacing: 1.8px;
     cursor: pointer;
     margin-bottom: 9rem;
-    @media only screen and (max-width: 500px) {
-      margin: 2rem auto;
-      margin-bottom: 5rem;
-      width: 270px;
-      height: 50px;
-      font-size: 8pt;
-      letter-spacing: 1.6pt;
+    @include tablet {
+      margin-top: 133px;
+      margin-bottom: 51px;
     }
+    @include mobile {
+      margin-top: 90px;
+      margin-bottom: 82px;
+    }
+ 
   }
   &__button:hover {
     background-color: #1a1a1a;

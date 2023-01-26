@@ -1,0 +1,165 @@
+@use '../../styles/base.scss' as *;
+
+.section {
+    position: relative;
+    width: 1194px;
+    height: 950px;
+    margin: 200px auto;
+    @include laptop {
+        width: 1240px;
+    }
+    @include tablet {
+        width: 670px;
+        height: 580px;
+    }
+    @include mobile {
+        width: 332px;
+        height: 280px;
+        margin-bottom: 50px;
+        margin-top: 30px;
+    }
+    &__text {
+        position: absolute;
+        bottom: 130px;
+        right: 0px;
+        width: 477px;
+        height: fit-content;
+        @include laptop {
+            right: 0px;
+            width: 492px;
+        }
+        @include tablet {
+            width: 247px;
+            bottom: 80px;
+        }
+        @include mobile {
+            width: 220px;
+            height: 200px;
+            background-color: #EEEFEF;
+            padding-left: 70px;
+            top: 65px;
+            z-index: 0;
+        }
+        &__buttonWrapper {
+            width: fit-content;
+            margin-top: 33px;
+            @include mobile {
+              margin: 20px auto;
+              display: none;
+            }
+        }
+        h1 {
+            @include subheading;
+            letter-spacing: 1.8px;
+            line-height: 20px;
+            margin-bottom: 20px;
+            @include tablet {
+              margin-bottom: 10px;
+            }
+            @include mobile {
+              letter-spacing: 1.28px;
+              margin-top: 35px
+            }
+          } 
+        p {
+            @include bodyText;
+            letter-spacing: 0.11px ;
+            line-height: 22px;
+            text-align: left;
+            @include mobile {
+              text-align: left;
+              letter-spacing: 0.21px;
+            }
+        }  
+    }
+  
+   
+    button {
+        background: #1a1a1a00 0% 0% no-repeat padding-box;
+        border: 1px solid #000000;
+        color: #1a1a1a;
+        width: 180px;
+        height: 46px;
+        font: bold 8.25px 'Alright-Sans';
+        letter-spacing: 1.65px;
+        text-transform: uppercase;
+        @include mobile {
+          font-size: 10px;
+          letter-spacing: 2px;
+        }
+    }
+    button:hover {
+        background-color: #1a1a1a;
+        color: white;
+    }
+}
+
+#leftImage {
+    position: absolute;
+    width: 683px;
+    height: 900px;
+    object-fit: cover;
+    bottom: 0;
+    @include laptop {
+        width: 688px;
+        height: 905px;
+    }
+    @include tablet {
+        width: 393px;
+        height: 518px;
+    }
+    @include mobile {
+        display: none;
+    }
+   
+}
+
+#rightImage {
+    position: absolute;
+    width: 477px;
+    height: 641px;
+    object-fit: cover;
+    opacity: 1;
+    object-fit: fill;
+    right: 0;
+    @include laptop {
+        width: 492px;
+        height: 662px;
+    }
+    @include tablet {
+        width: 247px;
+        height: 333px;
+    }
+    
+    @include mobile {
+        width: 156px;
+        height: 210px;
+        top: 0;
+        z-index: 1;
+        left: 0;
+    }
+}
+
+#mobileImage {
+    display: none;
+    @include mobile {
+        display: block;
+        width: 332px;
+        height: 439px;
+        margin: 0 auto;
+    }
+}
+
+#mobile {
+    display: none;
+    @include mobile {
+        display: block;
+        color: #1a1a1a;
+        font: bold 8.25px 'Alright-Sans';
+        letter-spacing: 1.65px;
+        width: fit-content;
+        text-transform: uppercase;
+        margin: 20px 0;
+        
+    }
+}

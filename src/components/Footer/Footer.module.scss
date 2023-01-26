@@ -44,6 +44,7 @@ a {
       color: white;
       @include mobile {
         line-height: normal;
+        margin-bottom: 1rem;
       }
     }
     h2 {

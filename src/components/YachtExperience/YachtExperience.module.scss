@@ -116,7 +116,8 @@
       background-color: transparent;
     }
     h3 {
-      @include subheadingStyling;
+      @include subheading;
+      
       text-align: left;
       margin-bottom: 3rem;
       @media only screen and (max-width: 1200px) {
@@ -127,7 +128,7 @@
       }
     }
     p {
-      @include bodyTextStyling;
+      @include bodyText;
       margin: 3.5rem 0;
       text-align: left;
       opacity: 1;

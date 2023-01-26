@@ -1,9 +1,5 @@
-// export default YachtExperience;
 import styles from './YachtExperience.module.scss';
 import firstImage from '../../images/2.jpg';
-
-// import firstImage from '../../images/2016-07-23 16.38.55.jpg';
-// import secondImage from '../../images/Left-Top.jpg';
 
 const YachtStories = () => (
   <div className={styles.section}>

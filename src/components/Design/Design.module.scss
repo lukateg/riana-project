@@ -1,66 +1,71 @@
 @use '../../styles/base.scss' as *;
 
 .section {
-  @include wrapper;
+  width: 1194px;
+  margin: 0 auto;
+  margin-top: 136px;
+  margin-bottom: 61px;
   color: $primary-color;
-
-  @media only screen and (max-width: 500px) {
-    width: 100%;
-    // padding: 1rem;
-    padding: 1.5rem;
+  @include laptop {
+    width: 1240px;
+    margin-top: 93px;
+    margin-bottom: 81px;
   }
+  @include tablet {
+    width: 100%;
+    margin-top: 81px;
+    margin-bottom: 36px;
+  }
+  @include mobile {
+    margin-top: 50px;
+    margin-bottom: 50px;
 
+  }
   &__content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1.5rem 0;
-  }
-
-  h2 {
-    @include mainHeadingStyling;
-    text-align: center;
-    margin-top: 4rem;
-    @media only screen and (max-width: 500px) {
-      margin-top: 0rem;
-    }
   }
   h3 {
-    @include subheadingStyling;
-    margin-bottom: 5rem;
+    @include subheading;
+    letter-spacing: 1.8px;
+    line-height: 25px;
     text-align: center;
-    @media only screen and (max-width: 500px) {
-      margin-bottom: 2rem;
+    @include mobile {
+      line-height: 22px;
+      letter-spacing: 1.6px;
     }
   }
   p {
-    @include bodyTextStyling;
-    margin-bottom: 5rem;
+    margin-top: 20px;
+    margin-bottom: 62px;
+    width: 690px;
+    @include bodyText;
+    letter-spacing: 0.11px;
+    line-height: 16px;
     text-align: center;
-    max-width: 939px;
-    @media only screen and (max-width: 500px) {
-      margin-bottom: 2rem;
+    @include laptop {
+      margin-top: 28px;
+      margin-bottom: 21px;
+      width: 720px;
+    }
+    @include tablet {
+      width: 436px;
+    }
+    @include mobile {
+      margin-top: 20px 0;
+      width: 344px;
     }
   }
   button {
-    background: #1a1a1a00 0% 0% no-repeat padding-box;
+    background-color: white;
     border: 1px solid #1a1a1a;
     color: #1a1a1a;
-    width: 240px;
-    height: 61px;
-    font: normal normal bold 15px 'Arial';
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    margin-bottom: 5rem;
-    @media only screen and (max-width: 500px) {
-      margin-bottom: 0;
-    }
-    @media only screen and (max-width: 400px) {
-      width: 162pt;
-      height: 41pt;
-      font-size: 10pt;
-      letter-spacing: 2pt;
-    }
+    width: 180px;
+    height: 46px;
+    font: bold 8.25px 'Arial';
+    letter-spacing: 1.65px;
+    text-transform: uppercase;    
   }
   button:hover {
     background-color: #1a1a1a;

@@ -1,130 +1,90 @@
 @use '../../styles/base.scss' as *;
 
 .section {
-    @include wrapper;
-    margin-top: 4rem;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
-  
-    @media only screen and (max-width: 660px) {
-       display: none;
-    }
-}
-
-.mainHeading {
-    font: normal normal normal 35px "Baskerville";
-    letter-spacing: 3.5px;
-    color: #1a1a1a;
-    text-align: center;
-    margin-bottom: 6rem;
-    @media only screen and (max-width: 480px) {
-        margin-top: 0;
-    }
-    @media only screen and (max-width: 500px) {
-        font-size: 20px;
-    }
-}
-
-.section__brochure {
-    display: flex;
-    //justify-content: space-between;
-    align-items:stretch ;
-    width: 100%;
-}
-
-.section__brochure__specifications {
-    display: flex;
-    flex-direction: column;
-    width: 65%;
-    text-transform: uppercase;
-    @media only screen and (max-width:1130px) {
-        width: 72%;
-    }
-    @media only screen and (max-width: 950px) {
-        width: 100%;
-    }
-}
-
-.section__brochure__image {
-    background-image: url('../../images/birdView-min.jpg');
-    overflow: hidden;
-    background-position: center;
-    background-repeat: repeat;
-    background-size: cover;
-    width: 35%;
-    @media only screen and (max-width:1130px) {
-        width: 28%;
-    }
-    @media only screen and (max-width:950px) {
+    @include tablet {
         display: none;
     }
-    
-    
-}
-
-
-.section__brochure__specifications__info { 
-    display: flex;
-    flex-direction: column;
-
-}
-
-.section__brochure__specifications__info h1 {
-    font: normal normal normal 16px "Alright-Sans";
-    letter-spacing: 2.4px;
-    text-transform: uppercase;
-    color: #1a1a1a;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
-}
-
-.section__brochure__specifications__info__data {
-    display: flex;
-    margin-top: 0.3rem;
-    h2 {
-        font: normal normal normal 12px "Alright-Sans";
-        letter-spacing: 0.14px;
-        width: 240px;
-        font-family: $ff-1;
-        color: #1a1a1a;
-        font-weight:bold;
-        @media only screen and (max-width: 1190px) {
-            width: 250px;
-        }
-        @media only screen and (max-width: 1130px) {
-            width: 180px;
-        }
-        @media only screen and (max-width:950px) {
-            width: 240px;
-        }
-        @media only screen and (max-width:950px) {
-            width: 240px;
-        }
-        @media only screen and (max-width: 660px) {
-            width: 250px;
-        }
-        
+    &__mainHeading {
+        margin-bottom: 71px;
+        @include subheading;
+        letter-spacing: 1.8px;
     }
-    p {
-        margin-top: 1px;
-        font: normal normal normal 12px "Arial";
-        width: 540px;
-        color: #1a1a1a;
-        @media only screen and (max-width: 1190px) {
-            width: 400px !important;
+    &__brochure {
+        margin: 0 auto;
+        width: 1375px;
+        display: flex;
+        align-items: center;
+        gap: 97px;
+        @include laptop {
+            width: 1239px;
+            gap: 0;
         }
-        @media only screen and (max-width:950px) {
-            width: 640px !important;
+        @include tablet {
+            flex-direction: column;
         }
-        @media only screen and (max-width: 660px) {
-            width: max-content;
+        img {
+            width: 712px;
+            height: 1060px;
+            object-fit: cover;
+            @include tablet {
+                width: 508px;
+                height: 756px;
+            }
         }
-   
+        &__specifications { 
+            display: flex;
+            flex-direction: column;
+            text-transform: uppercase;
+            width: 566px;
+            @include laptop {
+                width: 526px;
+            }
+            &__info {  
+                margin-top: 17px;
+                display: flex;
+                flex-direction: column;
+             
+                &__data {
+                    display: flex;
+                }
+                h1 {
+                    margin-bottom: 11px;
+                    font: normal 11.25px "Alright-Sans";
+                    line-height: 11px;
+                    letter-spacing: 1.69px;
+                    text-transform: uppercase;
+                    color: #1a1a1a;
+                }
+                h2 {
+                    width: 149px;
+                    font: bold 9px "Alright-Sans";
+                    letter-spacing: 0.09px;
+                    line-height: 22px;
+                    color: #1a1a1a;
+                }
+                p {
+                    width: 366px;
+                    font: normal normal normal 9px "Arial";
+                    letter-spacing: 0.09px;
+                    color: #1a1a1a;
+                    line-height: 22px;
+                }
+            }
+        }
     }
 }
+
+
+
+
+
+
 
 
 
