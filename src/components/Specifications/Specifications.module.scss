@@ -1,7 +1,7 @@
 @use '../../styles/base.scss' as *;
 
 .section {
-    margin: 0 auto;
+    margin: 100px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,7 +11,7 @@
         display: none;
     }
     &__mainHeading {
-        margin-bottom: 71px;
+        margin-bottom: 110px;
         @include subheading;
         letter-spacing: 1.8px;
     }

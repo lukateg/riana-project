@@ -4,11 +4,14 @@
     position: relative;
     width: 1194px;
     height: 950px;
-    margin: 200px auto;
+    margin: 0 auto;
+    margin-top: 200px;
+    margin-bottom: 150px;
     @include laptop {
         width: 1240px;
     }
     @include tablet {
+        margin-top: 50px;
         width: 670px;
         height: 580px;
     }
@@ -16,7 +19,7 @@
         width: 332px;
         height: 280px;
         margin-bottom: 50px;
-        margin-top: 30px;
+        margin-top: 60px;
     }
     &__text {
         position: absolute;

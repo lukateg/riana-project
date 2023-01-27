@@ -25,6 +25,8 @@ import HeroImageForHome from './images/HeroImage-min.jpg';
 import DiningPage from './components/Dining-Page/DiningPage';
 import UltimateYachtExperience from './components/UltimateYachtExperience/UltimateYachtExperience';
 import RianaYachtStories from './components/RianaYachtStories/RianaYachtStories';
+import LifestylePage from './components/Lifestyle-Page/LifestylePage';
+import EventsPage from './components/EventsPage/EventsPage';
 
 const App = () => (
   <>
@@ -56,6 +58,8 @@ const App = () => (
       <Route path="gallery" element={<Gallery />} />
       <Route path="contact" element={<ContactPage />} />
       <Route path="dining" element={<DiningPage />} />
+      <Route path="lifestyle" element={<LifestylePage />} />
+      <Route path="events" element={<EventsPage />} />
     </Routes>
     <Footer />
   </>

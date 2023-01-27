@@ -5,9 +5,10 @@ import Alert from '@mui/material/Alert';
 import styles from './ContactPage.module.scss';
 
 import ContactForm from './ContactForm/ContactForm';
+import Breadcrumbs from '../Breadcrumbs/Breadcrumbs';
 import HeroImage from '../HeroImage/HeroImage';
 import image from '../../images/PNRiana-0799 2-min.jpeg';
-import Brochure from './Brochure/Brochure';
+import DownloadBrochure from '../DownloadBrochure/DownloadBrochure';
 
 const ContactPage = () => {
   const form = useRef();
@@ -47,6 +48,7 @@ const ContactPage = () => {
   return (
     <div className={styles.section}>
       <HeroImage image={image} />
+      <Breadcrumbs />
       {alert && (
         <Alert
           severity="success"
@@ -76,7 +78,7 @@ const ContactPage = () => {
         setAlert={setAlert}
         formRefference={form}
       />
-      <Brochure />
+      <DownloadBrochure />
     </div>
   );
 };

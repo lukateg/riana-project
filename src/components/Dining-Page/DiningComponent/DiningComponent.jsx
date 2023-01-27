@@ -1,5 +1,7 @@
 import styles from './DiningComponent.module.scss';
-import image from '../../../images/Dinning-min.jpg';
+import image1 from '../../../images/hrana1.jpg';
+import image2 from '../../../images/hrana2.jpg';
+
 import brochure from '../../../images/brochureRiana.pdf';
 
 const DiningComponent = () => (
@@ -25,8 +27,8 @@ const DiningComponent = () => (
           </p>
         </div>
         <div className={styles.section__content__images__mobile}>
-          <img src={image} alt="dinningImage" className={styles.image} />
-          <img src={image} alt="dinningImage" className={styles.image} />
+          <img src={image1} alt="dinningImage" className={styles.image} />
+          <img src={image2} alt="dinningImage" className={styles.image} />
         </div>
 
         <div className={styles.section__content__buttonWrapper}>
@@ -38,8 +40,8 @@ const DiningComponent = () => (
         </div>
       </div>
       <div className={styles.section__image}>
-        <img src={image} alt="dinningImage" className={styles.image} />
-        <img src={image} alt="dinningImage" className={styles.image} />
+        <img src={image1} alt="dinningImage" className={styles.image} />
+        <img src={image2} alt="dinningImage" className={styles.image} />
       </div>
     </div>
   </div>

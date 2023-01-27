@@ -2,23 +2,18 @@
 
 .section {
   width: 1194px;
-  margin: 0 auto;
-  margin-top: 136px;
-  margin-bottom: 61px;
+  margin: 136px auto;
   color: $primary-color;
   @include laptop {
     width: 1240px;
-    margin-top: 93px;
-    margin-bottom: 81px;
+    margin: 93px auto;
   }
   @include tablet {
     width: 100%;
-    margin-top: 81px;
-    margin-bottom: 36px;
+    margin: 81px 0;
   }
   @include mobile {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 50px auto;
 
   }
   &__content {
@@ -65,7 +60,8 @@
     height: 46px;
     font: bold 8.25px 'Arial';
     letter-spacing: 1.65px;
-    text-transform: uppercase;    
+    text-transform: uppercase;  
+    margin-top: 15px;  
   }
   button:hover {
     background-color: #1a1a1a;
