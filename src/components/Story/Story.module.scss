@@ -1,0 +1,116 @@
+@use '../../styles/base.scss' as *;
+
+.section {
+    width: 576px;
+    @include tablet {
+        width: 346px;
+    }
+    @include mobile {
+        width: 344px;
+    }
+    &__content {
+      display: flex;
+      justify-content: center;
+      gap: 43px;
+      @include laptop {
+        gap: 60px;
+      }
+      @include tablet {
+        gap: 36px;
+      }
+      @include mobile {
+        flex-direction: column;
+        margin: 0 auto;
+        width: 344px;
+      }
+       &__element {      
+        &__image {
+          width: 576px;
+          height: 384px;
+          object-fit: cover;
+          @include tablet {
+            width: 346px;
+            height: 231px;
+          }
+          @include mobile {
+            width: 344px;
+            height: 287px;
+          }
+      }
+        &__heading {
+          margin-top: 20px;
+          font: normal 14px 'Baslerville';
+          letter-spacing: 1.12px;
+          margin-left: 20px;
+          @include laptop {
+            margin-left: 0;
+          }
+          @include tablet {
+            margin-left: 20px;
+          }
+          @include mobile {
+            margin-left: 10px;
+          }
+        }
+        &__paragraph {
+          margin-top: 19px;
+          width: 490px;
+          height: 105px;
+          margin-left: 20px;
+          @include bodyText;
+          letter-spacing: 0.28px;
+          line-height: 22px;
+          @include laptop {
+            margin-left: 0;
+          }
+          @include tablet {
+            width: 291px;
+            margin-left: 20px;
+            height: 180px;
+          }
+          @include mobile {
+            width: 322px;
+            margin-left: 10px;
+            height: fit-content;
+            font-size: 11px !important;
+            line-height: 20px;
+            letter-spacing: 0.11px;
+          }
+        }
+        &__discoverMore {  
+          color: #1a1a1a;
+          margin-top: 20px;
+          font: bolder 8.25px 'Arial';
+          letter-spacing: 1.65px;
+          width: fit-content;
+          margin-left: 20px;
+          @include laptop {
+            margin-left: 0;
+          }
+          @include tablet {
+            margin-left: 20px;
+          }
+          @include mobile {
+            margin-top: 20px;
+            margin-left: 10px;
+          }
+        }
+        &__discoverMore::after {
+          display:block;
+          content: '';
+          border-bottom: solid 1.5px #1a1a1a;  
+          transform: scaleX(0);  
+          transition: transform 250ms ease-in-out;
+          transform-origin:  0% 50%;
+        }
+        &__discoverMore:hover:after { 
+          transform: scaleX(1);
+        }
+      }
+    }
+}
+
+
+
+ 
+

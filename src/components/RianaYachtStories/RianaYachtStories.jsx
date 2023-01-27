@@ -1,6 +1,6 @@
 import styles from './RianaYachtStories.module.scss';
 import leftImage from '../../images/IMG_9213-min.jpg';
-import rightImage from '../../images/Left-Top-min.jpg';
+import rightImage from '../../images/helicopter.jpg';
 
 const RianaYachtStories = () => (
   <>

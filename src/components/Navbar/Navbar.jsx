@@ -8,17 +8,25 @@ import logoWhite from '../../images/beliLogo.svg';
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
   const [open, setOpen] = useState(true);
-  const [dining, setDining] = useState(false);
+  const [black, setBlack] = useState(false);
   const { pathname } = useLocation();
   let previousState = false;
 
   useEffect(() => {
     setOpen(true);
-    if (pathname === '/dining') {
-      setDining(true);
+    if (
+      pathname === '/dining' ||
+      pathname === '/lifestyle' ||
+      pathname === '/events'
+    ) {
+      setBlack(true);
     }
-    if (pathname !== '/dining') {
-      setDining(false);
+    if (
+      pathname !== '/dining' &&
+      pathname !== '/lifestyle' &&
+      pathname !== '/events'
+    ) {
+      setBlack(false);
     }
   }, [pathname]);
 
@@ -84,7 +92,7 @@ const Navbar = () => {
             src={logoBlack}
             alt=""
             className={
-              navbar || dining || !open
+              navbar || black || !open
                 ? `${styles.logoImage} ${styles.active}`
                 : `${styles.logoImage}`
             }
@@ -95,7 +103,7 @@ const Navbar = () => {
             src={logoWhite}
             alt=""
             className={
-              navbar || !open || dining
+              navbar || !open || black
                 ? `${styles.logoImage}`
                 : `${styles.logoImage} ${styles.active}`
             }
@@ -112,7 +120,7 @@ const Navbar = () => {
       </div>
       <hr
         className={
-          (navbar || dining) && open
+          (navbar || black) && open
             ? `${styles.hr} ${styles.active}`
             : `${styles.hr}`
         }
@@ -127,7 +135,7 @@ const Navbar = () => {
         <div className={styles.nav__item}>
           <Link
             className={
-              navbar || dining
+              navbar || black
                 ? `${styles.nav__item__element} ${styles.active}`
                 : `${styles.nav__item__element}`
             }
@@ -140,7 +148,7 @@ const Navbar = () => {
         <div className={styles.nav__item}>
           <div
             className={
-              navbar || dining
+              navbar || black
                 ? `${styles.dot} ${styles.active}`
                 : `${styles.dot}`
             }
@@ -152,7 +160,7 @@ const Navbar = () => {
         <div className={styles.nav__item}>
           <Link
             className={
-              navbar || dining
+              navbar || black
                 ? `${styles.nav__item__element} ${styles.active}`
                 : `${styles.nav__item__element}`
             }
@@ -164,7 +172,7 @@ const Navbar = () => {
         <div className={styles.nav__item}>
           <div
             className={
-              navbar || dining
+              navbar || black
                 ? `${styles.dot} ${styles.active}`
                 : `${styles.dot}`
             }
@@ -175,19 +183,19 @@ const Navbar = () => {
         <div className={styles.nav__item}>
           <Link
             className={
-              navbar || dining
+              navbar || black
                 ? `${styles.nav__item__element} ${styles.active}`
                 : `${styles.nav__item__element}`
             }
-            to="/stories"
+            to="/lifestyle"
           >
-            stories
+            lifestyle
           </Link>
         </div>
         <div className={styles.nav__item}>
           <div
             className={
-              navbar || dining
+              navbar || black
                 ? `${styles.dot} ${styles.active}`
                 : `${styles.dot}`
             }
@@ -198,7 +206,7 @@ const Navbar = () => {
         <div className={styles.nav__item}>
           <Link
             className={
-              navbar || dining
+              navbar || black
                 ? `${styles.nav__item__element} ${styles.active}`
                 : `${styles.nav__item__element}`
             }
@@ -210,7 +218,7 @@ const Navbar = () => {
         <div className={styles.nav__item}>
           <div
             className={
-              navbar || dining
+              navbar || black
                 ? `${styles.dot} ${styles.active}`
                 : `${styles.dot}`
             }
@@ -221,7 +229,7 @@ const Navbar = () => {
         <div className={styles.nav__item}>
           <Link
             className={
-              navbar || dining
+              navbar || black
                 ? `${styles.nav__item__element} ${styles.active}`
                 : `${styles.nav__item__element}`
             }
@@ -233,7 +241,7 @@ const Navbar = () => {
         <div className={styles.nav__item}>
           <div
             className={
-              navbar || dining
+              navbar || black
                 ? `${styles.dot} ${styles.active}`
                 : `${styles.dot}`
             }
@@ -244,7 +252,7 @@ const Navbar = () => {
         <div className={styles.nav__item}>
           <Link
             className={
-              navbar || dining
+              navbar || black
                 ? `${styles.nav__item__element} ${styles.active}`
                 : `${styles.nav__item__element}`
             }
@@ -257,7 +265,7 @@ const Navbar = () => {
         <div className={styles.nav__item}>
           <div
             className={
-              navbar || dining
+              navbar || black
                 ? `${styles.dot} ${styles.active}`
                 : `${styles.dot}`
             }
@@ -268,7 +276,7 @@ const Navbar = () => {
         <div className={styles.nav__item}>
           <Link
             className={
-              navbar || dining
+              navbar || black
                 ? `${styles.nav__item__element} ${styles.active}`
                 : `${styles.nav__item__element}`
             }
@@ -300,8 +308,8 @@ const Navbar = () => {
           </Link>
         </div>
         <div className={styles.nav__mobile__row}>
-          <Link to="/stories">stories</Link>
-          <Link to="/stories">
+          <Link to="/lifestyle">lifestyle</Link>
+          <Link to="/lifestyle">
             <i className="fa-solid fa-chevron-right">{/* arrow */}</i>
           </Link>
         </div>

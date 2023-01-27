@@ -2,10 +2,8 @@
 
 .section {
   width: 1375px;
-  margin: 0 auto;
+  margin: 150px auto;
   color: $primary-color;
-  margin-top: 9rem;
-  margin-bottom: 7rem;
   height: fit-content;
   @include laptop {
     width: 1239px;
@@ -15,12 +13,11 @@
     width: 768px;
   }
   @include mobile {
+    margin-top: 60px;
+    margin-bottom: 50px;
     width: 350px;
     height: 500px;
   }
-  // @media only screen and (max-width: 340px) {
-  //   display: none;
-  // }
   &__content {
     margin: 2rem 0 0 0;
     display: flex;
@@ -156,7 +153,7 @@
     letter-spacing: 1.8px;
     line-height: 20px;
     text-align: center;
-    margin-bottom: 6rem;
+    margin-bottom: 20px;
     @include mobile {
       margin-bottom: 2rem;
     }

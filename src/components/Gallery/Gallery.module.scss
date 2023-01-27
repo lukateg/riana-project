@@ -1,91 +1,21 @@
 @use '../../styles/base.scss' as *;
 
-.section {
-  @include wrapper;
-  &__arrowContainer {
-    position: relative;
+.image {
+  object-fit: cover;
+  width: 1920px;
+  height: 933px;
+  margin: 100px auto;
+  @include laptop {
+    width: 1440px;
+    height: 705px;
   }
-  &__arrow {
-    width: 50px;
-    height: 50px;
-    background-color: black;
-    border: none;
-    color: #ffffff;
-    position: absolute;
-    right: 0;
-    top: 13%;
-    @media only screen and (max-width: 450px) {
-      display: none;
-    }
+  @include tablet {
+    width: 768px;
+    height: 373px;
   }
-}
-
-.button {
-  display: block;
-  margin: 3rem auto;
-  width: 426px;
-  height: 88px;
-  background: #ffffff 0% 0% no-repeat padding-box;
-  border: 1px solid #707070;
-  opacity: 1;
-  cursor: pointer;
-  font: normal normal bold 15px 'Arial';
-  letter-spacing: 3px;
-  margin-bottom: 7rem;
-  @media only screen and (max-width: 500px) {
-  
-    width: 270px;
-    height: 50px;
-    font-size: 8pt;
-    letter-spacing: 1.6pt;
-    
+  @include mobile {
+    width: 375px;
+    height: 182px;
   }
 }
-
-.button:hover {
-  background-color: #1a1a1a;
-  color: white;
-}
-
-.gallery h4 {
-  font: normal normal normal 35px "Times New Roman";
-}
-
-.mainHeading {
-  @include mainHeadingStyling;
-  text-align: center;
-  margin-bottom: 3rem;
-  margin-top: 6rem;
-  @media only screen and (max-width: 500px) {
-    display: none;
-  }
-}
-
-.text {
-  display: none;
-  @media only screen and (max-width: 500px) {
-    display: block;
-    margin-left: 1.3rem;
-    margin-right: 1.3rem;
-    margin-top: 2rem;
-  }
-}
-
-.text h3 {
-  font: normal normal normal 22pt 'Times New Roman';
-  letter-spacing: 2.2pt;
-  line-height: 20pt !important;
-}
-
-.text h4 {
-  font: normal normal normal 15pt 'Times New Roman';
-  letter-spacing: 1.5pt;
-  margin-bottom: 2rem;  
-  line-height: 20pt !important;
-
-}
-
-.text p {
-  @include bodyTextStyling;
-  line-height: 20pt !important;
-}
+ 

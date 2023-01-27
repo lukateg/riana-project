@@ -6,50 +6,50 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    @media only screen and (max-width: 500px) {
-      width: 95%;
+    margin-top: 116px;
+    @include mobile {
+      margin-top: 90px;
+    }
+
+   h1 {
+      @include subheading;
+      letter-spacing: 3.15px !important;
+      text-align: center;
+      line-height: 25px;
+      @include laptop {
+        letter-spacing: 1.8px !important;
+      }
+      @include tablet {
+        letter-spacing: 1.95px !important;
+      }
+      @include mobile {
+        letter-spacing: 1.57px !important;
+      }
+   }
+   p {
+      @include bodyText;
+        text-align: center;
+        width: 792px;
+        letter-spacing: 0.28px !important;
+        line-height: 16px !important;
+        margin: 20px 0;
+        @include laptop {
+          width: 720px;
+          line-height: 22px !important;
+          letter-spacing: 0.28px!important;
+        }
+        @include tablet {
+          width: 489px;
+          letter-spacing:0.28px !important;
+          line-height: 22px !important;
+        }
+        @include mobile {
+          margin: 5px 0;
+          width: 335px;
+        }
    }
     
 }
 
-.section__heading1 {
-   @include mainHeadingStyling;
-    text-align: center;
-    margin-top: 5rem;
-    @media only screen and (max-width: 500px) {
-        margin-top: 2rem;
-     }
-}
 
 
-.section__heading2 {
-   @include subheadingStyling;
-   text-align: center;
-   margin-bottom: 3rem;
-   @media only screen and (max-width: 500px) {
-      margin-bottom: 1.5rem;
-    }
-}
-
-.section p {
-   @include bodyTextStyling;
-   margin-top: 2rem;
-   text-align: center;
-   width: 800px;
-   max-width: 850px;
-   @media only screen and (max-width: 870px) {
-      width: 600px;
-   }
-   @media only screen and (max-width: 870px) {
-      width: 550px;
-   }
-   @media only screen and (max-width: 650px) {
-      width: 500px;
-   }
-   @media only screen and (max-width: 500px) {
-      margin-top: 1rem;
-      width: 100%;
-      padding-left: 0.5rem;
-      padding-right: 0.5rem;
-   }
-}

@@ -22,24 +22,25 @@
 
 .text {
     position: absolute;
-    top: 55%;
-    left: 80px;
-    
+    top: 40%;
+    left: 5%;
     text-transform: uppercase;
     color: #f7f7f7;
+    @include tablet {
+        display: none
+    }
 
-    @media only screen and (max-width: 760px) {
-        display: none;
+    h2 {
+        @include subheading;
+        letter-spacing: 3.15px;
+        line-height: 22px;
+    }
+    p {
+        @include bodyText;
+        letter-spacing: 0.28px;
+        line-height: 16px;
+        text-transform:none;
+        margin-top: 15px;
     }
 }
 
-.text h2 {
-    font: normal normal normal 35px 'Times New Roman';
-    letter-spacing: 3.5px;
-}
-
-.text h3 {
-    font: normal normal normal 25px 'Times New Roman';
-    font-size: 25px;
-    letter-spacing: 2.5px;
-}
