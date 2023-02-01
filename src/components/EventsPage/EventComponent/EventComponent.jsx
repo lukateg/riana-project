@@ -15,7 +15,10 @@ const EventComponent = () => (
           There is a further double cabin adjacent to the wheel house which is
           ideal accommodation for nannies, security, staff or extra guests.
         </p>
-        <p>All cabins are fitted with ensuite bathrooms.</p>
+        <p>
+          All cabins are fitted with ensuite bathrooms.
+          <br className={styles.mobile} /> <br />
+        </p>
         <br id={styles.mobile} />
         <p>Maximum Capacity:</p>
         <p>Sailing (with dispensation) - 22 people</p>

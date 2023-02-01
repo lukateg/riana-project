@@ -16,7 +16,34 @@
     margin-top: 60px;
     margin-bottom: 50px;
     width: 350px;
-    height: 500px;
+    height: 1000px;
+  }
+  &__text {
+    @include bodyText;
+    letter-spacing: 0.28px;
+    line-height: 16px;
+    margin: 30px auto !important;
+    text-align: center;
+    justify-content: center;
+    max-width: 690px !important;
+    @include mobile {
+      margin-top: -1rem;
+    }
+  }
+  &__image {
+    margin-top: 60px !important;
+    margin-bottom: 108px !important;
+    width: 1192px !important;
+    height: 779px !important;
+    object-fit: cover;
+    @include tablet {
+      width: 727px !important;
+      height: 475px !important;
+    }
+    @include mobile {
+      width: 334px !important;
+      height: 218px !important;
+    }
   }
   &__content {
     margin: 2rem 0 0 0;
@@ -67,9 +94,6 @@
       margin-bottom: 0px;
       height: 40px;
     }
-    // @media only screen and (max-width: 500px) {
-    //   height: 30px;
-    // }
   }
   &__span {
     opacity: 0;
@@ -177,5 +201,5 @@
       height: 180px;
       margin: 3rem auto;
     }
-  }
+  } 
 }

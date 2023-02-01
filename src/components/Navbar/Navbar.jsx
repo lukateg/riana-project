@@ -62,16 +62,6 @@ const Navbar = () => {
       onMouseEnter={() => changeNavbarOnMouseEnter(navbar)}
       onMouseLeave={() => changeNavbarOnMouseLeave(navbar)}
     >
-      <div
-        className={
-          navbar
-            ? `${styles.nav__newsletter} ${styles.active}`
-            : `${styles.nav__newsletter} `
-        }
-      >
-        <i className="fa-regular fa-envelope">{/* envelope */}</i>
-        <p>newsletter</p>
-      </div>
       <div className={styles.nav__bookNowButtonWrapper}>
         <button
           type="button"
@@ -210,9 +200,9 @@ const Navbar = () => {
                 ? `${styles.nav__item__element} ${styles.active}`
                 : `${styles.nav__item__element}`
             }
-            to="/offers"
+            to="/experiences"
           >
-            offers
+            experiences
           </Link>
         </div>
         <div className={styles.nav__item}>
@@ -294,7 +284,7 @@ const Navbar = () => {
         }
       >
         <div className={styles.nav__mobile__row__contact}>
-          <a href="tel:+971 50 478 4660">
+          <a href="tel:+447 788 200 528">
             <i className="fa-solid fa-phone">{/* phone */}</i>
           </a>
           <Link to="/contact">
@@ -314,8 +304,8 @@ const Navbar = () => {
           </Link>
         </div>
         <div className={styles.nav__mobile__row}>
-          <Link to="/offers">offers</Link>
-          <Link to="/offers">
+          <Link to="/experiences">experiences</Link>
+          <Link to="/experiences">
             <i className="fa-solid fa-chevron-right">{/* arrow */}</i>
           </Link>
         </div>

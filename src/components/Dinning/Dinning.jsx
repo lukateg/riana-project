@@ -9,18 +9,19 @@ const Dinning = () => (
         <h4>fresh and diverse</h4>
       </div>
       <p className={styles.section__content__text}>
-        Your chef may prepare a variety of local or international dishes fresh
-        from source.
+        Enjoy an unforgettable culinary experience presented via our exclusive
+        partnership with Roberto’s Mare robertosmare.com <br /> <br />
       </p>
       <p className={styles.section__content__text}>
-        Our chef has over 10+ years of experience across the culinary world.
-        They are passionate about working with fresh produce and creating
-        innovative dishes, ensuring an unforgettable dining experience
-        throughout your stay.
+        Our onboard chef will deliver fresh, authentic local and international
+        cuisine, including a variety of tailor-made and signature dishes paired
+        with the perfect selection of wines, spirits & beverages. Join us on an
+        opulent gastronomic journey and enjoy our bespoke artisanal approach to
+        fine cuisine. <br /> <br />
       </p>
 
       <p className={styles.section__content__text} id={styles.mobile}>
-        Upon request, special dietary requirements may also be accommodated.
+        Special dietary requirements may be accommodated upon request.
       </p>
 
       <div className={styles.buttonWrapper}>
