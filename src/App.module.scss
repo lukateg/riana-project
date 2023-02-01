@@ -1,0 +1,14 @@
+@use './styles/base.scss' as *;
+
+.heroImage {
+    @include mobile {
+        display: none;
+    }
+}
+
+.heroImageMobile {
+    display: none;
+    @include mobile {
+        display: block;
+    }
+}

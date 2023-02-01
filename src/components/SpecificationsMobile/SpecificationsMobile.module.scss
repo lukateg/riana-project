@@ -1,11 +1,11 @@
 @use '../../styles/base.scss' as *;
 
 .section {
-  // background-color: red;
   width: 1375px;
   margin: 150px auto;
   color: $primary-color;
   height: fit-content;
+  display: none;
   @include laptop {
     width: 1239px;
     padding: 0;
@@ -15,10 +15,11 @@
     margin: 100px auto;
   }
   @include mobile {
+    display: block;
     margin-top: 60px;
     margin-bottom: 50px;
     width: 350px;
-    height: 1050px;
+    height: fit-content;
   }
   &__text {
     @include bodyText;
@@ -57,6 +58,9 @@
     height: fit-content;
     @include mobile {
       flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
+      height: 50px;
     }
   }
   &__buttons {
@@ -68,14 +72,16 @@
     height: 100%;
     @include tablet {
       margin-left: 20px;
+      margin-right: 100px;
     }
     @include mobile {
       flex-direction: row;
       width: 100%;
       justify-content: center;
       align-items: center;
-      gap: 50px;
+      gap: 30px;
       margin-left: 0;
+      margin-bottom: -30px;
     }
   }
   &__button {
@@ -97,6 +103,7 @@
     @include mobile {
       margin-bottom: 0px;
       height: 40px;
+      width: 100px;
     }
   }
   &__span {
@@ -172,6 +179,37 @@
     }
     &--not-active {
       opacity: 0;
+    }
+  }
+  &__brochure {
+    &__specifications {
+        &__info {
+            &__data {
+                display: flex;
+                h2 {
+                    width: 149px !important;
+                    font: bold 8.25px "Alright-Sans" !important;
+                    letter-spacing: 0.09px !important;
+                    line-height: 22px !important;
+                    color: #1a1a1a !important;
+                    margin: 0 !important; 
+                    text-align: left !important;
+                    margin-right: 20px !important;
+                    text-transform: uppercase !important;
+                }
+                p { 
+                    width: 366px !important;
+                    font: normal normal normal 8.25px "Arial" !important;
+                    letter-spacing: 0.03px !important;
+                    color: #1a1a1a !important;
+                    line-height: 22px !important;
+                    margin: 0 !important; 
+                    text-align: left !important;
+                    text-transform: uppercase !important;
+
+                }
+            }
+        }
     }
   }
   span {
