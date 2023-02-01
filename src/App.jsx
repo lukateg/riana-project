@@ -1,9 +1,11 @@
 /* eslint-disable no-unused-vars */
 import { Routes, Route } from 'react-router-dom';
+import styles from './App.module.scss';
 
 import Carousel from './components/Carousel/Carousel';
 import Navbar from './components/Navbar/Navbar';
 import YachtExperience from './components/YachtExperience/YachtExperience';
+import SpecificationsMobile from './components/SpecificationsMobile/SpecificationsMobile';
 import HeroImage from './components/HeroImage/HeroImage';
 import ClassicMotorSailingYacht from './components/ClassicMotorSailingYacht/ClassicMotorSailingYacht';
 import Design from './components/Design/Design';
@@ -22,6 +24,7 @@ import YachtStories from './components/YachtStories/YachtStories';
 import ContactPage from './components/Contact/ContactPage';
 import Gallery from './components/Gallery/Gallery';
 import HeroImageForHome from './images/HeroImage-min.jpg';
+import HeroImageForHomeMobile from './images/heroMobile.jpeg';
 import DiningPage from './components/Dining-Page/DiningPage';
 import UltimateYachtExperience from './components/UltimateYachtExperience/UltimateYachtExperience';
 import RianaYachtStories from './components/RianaYachtStories/RianaYachtStories';
@@ -36,7 +39,12 @@ const App = () => (
         path="/"
         element={
           <>
-            <HeroImage image={HeroImageForHome} />
+            <div className={styles.heroImage}>
+              <HeroImage image={HeroImageForHome} />
+            </div>
+            <div className={styles.heroImageMobile}>
+              <HeroImage image={HeroImageForHomeMobile} />
+            </div>
             {/* <YachtExperience /> */}
             <UltimateYachtExperience />
             <ClassicMotorSailingYacht />
@@ -46,6 +54,7 @@ const App = () => (
               images={[firstImage, secondImage, thirdImage, fourthImage]}
             />
             <Specifications />
+            <SpecificationsMobile />
             <Layout />
             <Events />
             {/* <YachtStories /> */}

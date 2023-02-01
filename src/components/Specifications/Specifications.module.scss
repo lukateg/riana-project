@@ -8,6 +8,10 @@
     align-items: center;
     text-transform: uppercase;
     @include tablet {
+        width: 768px;
+    }
+  
+    @include mobile {
         display: none;
     }
     &__mainHeading {
@@ -23,13 +27,14 @@
         gap: 97px;
         @include laptop {
             width: 1239px;
-            gap: 0;
+            gap: 104px;
         }
         @include tablet {
             flex-direction: column;
+            width: 768px;
         }
         img {
-            width: 712px;
+            width: 608px;
             height: 1060px;
             object-fit: cover;
             @include tablet {

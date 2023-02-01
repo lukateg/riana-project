@@ -94,13 +94,13 @@
             @include mobile {
                 padding: 0;
                 margin: 0;
-                width: 350px;
-                height: 550px;
+                width: 320px;
+                height: 570px;
             }
             
             &__content {
                 @include mobile {
-                    width: 350px;
+                    // width: 350px;
                     height: fit-content;
                     height: 850px;
                 }
@@ -118,7 +118,7 @@
         letter-spacing: 0.11px;
         margin-bottom: 1rem;
         @include mobile {
-            line-height: 22px !important;
+            line-height: 20px !important;            
         }
     }
     h2 {

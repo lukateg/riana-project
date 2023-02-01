@@ -30,14 +30,14 @@ const Footer = () => {
     <div className={styles.sectionWrapper}>
       <div className={styles.section}>
         <div className={styles.section__stayConnected}>
-          <h1>STAY CONNECTED</h1>
+          {/* <h1>STAY CONNECTED</h1>
           <h2>SIGN UP TO OUR NEWSLETTER</h2>
           <button
             type="button"
             className={styles.section__stayConnected__button}
           >
             SIGN UP
-          </button>
+          </button> */}
           <img src={image} alt="Riana Yacht" />
         </div>
         <div className={styles.section__navigation}>

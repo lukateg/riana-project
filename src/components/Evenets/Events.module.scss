@@ -28,7 +28,7 @@
     }
     @include tablet {
       width: 428px;
-      height: 409px;
+      height: 450px;
     }
     @include mobile {
       width: 100%;
@@ -61,6 +61,8 @@
           margin-bottom: 10px;
         }
         @include mobile {
+          margin-top: 25px;
+          margin-bottom: 30px;
           letter-spacing: 1.6px;
         }
       } 
@@ -79,8 +81,12 @@
       width: fit-content;
       margin-left: 30px;
       margin-top: 20px;
+      @include tablet {
+        margin-top: 50px;
+      }
       @include mobile {
-        margin: 20px auto;
+        margin: 30px auto;
+        margin-bottom: 55px;
       }
     }
     button {
@@ -138,7 +144,8 @@
 }
 #mobile {
   @include tablet {
-    display: none;
+    color: red !important;
+    display: none !important;
   }
   @include mobile {
     display: block;

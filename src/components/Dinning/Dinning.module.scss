@@ -29,7 +29,7 @@
     border-bottom: 1px solid black;
     @include tablet {
       width: 300px;
-      height: 372px;
+      height: 400px;
     }
     &__heading {
       text-align: center;
@@ -59,6 +59,9 @@
       margin: 0 auto;
       margin-top: 20px;
       @include tablet {
+        margin-top: 0px;
+      }
+      @include mobile {
         margin-top: 40px;
       }
     }
