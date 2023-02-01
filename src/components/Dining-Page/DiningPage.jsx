@@ -1,6 +1,6 @@
 import HeroImage from '../HeroImage/HeroImage';
 import ParagraphComponent from '../ParagraphComponent/ParagraphComponent';
-import image from '../../images/deck-1.jpg';
+import image from '../../images/headingDining.jpeg';
 import DiningComponent from './DiningComponent/DiningComponent';
 import styles from './DiningPage.module.scss';
 import diningTableImage from '../../images/_D811904-min.jpg';
@@ -14,7 +14,14 @@ const DiningPage = () => (
     <Breadcrumbs />
     <ParagraphComponent
       heading="DINING AND FACILITIES"
-      text="Living, dining and guest cabins are luxuriously fitted and furnished with high ceilings. Outdoor areas have expansive open decks with shaded areas for an optimum experience of the nature and oceanic surroundings that abound en-route, at anchor or at port."
+      text={
+        <>
+          Living, dining and guest cabins are luxuriously fitted and furnished
+          with high ceilings. <br /> Outdoor areas have expansive open decks
+          with shaded areas for an optimum experience of the nature and oceanic
+          surroundings that abound en-route, at anchor or at port.
+        </>
+      }
     />
     <DiningComponent />
     <div className={styles.imageWrapper}>

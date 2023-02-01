@@ -4,7 +4,7 @@ import Events from '../Evenets/Events';
 import Breadcrumbs from '../Breadcrumbs/Breadcrumbs';
 import DownloadBrochure from '../DownloadBrochure/DownloadBrochure';
 import hero from '../../images/blackAndWhite.JPG';
-import image from '../../images/event.jpg';
+import image from '../../images/IMG_9949.jpeg';
 import EventComponent from './EventComponent/EventComponent';
 
 const EventsPage = () => (
@@ -12,9 +12,18 @@ const EventsPage = () => (
     <div className={styles.color}>
       <HeroImage
         image={hero}
-        heading="CELEBRATIONS &"
-        heading2="EVENTS"
-        text="Create everlasting moments with perfectly curated events on Riana Yacht."
+        heading={
+          <div style={{ color: 'white' }}>
+            CELEBRATIONS & <br />
+            EVENTS
+          </div>
+        }
+        text={
+          <div style={{ color: 'white' }}>
+            Create everlasting moments with perfectly <br /> curated events on
+            Riana Yacht.
+          </div>
+        }
       />
     </div>
 

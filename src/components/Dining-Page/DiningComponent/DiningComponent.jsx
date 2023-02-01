@@ -14,11 +14,14 @@ const DiningComponent = () => (
         </div>
         <div className={styles.section__content__text}>
           <p>
-            Your chef may prepare a variety of local or international dishes.
+            Your chef may prepare a variety of local or international
+            dishes.Upon request, special dietary requirements may also be
+            accommodated.
+            <br /> <br />
           </p>
           <p>
-            Upon request, special dietary requirements may also be accommodated.
             Our chef has over 10+ years of experience across the culinary world.
+            <br /> <br />
           </p>
           <p>
             They are passionate about working with fresh produce and creating

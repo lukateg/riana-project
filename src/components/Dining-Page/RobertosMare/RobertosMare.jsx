@@ -21,13 +21,10 @@ const RobertosMare = () => (
             Our on board chef will deliver fresh, authentic local and
             international cuisine including a variety of tailor-made and
             signature dishes paired with the perfect selection of wines, spirits
-            & beverages.
+            & beverages.Join us on an opulent gastronomic journey and enjoy our
+            bespoke artisanal approach to fine cuisine.
           </p>
-          <p>
-            Join us on an opulent gastronomic journey and enjoy our bespoke
-            artisanal approach to fine cuisine.
-          </p>
-          <p>*Special dietary requirements may be accommodated upon request.</p>
+          <p>Special dietary requirements may be accommodated upon request.</p>
           <img
             src={robertosMareImage}
             alt="Roberto's Mare"

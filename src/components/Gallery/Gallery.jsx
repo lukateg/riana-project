@@ -51,23 +51,31 @@ const Gallery = () => {
       <TextGallery
         headline1="EXTERIOR"
         headline2="SPACE AND COMFORT"
-        text="With three extensive areas for sunbathing and entertaining, guests
-              may relax on the flybridge, forward or aft decks.
-              There are also two outdoor dining areas on the flybridge and aft
-              decks which can be shaded during the day and open to the stars at
-              night."
+        text={
+          <>
+            With three extensive areas for sunbathing and entertaining, guests
+            may relax on the flybridge, forward or aft decks. <br /> There are
+            also two outdoor dining areas on the flybridge and aft decks which
+            can be shaded during the day and open to the stars at night.
+          </>
+        }
       />
       <Carousel images={[firstImage, secondImage, thirdImage, fourthImage]} />
       <img src={hero2} alt="" className={styles.image} />
       <TextGallery
         headline1="INTERIOR"
         headline2="BESPOKE AND TIMELESS"
-        text="Dining and entertainment areas includes a lounge, bar and dining
-        area for up to 10 people. Sleeping accommodation comprises 2 x Queen
-        and 2 x Twin cabins (with an extra sleep sofa in each twin cabin).
-        There is a further double cabin adjacent to the wheel house which is
-        ideal accommodation for nannies, security, staff or extra guests.
-        All cabins are fitted with ensuite bathrooms."
+        text={
+          <>
+            Dining and entertainment areas includes a lounge, bar and dining
+            area for up to 10 people. Sleeping accommodation comprises 2 x Queen
+            and 2 x Twin cabins (with an extra sleep sofa in each twin cabin).
+            There is a further double cabin adjacent to the wheel house which is
+            ideal accommodation for nannies, security, staff or extra guests.
+            <br /> <br />
+            All cabins are fitted with ensuite bathrooms.
+          </>
+        }
       />
       <Carousel images={[firstImage2, secondImage2, thirdImage2]} />
       <DownloadBrochure />

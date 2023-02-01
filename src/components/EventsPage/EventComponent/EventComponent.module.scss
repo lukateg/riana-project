@@ -25,13 +25,13 @@
         width: 477px;
         height: fit-content;
         @include laptop {
-            bottom: 100px;
+            bottom: 75px;
             right: 0px;
             width: 492px;
         }
         @include tablet {
             width: 247px;
-            bottom: 20px;
+            bottom: 5px;
         }
         @include mobile {
             width: 220px;
@@ -145,5 +145,12 @@
         text-transform: uppercase;
         margin: 20px 0;
         
+    }
+}
+
+.mobile {
+    display: block;
+    @include mobile {
+        display: none;
     }
 }

@@ -13,12 +13,16 @@ const Events = () => (
         </h1>
         <p>
           Riana Yacht provides a unique floating venue that will comfortably
-          accommodate circa 80 people on it{`'`}s wide, open decks for a variety
-          of events. Whether on board or in conjunction with one of our hotel or
+          accommodate approximately 80 people on its wide, open decks for a
+          variety of events.
+          <br /> <br />
+          Whether on board or in conjunction with one of our hotel or
           destination partners we offer a seamless transition from wedding to
-          party to event including bespoke themes, decoration and music to suit
+          party to events including bespoke themes, decoration and music to suit
           the occasion.
           <br /> <br />
+          Riana Yacht will bring any event to life and make those celebrations
+          even more memorable.
           <span id={styles.mobile}>
             Riana Yacht will bring any event to life and make those celebrations
             even more memorable.

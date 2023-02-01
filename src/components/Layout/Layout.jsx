@@ -4,6 +4,7 @@ import styles from './Layout.module.scss';
 import lowerDeck from '../../images/lower-deck-min.png';
 import flybridgeDeck from '../../images/flybridge-deck-min.png';
 import mainDeck from '../../images/main-deck-min.png';
+import image from '../../images/_D811368.jpg';
 
 function Layout() {
   const [images, setImages] = useState({
@@ -14,7 +15,23 @@ function Layout() {
   return (
     <div className={styles.section}>
       <h2>LAYOUT</h2>
-      <main className={styles.section__content}>
+      <p className={styles.section__text}>
+        Discover Riana, a custom designed and built 42-metre luxury motor
+        sailing yacht with the feel, grace and elegance of a traditional sailing
+        yacht. Built to the highest technical and safety standards, Riana is a
+        modern yacht in a classic style, with a volume comparable to that of
+        many yachts of a larger size.
+      </p>
+      <p className={styles.section__text}>
+        Guests may unwind in its elegant surroundings, with ample decks,
+        comfortable interior spaces, and all the luxuries and amenities needed
+        for an easy and comfortable sail. The yacht has been designed for
+        maximum exposure to the nature and oceanic surroundings – morning coffee
+        on the deck with be hard to beat from anywhere else.
+      </p>
+      <img src={image} className={styles.section__image} alt="" />
+
+      <div className={styles.section__content}>
         <div className={styles.section__buttons}>
           <div>
             <button
@@ -144,14 +161,14 @@ function Layout() {
             }`}
           >
             <p>
-              These spaces contain the technical running’s of the ship are
+              These spaces contain the technical running’s of the ship and are
               concealed for the guests’ comfort. We can give you a tour of our
               engine room and other operational facilities upon request.
             </p>
             <img src={flybridgeDeck} alt="slika" />
           </div>
         </section>
-      </main>
+      </div>
     </div>
   );
 }
