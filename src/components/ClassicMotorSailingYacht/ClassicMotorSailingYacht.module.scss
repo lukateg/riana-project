@@ -43,7 +43,7 @@
         width: 247px;
         height: 46px;
         background-color: white;
-        font: bold 8.25px 'Arial';
+        font: bold 8.25px 'Alright-Sans';
         letter-spacing: 1.65px;
         border: none;
         color: #1a1a1a;
@@ -65,11 +65,7 @@
     }
 }
 #number {
-    font: normal normal bold 15px 'Arial';
-    font-weight: bold;
-    @media only screen and (max-width: 600px) {
-        font-size: 8pt;
-     }
+    font: bold 8.25px 'Arial';
 }
 
 

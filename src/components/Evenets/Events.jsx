@@ -1,4 +1,4 @@
-import brochure from '../../images/brochureRiana.pdf';
+import { Link } from 'react-router-dom';
 
 import styles from './Events.module.scss';
 import image from '../../images/8F9A1084-min.jpeg';
@@ -29,11 +29,12 @@ const Events = () => (
         </p>
       </div>
       <img src={image} alt="" className={styles.section__image} />
-      <div className={styles.section__content__buttonWrapper}>
-        <a href={brochure} download="Riana Brochure">
+      <Link to="/events">
+        <div className={styles.section__content__buttonWrapper}>
           <button type="button">EXPLORE</button>
-        </a>
-      </div>
+        </div>
+      </Link>
+
       <img src={image} alt="" className={styles.imageMobile} />
     </div>
   </div>

@@ -64,20 +64,21 @@
       opacity: 1;
     }
     button {
-      background: #1a1a1a00 0% 0% no-repeat padding-box;
-      border: 1px solid #000000;
-      width: 240px;
-      height: 61px;
-      font: normal normal bold 15px 'Arial';
-      letter-spacing: 3px;
-      text-transform: uppercase;
+      background-color: white;
+      border: 1px solid #1a1a1a;
+      color: #1a1a1a;
+      width: 180px;
+      height: 46px;
+      font: bold 8.25px 'Alright-Sans';
+      letter-spacing: 1.65px;
+      text-transform: uppercase;  
       margin-bottom: 1rem;
       margin-top: 1rem;
       @media only screen and (max-width: 400px) {
         padding: 10px 30px;
       }
     }
-    button:hover{
+    button:hover {
       background-color: #1a1a1a;
       color: white;
     }

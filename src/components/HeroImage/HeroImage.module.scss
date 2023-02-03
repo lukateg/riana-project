@@ -7,16 +7,19 @@
   height: 50%;
   max-height: 1500px;
   width: 100%;
+  object-fit: cover;
 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  
-  @media only screen and (max-width: 500px) {
-      height: 300px !important;
+  @media only screen and (max-width: 2500px) {
+    height: 1094px;
   }
-  @media only screen and (max-width: 375px) {
-    height: 250px !important;
+  @include laptop {
+    height: 766px;
+  }
+  @include tablet {
+    height: 512px;
+  }
+  @include mobile {
+    height: 250px;
   }
 }
 

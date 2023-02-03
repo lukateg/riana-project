@@ -142,9 +142,6 @@ const Footer = () => {
                 <i className="fa-brands fa-instagram">{/* instagram */}</i>
               </div>
             </a>
-            <div className={styles.section__links__icons__wrapper}>
-              <i className="fa-brands fa-facebook">{/* facebook */}</i>
-            </div>
           </div>
           <div className={styles.section__links__rights}>
             <p>ALL RIGHTS RESERVED.</p>

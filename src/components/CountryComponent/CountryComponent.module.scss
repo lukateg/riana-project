@@ -1,0 +1,35 @@
+@use '../../styles/base.scss' as *;
+
+.section {
+    margin: 130px auto;
+    width: 1256px;
+    display: flex;
+    justify-content: center;
+    gap: 34px;
+    padding: 36px;
+   
+    &__text {
+        width: 564px;
+        height: 184px;
+    }
+    h1 {
+        @include subheadingStyling;
+        margin-bottom: 23px
+    }
+    p {
+        @include bodyText;
+        letter-spacing: 0.28px;
+        line-height: 16px;
+        margin-bottom: 1rem;
+    }
+    img {
+        width: 582px;
+        height: 387px;
+        object-fit: cover;
+    }
+}
+
+.grey {
+    background-color: #EEEFEF;
+}
+
