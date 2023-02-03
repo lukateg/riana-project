@@ -7,7 +7,7 @@ import Breadcrumbs from '../Breadcrumbs/Breadcrumbs';
 import firstImage from '../../images/_D811900-min.jpg';
 import secondImage from '../../images/_D8E9214-min.jpg';
 import thirdImage from '../../images/IMG_6812-min.JPG';
-import fourthImage from '../../images/_D811726-min.jpg';
+// import fourthImage from '../../images/_D811726-min.jpg';
 
 import HeroImage from '../HeroImage/HeroImage';
 import HeroImageForGaller from '../../images/GalleryHero-min.jpg';
@@ -60,7 +60,7 @@ const Gallery = () => {
           </>
         }
       />
-      <Carousel images={[firstImage, secondImage, thirdImage, fourthImage]} />
+      <Carousel images={[firstImage, secondImage, thirdImage]} />
       <img src={hero2} alt="" className={styles.image} />
       <TextGallery
         headline1="INTERIOR"

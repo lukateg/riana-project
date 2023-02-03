@@ -6,8 +6,8 @@ import styles from './ContactPage.module.scss';
 
 import ContactForm from './ContactForm/ContactForm';
 import Breadcrumbs from '../Breadcrumbs/Breadcrumbs';
-import HeroImage from '../HeroImage/HeroImage';
-import image from '../../images/PNRiana-0799 2-min.jpeg';
+import image from '../../images/heroContact2-crop.jpg';
+import image2 from '../../images/kontaktSlika-min-crop.jpg';
 import DownloadBrochure from '../DownloadBrochure/DownloadBrochure';
 
 const ContactPage = () => {
@@ -47,7 +47,7 @@ const ContactPage = () => {
 
   return (
     <div className={styles.section}>
-      <HeroImage image={image} />
+      <img src={image} alt="" className={styles.HeroImage} />
       <Breadcrumbs />
       {alert && (
         <Alert
@@ -78,6 +78,7 @@ const ContactPage = () => {
         setAlert={setAlert}
         formRefference={form}
       />
+      <img src={image2} alt="" className={styles.image} />
       <DownloadBrochure />
     </div>
   );

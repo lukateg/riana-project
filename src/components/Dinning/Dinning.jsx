@@ -1,5 +1,6 @@
+import { Link } from 'react-router-dom';
+
 import styles from './Dinning.module.scss';
-import brochure from '../../images/brochureRiana.pdf';
 
 const Dinning = () => (
   <div className={styles.section}>
@@ -25,11 +26,11 @@ const Dinning = () => (
       </p>
 
       <div className={styles.buttonWrapper}>
-        <a href={brochure} download="Riana Brochure">
+        <Link to="/dining">
           <button type="button" className={styles.niki}>
             EXPLORE
           </button>
-        </a>
+        </Link>
       </div>
     </div>
     <div className={styles.section__image}>

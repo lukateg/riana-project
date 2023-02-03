@@ -30,6 +30,7 @@ import UltimateYachtExperience from './components/UltimateYachtExperience/Ultima
 import RianaYachtStories from './components/RianaYachtStories/RianaYachtStories';
 import LifestylePage from './components/Lifestyle-Page/LifestylePage';
 import EventsPage from './components/EventsPage/EventsPage';
+import ExperiencesPage from './components/ExperiencesPage/ExperiencesPage';
 
 const App = () => (
   <>
@@ -69,6 +70,7 @@ const App = () => (
       <Route path="dining" element={<DiningPage />} />
       <Route path="lifestyle" element={<LifestylePage />} />
       <Route path="events" element={<EventsPage />} />
+      <Route path="experiences" element={<ExperiencesPage />} />
     </Routes>
     <Footer />
   </>

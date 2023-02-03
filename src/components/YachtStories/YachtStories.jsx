@@ -1,5 +1,5 @@
+import { Link } from 'react-router-dom';
 import styles from './YachtStories.module.scss';
-import brochure from '../../images/brochureRiana.pdf';
 import firstImage from '../../images/IMG_9213-min.jpg';
 import secondImage from '../../images/Left-Top-min.jpg';
 
@@ -28,9 +28,11 @@ const YachtStories = () => (
             ideal accommodation for nannies, security, staff or extra guests.
             <br /> All cabins are fitted with ensuite bathrooms.
           </p>
-          <a href={brochure} download="Riana Brochure">
-            <button type="button">DISCOVER MORE</button>
-          </a>
+          <Link to="/events">
+            <div>
+              <button type="button">DISCOVER MORE</button>
+            </div>
+          </Link>
         </div>
       </div>
     </div>

@@ -90,18 +90,14 @@
       }
     }
     button {
-      background: #1a1a1a00 0% 0% no-repeat padding-box;
-      border: 1px solid #000000;
+      background-color: #eeefef;
+      border: 1px solid #1a1a1a;
       color: #1a1a1a;
       width: 180px;
       height: 46px;
       font: bold 8.25px 'Alright-Sans';
       letter-spacing: 1.65px;
-      text-transform: uppercase;
-      @include mobile {
-        font-size: 10px;
-        letter-spacing: 2px;
-      }
+      text-transform: uppercase;  
     }
     button:hover {
       background-color: #1a1a1a;

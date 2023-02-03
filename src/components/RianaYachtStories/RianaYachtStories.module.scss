@@ -89,10 +89,6 @@
         font: bold 8.25px 'Alright-Sans';
         letter-spacing: 1.65px;
         text-transform: uppercase;
-        @include mobile {
-          font-size: 10px;
-          letter-spacing: 2px;
-        }
     }
     button:hover {
         background-color: #1a1a1a;
