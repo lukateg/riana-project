@@ -30,7 +30,7 @@ const EventsPage = () => (
     <Breadcrumbs />
     <h1 className={styles.heading}>RIANA EVENTS</h1>
     <EventComponent />
-    <Events />
+    <Events eventsPage="eventsPage" />
     <img src={image} alt="" className={styles.image} />
     <DownloadBrochure />
   </>

@@ -6,7 +6,7 @@ import DownloadBrochure from '../DownloadBrochure/DownloadBrochure';
 import Breadcrumbs from '../Breadcrumbs/Breadcrumbs';
 import firstImage from '../../images/_D811900-min.jpg';
 import secondImage from '../../images/_D8E9214-min.jpg';
-import thirdImage from '../../images/IMG_6812-min.JPG';
+import thirdImage from '../../images/_D811904-min.jpg';
 // import fourthImage from '../../images/_D811726-min.jpg';
 
 import HeroImage from '../HeroImage/HeroImage';

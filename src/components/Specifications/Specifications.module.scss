@@ -46,10 +46,7 @@
             display: flex;
             flex-direction: column;
             text-transform: uppercase;
-            width: 566px;
-            @include laptop {
-                width: 526px;
-            }
+            width: 600px;
             &__info {  
                 margin-top: 17px;
                 display: flex;
@@ -74,7 +71,7 @@
                     color: #1a1a1a;
                 }
                 p {
-                    width: 366px;
+                    width: 450px;
                     font: normal normal normal 9px "Arial";
                     letter-spacing: 0.09px;
                     color: #1a1a1a;

@@ -156,10 +156,7 @@ function Layout() {
               className={styles.section__brochure__specifications__info__data}
             >
               <h2>crew</h2>
-              <p>
-                7 INTERNATIONAL CREW, STWC PROFICIENCY PROFESSIONALS WITH MORE
-                THAN 5 YEARS SERVICE TOGETHER AS TEAM ON YACHT
-              </p>
+              <p>7 INTERNATIONAL CREW, STCW PROFICIENCY</p>
             </div>
             <div
               className={styles.section__brochure__specifications__info__data}
@@ -259,26 +256,20 @@ function Layout() {
             >
               <h2>safety</h2>
               <p>
-                SAFETY LIFE RAFT X 4, EPIRB, SART, FIRE EXT ADV, 8 FIRST AID
-                MEDICAL KITS, <br /> 24 LIFE JACKETS, FLARES
+                LIFE RAFT X 4, EPIRB, SART, FIRE EXT ADV, 8 FIRST AID MEDICAL
+                KITS, 24 LIFE JACKETS, FLARES
               </p>
             </div>
             <div
               className={styles.section__brochure__specifications__info__data}
             >
-              <h2>crew</h2>
-              <p>silyon yachts</p>
-            </div>
-            <div
-              className={styles.section__brochure__specifications__info__data}
-            >
               <h2>safety monitorigin</h2>
-              <p>DECK OUTDOOR CCTV 24/7 SECURITY MONITORING, AIS TRANSPONDER</p>
+              <p>AIS TRANSPONDER, CCTV 24/7 SECURITY MONITORING</p>
             </div>
             <div
               className={styles.section__brochure__specifications__info__data}
             >
-              <h2>internet</h2>
+              <h2>internet / wifi</h2>
               <p>yes</p>
             </div>
             <div
@@ -315,17 +306,14 @@ function Layout() {
               className={styles.section__brochure__specifications__info__data}
             >
               <h2>cabin / suites</h2>
-              <p>
-                CABIN/SUITES 2 DOUBLE/2 TWIN, 1 EXTRA DOUBLE (BEHIND THE
-                WHEELHOUSE)
-              </p>
+              <p>2 DOUBLE / 2 TWIN, 1 EXTRA DOUBLE (BEHIND THE WHEELHOUSE)</p>
             </div>
             <div
               className={styles.section__brochure__specifications__info__data}
             >
               <h2>in-room amenities</h2>
               <p>
-                safe, fridge, flat screen tv and entertainment system ensuite
+                safe, fridge, flat screen tv and entertainment system, ensuite
               </p>
             </div>
             <div
@@ -364,7 +352,7 @@ function Layout() {
               className={styles.section__brochure__specifications__info__data}
             >
               <h2>cocktail area</h2>
-              <p>large cocktail area with seating at bow</p>
+              <p>LARGE COCKTAIL AREA WITH SEATING AT BOWDECK AND SUNDECK</p>
             </div>
             <div
               className={styles.section__brochure__specifications__info__data}
@@ -374,12 +362,6 @@ function Layout() {
                 FLATSCREEN TV WITH SURROUND SOUND AND APPLE TV ENTERTAINMENT
                 SYSTEM
               </p>
-            </div>
-            <div
-              className={styles.section__brochure__specifications__info__data}
-            >
-              <h2>crew cabins</h2>
-              <p>located under aft deck</p>
             </div>
           </div>
         </section>

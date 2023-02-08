@@ -14,18 +14,10 @@ const Navbar = () => {
 
   useEffect(() => {
     setOpen(true);
-    if (
-      pathname === '/dining' ||
-      pathname === '/lifestyle' ||
-      pathname === '/events'
-    ) {
+    if (pathname === '/lifestyle' || pathname === '/events') {
       setBlack(true);
     }
-    if (
-      pathname !== '/dining' &&
-      pathname !== '/lifestyle' &&
-      pathname !== '/events'
-    ) {
+    if (pathname !== '/lifestyle' && pathname !== '/events') {
       setBlack(false);
     }
   }, [pathname]);
@@ -159,7 +151,7 @@ const Navbar = () => {
             gallery
           </Link>
         </div>
-        <div className={styles.nav__item}>
+        {/* <div className={styles.nav__item}>
           <div
             className={
               navbar || black
@@ -167,10 +159,10 @@ const Navbar = () => {
                 : `${styles.dot}`
             }
           >
-            <i className="fa-sharp fa-solid fa-circle">{/* icon */}</i>
+            <i className="fa-sharp fa-solid fa-circle"> icon </i>
           </div>
-        </div>
-        <div className={styles.nav__item}>
+        </div> */}
+        {/* <div className={styles.nav__item}>
           <Link
             className={
               navbar || black
@@ -181,7 +173,7 @@ const Navbar = () => {
           >
             lifestyle
           </Link>
-        </div>
+        </div> */}
         <div className={styles.nav__item}>
           <div
             className={
@@ -193,7 +185,7 @@ const Navbar = () => {
             <i className="fa-sharp fa-solid fa-circle">{/* icon */}</i>
           </div>
         </div>
-        <div className={styles.nav__item}>
+        {/* <div className={styles.nav__item}>
           <Link
             className={
               navbar || black
@@ -204,8 +196,8 @@ const Navbar = () => {
           >
             experiences
           </Link>
-        </div>
-        <div className={styles.nav__item}>
+        </div> */}
+        {/* <div className={styles.nav__item}>
           <div
             className={
               navbar || black
@@ -213,9 +205,9 @@ const Navbar = () => {
                 : `${styles.dot}`
             }
           >
-            <i className="fa-sharp fa-solid fa-circle">{/* icon */}</i>
+            <i className="fa-sharp fa-solid fa-circle"></i>
           </div>
-        </div>
+        </div> */}
         <div className={styles.nav__item}>
           <Link
             className={
@@ -297,18 +289,20 @@ const Navbar = () => {
             <i className="fa-solid fa-chevron-right">{/* arrow */}</i>
           </Link>
         </div>
-        <div className={styles.nav__mobile__row}>
+
+        {/* <div className={styles.nav__mobile__row}>
           <Link to="/lifestyle">lifestyle</Link>
           <Link to="/lifestyle">
-            <i className="fa-solid fa-chevron-right">{/* arrow */}</i>
+            <i className="fa-solid fa-chevron-right"> arrow </i>
           </Link>
-        </div>
-        <div className={styles.nav__mobile__row}>
+        </div> */}
+
+        {/* <div className={styles.nav__mobile__row}>
           <Link to="/experiences">experiences</Link>
           <Link to="/experiences">
-            <i className="fa-solid fa-chevron-right">{/* arrow */}</i>
+            <i className="fa-solid fa-chevron-right"></i>
           </Link>
-        </div>
+        </div> */}
         <div className={styles.nav__mobile__row}>
           <Link to="/dining">dining</Link>
           <Link to="/dining">
