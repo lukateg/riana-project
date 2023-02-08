@@ -54,14 +54,17 @@ const Navbar = () => {
       onMouseEnter={() => changeNavbarOnMouseEnter(navbar)}
       onMouseLeave={() => changeNavbarOnMouseLeave(navbar)}
     >
-      <div className={styles.nav__bookNowButtonWrapper}>
-        <button
-          type="button"
-          id={navbar || !open ? `${styles.buttonActive}` : ''}
-        >
-          book <span>now</span>
-        </button>
-      </div>
+      <Link to="/contact">
+        <div className={styles.nav__bookNowButtonWrapper}>
+          <button
+            type="button"
+            id={navbar || !open ? `${styles.buttonActive}` : ''}
+          >
+            book <span>now</span>
+          </button>
+        </div>
+      </Link>
+
       <div
         className={
           navbar || !open
