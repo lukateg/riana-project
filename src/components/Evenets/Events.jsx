@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import styles from './Events.module.scss';
 import image from '../../images/8F9A1084-min.jpeg';
 
-const Events = () => (
+const Events = ({ eventsPage }) => (
   <div className={styles.section}>
     <div className={styles.section__content}>
       <div className={styles.section__content__text}>
@@ -29,11 +29,13 @@ const Events = () => (
         </p>
       </div>
       <img src={image} alt="" className={styles.section__image} />
-      <Link to="/events">
-        <div className={styles.section__content__buttonWrapper}>
-          <button type="button">EXPLORE</button>
-        </div>
-      </Link>
+      <div className={eventsPage ? `${styles.eventsPage}` : ''}>
+        <Link to="/events">
+          <div className={styles.section__content__buttonWrapper}>
+            <button type="button">EXPLORE</button>
+          </div>
+        </Link>
+      </div>
 
       <img src={image} alt="" className={styles.imageMobile} />
     </div>

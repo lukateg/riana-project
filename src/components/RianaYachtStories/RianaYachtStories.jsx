@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 import styles from './RianaYachtStories.module.scss';
 import leftImage from '../../images/IMG_9213-min.jpg';
-import rightImage from '../../images/helicopter.jpg';
+import rightImage from '../../images/isecena.jpg';
 
 const RianaYachtStories = () => (
   <div className={styles.section}>

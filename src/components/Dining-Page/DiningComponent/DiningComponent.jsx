@@ -2,8 +2,6 @@ import styles from './DiningComponent.module.scss';
 import image1 from '../../../images/hrana1.jpg';
 import image2 from '../../../images/hrana2.jpg';
 
-import brochure from '../../../images/brochureRiana.pdf';
-
 const DiningComponent = () => (
   <div className={styles.section}>
     <div className={styles.section__wrapper}>
@@ -32,14 +30,6 @@ const DiningComponent = () => (
         <div className={styles.section__content__images__mobile}>
           <img src={image1} alt="dinningImage" className={styles.image} />
           <img src={image2} alt="dinningImage" className={styles.image} />
-        </div>
-
-        <div className={styles.section__content__buttonWrapper}>
-          <a href={brochure} download="Riana Brochure">
-            <button type="button">
-              <p>EXPLORE</p>
-            </button>
-          </a>
         </div>
       </div>
       <div className={styles.section__image}>

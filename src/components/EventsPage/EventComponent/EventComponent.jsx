@@ -1,6 +1,6 @@
 import styles from './EventComponent.module.scss';
 import leftImage from '../../../images/IMG_9213-min.jpg';
-import rightImage from '../../../images/8F9A0972copy.jpg';
+import rightImage from '../../../images/events-crno-bela.jpeg';
 
 const EventComponent = () => (
   <>
@@ -9,7 +9,7 @@ const EventComponent = () => (
       <img src={rightImage} alt="" id={styles.rightImage} />
       <div className={styles.section__text}>
         <h1>
-          RIANA YACHT <br id={styles.mobile} /> STORIES
+          RIANA YACHT <br id={styles.mobile} /> EVENTS
         </h1>
         <p>
           There is a further double cabin adjacent to the wheel house which is
