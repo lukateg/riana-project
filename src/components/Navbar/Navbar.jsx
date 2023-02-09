@@ -188,7 +188,7 @@ const Navbar = () => {
             <i className="fa-sharp fa-solid fa-circle">{/* icon */}</i>
           </div>
         </div>
-        {/* <div className={styles.nav__item}>
+        <div className={styles.nav__item}>
           <Link
             className={
               navbar || black
@@ -199,8 +199,8 @@ const Navbar = () => {
           >
             experiences
           </Link>
-        </div> */}
-        {/* <div className={styles.nav__item}>
+        </div>
+        <div className={styles.nav__item}>
           <div
             className={
               navbar || black
@@ -208,9 +208,9 @@ const Navbar = () => {
                 : `${styles.dot}`
             }
           >
-            <i className="fa-sharp fa-solid fa-circle"></i>
+            <i className="fa-sharp fa-solid fa-circle">{/* dot */}</i>
           </div>
-        </div> */}
+        </div>
         <div className={styles.nav__item}>
           <Link
             className={
@@ -300,12 +300,12 @@ const Navbar = () => {
           </Link>
         </div> */}
 
-        {/* <div className={styles.nav__mobile__row}>
+        <div className={styles.nav__mobile__row}>
           <Link to="/experiences">experiences</Link>
           <Link to="/experiences">
-            <i className="fa-solid fa-chevron-right"></i>
+            <i className="fa-solid fa-chevron-right">{/* arrow */}</i>
           </Link>
-        </div> */}
+        </div>
         <div className={styles.nav__mobile__row}>
           <Link to="/dining">dining</Link>
           <Link to="/dining">

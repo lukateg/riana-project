@@ -7,13 +7,27 @@
     justify-content: center;
     gap: 34px;
     padding: 36px;
+    @include tablet {
+        width: 727px;
+        padding: 20px;
+        margin: 20px auto;
+    }
+    @include mobile {
+        width: 375px;
+        flex-direction: column;
+    }
    
     &__text {
         width: 564px;
         height: 184px;
+        @include tablet {
+            width: 327px;
+            height: fit-content;
+        }        
     }
     h1 {
-        @include subheadingStyling;
+        @include subheading;
+        letter-spacing: 3.15px;
         margin-bottom: 23px
     }
     p {
@@ -21,11 +35,22 @@
         letter-spacing: 0.28px;
         line-height: 16px;
         margin-bottom: 1rem;
+        @include tablet {
+            width: 327px;
+        }
     }
     img {
         width: 582px;
         height: 387px;
         object-fit: cover;
+        @include tablet {
+            width: 323px;
+            height: 215px;
+        }
+        @include mobile {
+            width: 334px;
+            height: 222px;
+        }
     }
 }
 
