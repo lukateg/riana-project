@@ -9,20 +9,13 @@ const EventComponent = () => (
       <img src={rightImage} alt="" id={styles.rightImage} />
       <div className={styles.section__text}>
         <h1>
-          RIANA YACHT <br id={styles.mobile} /> EVENTS
+          LUXURY ELEGANCE <br id={styles.mobile} /> GRACE
         </h1>
         <p>
-          There is a further double cabin adjacent to the wheel house which is
-          ideal accommodation for nannies, security, staff or extra guests.
+          Let us provide the perfect venue and help you create unforgettable
+          moments & memories for family, friends and guests. <br /> <br />
         </p>
-        <p>
-          All cabins are fitted with ensuite bathrooms.
-          <br className={styles.mobile} /> <br />
-        </p>
-        <br id={styles.mobile} />
-        <p>Maximum Capacity:</p>
-        <p>Sailing (with dispensation) - 22 people</p>
-        <p>Moored / Anchored - 80 people</p>
+        <p>Celebrate your next event in a unique style on Riana Yacht</p>
       </div>
     </div>
     <img src={leftImage} alt="" id={styles.mobileImage} />
