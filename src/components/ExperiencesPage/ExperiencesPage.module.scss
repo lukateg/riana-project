@@ -6,11 +6,16 @@
     text-align: center;
     margin-top: 3rem;
     margin-bottom: 7rem;
+    @include mobile {
+      margin-bottom: 3rem;
+    }
+ 
 }
 .image {
     width: 1920px;
     height: 579px;
     object-fit: cover;
+    margin: 0 auto;
     @include laptop {
       width: 1440px;
       height: 434px;
@@ -20,10 +25,38 @@
       height: 231px;
     }
     @include mobile {
-      display: none;
+      width: 375px;
+      height: 156px;
     }
   }
 
   .background {
     background-color: red($color: #000000);
+  }
+
+  .itinerary {
+    margin: 0 auto;
+    &__heading {
+      @include subheading;
+      text-align: center;
+      margin-top: 156px;
+      margin-bottom: 30px;
+      letter-spacing: 3.15px;
+      @include laptop {
+        margin-bottom: 50px;
+      }
+      @include mobile {
+        margin-top: 50px;
+      }
+    }
+    &__section {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      @include tablet {
+        gap: 30px;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
   }

@@ -1,0 +1,51 @@
+@use '../../styles/base.scss' as *;
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 130px auto;
+    @include tablet {
+        margin: 60px auto;
+    }
+    @include mobile {
+        margin: 0px auto;
+        margin-bottom: 50px;
+    }
+    a {
+        text-decoration: none;
+        color: #1a1a1a;
+    }
+    h1 {
+        @include subheading;
+        letter-spacing: 3.15px;
+    }
+    p {
+        margin-top: 20px;
+        font: 11.25px 'Arial';
+        letter-spacing: 0.28px;
+        line-height: 16px;
+        font-weight: 100;
+    }
+    button {
+        background: white;
+        border: .5px solid #1a1a1a;
+        color: #1a1a1a;
+        width: 110px;
+        height: 36px;
+        margin-top: 20px;
+        font: bold 10.5px 'Arial';
+        text-transform: uppercase;
+        letter-spacing: 2.1px;
+        @include mobile {
+            color: white;
+            background-color: #1a1a1a;
+        }
+    }
+    span {
+        @include mobile {
+            display: none;
+        }
+    }
+}
