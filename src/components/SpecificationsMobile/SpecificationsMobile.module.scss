@@ -64,6 +64,7 @@
     }
   }
   &__buttons {
+    // background-color: red;
     color: black;
     display: flex;
     flex-direction: column;
@@ -77,10 +78,10 @@
     @include mobile {
       flex-direction: row;
       width: 100%;
+      margin: 0 auto;
       justify-content: center;
       align-items: center;
-      gap: 30px;
-      margin-left: 0;
+      gap: 15px;
       margin-bottom: -30px;
     }
   }
@@ -101,9 +102,10 @@
       letter-spacing: 1.65px;
     }
     @include mobile {
+      font-family: 'Arial';
       margin-bottom: 0px;
       height: 40px;
-      width: 100px;
+      width: 95px;
     }
   }
   &__span {

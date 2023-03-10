@@ -29,7 +29,7 @@ const ExperiencesPage = () => (
       heading="MONTENEGRO"
       p1="Discover this tiny but unique country in the heart of Europe that is rich in nature and long in history, culture and heritage."
       p2="The Montenegrin coastline (from the Croatian to the Albanian border) abounds with stunning scenery, gastronomic delights, numerous anchorage and swimming spots and water access to the UNESCO World Heritage protected towns of Kotor, Budva, Bar and Ulcijn amongst other must visit locations including numerous mountains, lakes, forests and other towns and villages across the country."
-      p3="*Bespoke Montenegro land adventures and other services and experiences are offered in conjunction with our destination management partner discovermontenegro.com at an extra cost."
+      p3="Bespoke Montenegro land adventures and other services and experiences are offered in conjunction with our destination management partner Discover Montenegro, discovermontenegro.com."
     />
 
     <CountryComponent
@@ -50,14 +50,14 @@ const ExperiencesPage = () => (
     <CountryComponent
       image={italyImage}
       heading="ITALY"
-      p1="Italy Needs Little Introduction As A Sailing Destination, However, We Have A Few Tricks Up Our Sleeve When It Comes To Navigating The Various Italian Hotspots And Adding A Selection Of Stunning Locations And Expeditions To Your Itinerary."
-      p2="What About Our Volcano Cruise For Example. We Can Offer A Pure Sicilian Dinner Experience With A Visit From A Renowned Local Chef, Local Wines And Live Acoustic Background Music As You Dine At Sunset Drifting Past The Active Stromboli Volcano As Your Backdrop."
-      p3="Our Bespoke Volcano Dinning Experience Is Offered In Conjunction With Our Sicilian Destination Partner Contessa Consulting Contessaconsulting.Com At An Extra Cost."
+      p1="Italy needs little introduction as a sailing destination, however, we have a few tricks up our sleeve when it comes to navigating the various Italian hotspots and adding a selection of stunning locations and expeditions to your itinerary. "
+      p2="For our volcano cruise, for example, we can offer a pure Sicilian dinner experience with a visit from a renowned local chef, local wines and live acoustic background music as you dine at sunset drifting past the active Stromboli volcano as your backdrop."
+      p3="Our bespoke volcano dining experience is offered in conjunction with our Sicilian destination partner Contessa Consulting, contessaconsulting.com at an extra cost."
     />
     <Reservations />
     <img src={image2} alt="" className={styles.image} />
     <div className={styles.itinerary}>
-      <h1 className={styles.itinerary__heading}>ITINERARY</h1>
+      <h1 className={styles.itinerary__heading}>SUGGESTED ITINERARY</h1>
       <div className={styles.itinerary__section}>
         <Itinerary
           number="1"

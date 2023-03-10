@@ -27,22 +27,30 @@
         letter-spacing: 0.28px;
         line-height: 16px;
         font-weight: 100;
+        @include mobile {
+            font-family: 'Arial';
+        }
     }
     button {
         background: white;
-        border: .5px solid #1a1a1a;
+        border: 1px solid #707070;
         color: #1a1a1a;
         width: 110px;
         height: 36px;
         margin-top: 20px;
-        font: bold 10.5px 'Arial';
+        font: bold 10.5px 'Alright-Sans';
         text-transform: uppercase;
         letter-spacing: 2.1px;
         @include mobile {
+            font-family: 'Arial';
             color: white;
             background-color: #1a1a1a;
         }
     }
+    button:hover {
+        background-color: #1a1a1a;
+        color: white;
+      }
     span {
         @include mobile {
             display: none;

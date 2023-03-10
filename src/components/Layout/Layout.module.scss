@@ -74,8 +74,8 @@
       width: 100%;
       justify-content: center;
       align-items: center;
-      gap: 50px;
-      margin-left: 0;
+      gap: 8px;
+      margin: 0 auto;
     }
   }
   &__button {
@@ -96,31 +96,31 @@
     }
     @include mobile {
       margin-bottom: 0px;
+      font-family: 'Arial';
       height: 40px;
+      width: 100px;
+      min-width: 110px;
     }
   }
   &__span {
     opacity: 0;
     position: absolute;
-    width: 80px;
+    width: 100%;
     margin: 0 auto;
     height: 1px;
     background-color: $primary-color-lt;
     bottom: 0;
-    left: 20px;
+    left: 0px;
     z-index: 1;
     transition: width 1s, height 4s;
     -webkit-transition: opacity 0.5s ease-in-out;
     -moz-transition: opacity 0.5s ease-in-out;
     -o-transition: opacity 0.5s ease-in-out;
     transition: opacity 0.5s ease-in-out;
-    @include tablet {
-      left: 10px;
-    }
     @include mobile {
-      width: 100%;
+      width: 80%;
       height: 1px;
-      left: 0px;
+      text-align: center;
       // left: 5px;
       // right: 5px;
     }
