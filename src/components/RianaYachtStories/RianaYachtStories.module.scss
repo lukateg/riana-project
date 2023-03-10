@@ -5,8 +5,8 @@
     width: 1194px;
     height: 950px;
     margin: 0 auto;
-    margin-top: 200px;
-    margin-bottom: 150px;
+    margin-top: 300px;
+    margin-bottom: 250px;
     @include laptop {
         width: 1240px;
     }
@@ -89,6 +89,9 @@
         font: bold 8.25px 'Alright-Sans';
         letter-spacing: 1.65px;
         text-transform: uppercase;
+        @include mobile {
+            font-family: 'Arial';
+        }
     }
     button:hover {
         background-color: #1a1a1a;

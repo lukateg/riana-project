@@ -25,6 +25,9 @@
     font: bold 8.25px 'Alright-Sans';
     letter-spacing: 1.8px;
     cursor: pointer;
+    @include mobile {
+      font-family: 'Arial';
+    }
   }
   &__button:hover {
     background-color: #1a1a1a;
@@ -43,8 +46,6 @@
     position: absolute;
     right: 0;
     top: 13%;
-    padding-left: 8px;
-    
   }
 
 }

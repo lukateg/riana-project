@@ -95,7 +95,6 @@
     position: absolute;
     right: 0;
     top: 13%;
-    padding-left: 8px;
   }
   &__button {
     color: black;
@@ -117,6 +116,7 @@
     @include mobile {
       margin-top: 90px;
       margin-bottom: 82px;
+      font-family: 'Arial';
     }
   }
   &__button:hover {

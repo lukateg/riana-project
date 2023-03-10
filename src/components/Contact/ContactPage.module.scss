@@ -45,6 +45,7 @@
 .image {
   width: 1920px;
   height: 579px;
+  margin: 0 auto;
   object-fit: cover;
   @include laptop {
     width: 1440px;

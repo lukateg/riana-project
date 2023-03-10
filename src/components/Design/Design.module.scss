@@ -63,6 +63,9 @@
     letter-spacing: 1.65px;
     text-transform: uppercase;  
     margin-top: 15px;  
+    @include mobile {
+      font-family: 'Arial';
+    }
   }
   button:hover {
     background-color: #1a1a1a;

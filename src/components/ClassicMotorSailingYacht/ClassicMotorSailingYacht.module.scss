@@ -57,6 +57,7 @@
             width: 180px;
             height: 46px;
             margin-top: 20px;
+            font-family: 'Arial';
         }
     }
     button:hover {
@@ -66,6 +67,9 @@
 }
 #number {
     font: bold 8.25px 'Arial';
+    @include tablet {
+        display: none;
+    }
 }
 
 
