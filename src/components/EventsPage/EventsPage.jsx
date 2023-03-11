@@ -26,7 +26,6 @@ const EventsPage = () => (
         }
       />
     </div>
-
     <Breadcrumbs />
     <h1 className={styles.heading}>RIANA EVENTS</h1>
     <EventComponent />

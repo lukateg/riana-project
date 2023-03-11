@@ -46,7 +46,6 @@ const App = () => (
             <div className={styles.heroImageMobile}>
               <HeroImage image={HeroImageForHomeMobile} />
             </div>
-            {/* <YachtExperience /> */}
             <UltimateYachtExperience />
             <ClassicMotorSailingYacht />
             <Design />
@@ -58,7 +57,6 @@ const App = () => (
             <SpecificationsMobile />
             <Layout />
             <Events />
-            {/* <YachtStories /> */}
             <RianaYachtStories />
             <Dinning />
             <Activities />
