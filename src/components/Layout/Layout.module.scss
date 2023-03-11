@@ -74,7 +74,7 @@
       width: 100%;
       justify-content: center;
       align-items: center;
-      gap: 8px;
+      gap: 10px;
       margin: 0 auto;
     }
   }
@@ -118,7 +118,7 @@
     -o-transition: opacity 0.5s ease-in-out;
     transition: opacity 0.5s ease-in-out;
     @include mobile {
-      width: 80%;
+      // width: 80%;
       height: 1px;
       text-align: center;
       // left: 5px;

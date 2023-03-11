@@ -28,12 +28,13 @@
     }
     @include tablet {
       width: 428px;
-      height: 450px;
+      height: 410px;
     }
     @include mobile {
       width: 100%;
       height: fit-content;
       padding-top: 146px;
+      padding-bottom: 30px;
     }
     &__text {
       width: 360px;
