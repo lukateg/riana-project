@@ -16,6 +16,8 @@ import styles from './Gallery.module.scss';
 import firstImage2 from '../../images/_D812016-min.jpg';
 import secondImage2 from '../../images/_D812026-min.jpg';
 import thirdImage2 from '../../images/interiorImage-min.jpg';
+import forthImage from '../../images/IMG_6219.jpg';
+import fifthImage from '../../images/IMG_6226.jpg';
 
 import hero1 from '../../images/PNRianofromabove-0832.jpg';
 import hero2 from '../../images/portonovi.jpg';
@@ -77,7 +79,15 @@ const Gallery = () => {
           </>
         }
       />
-      <Carousel images={[firstImage2, secondImage2, thirdImage2]} />
+      <Carousel
+        images={[
+          firstImage2,
+          secondImage2,
+          thirdImage2,
+          forthImage,
+          fifthImage
+        ]}
+      />
       <DownloadBrochure />
     </>
   );
